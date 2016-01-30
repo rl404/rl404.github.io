@@ -1,9 +1,4 @@
 body {
-	background-image: url(https://cdn.rawgit.com/rl404/rl404.github.io/bg/index.jpg);
+	background-image: url(bg/index.jpg);
 	background-size: cover;
-}
-
-h1,p {
-	right: 50%;
-	left: 50%;
 }
