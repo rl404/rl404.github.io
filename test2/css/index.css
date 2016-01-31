@@ -1,16 +1,16 @@
-body{
+body {
 	background-color: white;
 }
 
-h1{
-	color: white;
+h1 {
+	color: black;
 }
 
-p{
+p {
 	color: blue;
 }
 
-img{
+img {
+	position: absolute;
 	left: 50%;
-	right: 50%;
 }
