@@ -1,16 +1,18 @@
 body {
-	background-color: white;
+	background-color: #FDFDFD;
 }
 
 h1 {
+	text-align: center;
 	color: black;
 }
 
 p {
-	color: blue;
+	text-align: center;
+	color: red;
 }
 
 img {
-	position: absolute;
-	left: 50%;
+	display: block;
+	margin: auto;
 }
