@@ -7,25 +7,9 @@
 		<h1>OSU!</h1>
 
 		<script type="javascript">
-			function call(){
-				$.ajax({
-					url: 'osu.ppy.sh/api/get_user?k=270c5c3195f243df0696fde15864b12f56db030e&u=50265',
-					type: "GET",
-					dataType: "jsonp",
-					async:false,
-     				success: function (msg) {
-         				JsonpCallback(msg);
-					},
-    				error: function () {
-        				ErrorFunction();
-    				}
-				});
-			}
-
-			function callback(json){
-				document.getElementById('summary').innerHtml = json.result;
-			}
-
+			$.getJSON("osu.ppy.sh/api/get_user?k=270c5c3195f243df0696fde15864b12f56db030e&u=50265", function(data){
+				alert(data);
+			});
 		</script>
 
 	</body>
