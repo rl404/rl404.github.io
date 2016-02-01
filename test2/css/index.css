@@ -1,6 +1,10 @@
 body {
-	color: white;
-	background-color: black;
+	color: red;
+	background-color: #FDFDFD;
+}
+
+h1,p {
+	text-align: center;
 }
 
 img {
