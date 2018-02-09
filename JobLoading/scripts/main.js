@@ -250,14 +250,14 @@ $(document).ready(function() {
       var submittedproject = document.getElementById("projectname").value;
       var submittedmonth = document.getElementById("projectmonth").value;
       var submittedyear = document.getElementById("projectyear").value;
-      $.ajax({
-         type: 'POST',
-         url:  'projecttable.php',
-         data: { project: submittedproject, month: submittedmonth, year: submittedyear }
-      })
-      .done( function (responseText) {
-         $('#reportprojecttable').html(responseText);
-      })
+      
+      if (submittedproject) {
+         $('#reportprojecttable1').hide();
+         $('#reportprojecttable2').show();
+      } else {        
+         $('#reportprojecttable2').hide();
+         $('#reportprojecttable1').show();
+      }      
    });
 
    $('#homepage').on("change","#projectmonth", function (event) {
