@@ -1,0 +1,137 @@
+<html>
+<head>
+	<title>Job Loading</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='css/semantic.min.css' rel='stylesheet'>
+	<link href='css/main.css' rel='stylesheet'>
+	<script src='scripts/jquery.min.js'></script>
+	<script src='scripts/semantic.min.js'></script>
+	<script src='scripts/sortable.js'></script>
+	<script src='scripts/main.js'></script>
+	<script src='scripts/loader.js'></script>
+	<script src='scripts/fixedheader.js'></script>
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			Entry
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='update/update.html' class='item'>Job Hours</a>
+				<a href='input/job.html' class='item'>New Job</a>
+				<a href='input/project.html' class='item'>New Project</a>
+				<a href='input/dept.html' class='item'>New Dept./Sect.</a>
+				<a href='input/staff.html' class='item'>New Member</a>
+			</div>
+		</div>
+
+		<a href='list/joblist.html' class='item'>Job List</a>
+		<a href='list/projectlist.html' class='item'>Project List</a>
+		<a href='list/stafflist.html' class='item'>Member List</a>
+		<a href='list/deptlist.html' class='item'>Dept./Sect. List</a>
+		<a href='viewer/viewer.html' class='item'>Viewer</a>
+
+		<div class='ui simple dropdown item'>
+			Report
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='report/project.html' class='item'>By Project</a>
+				<a href='report/dept.html' class='item'>By Dept</a>
+				<a href='report/job.html' class='item'>By Job</a>
+				<a href='report/staff.html' class='item'>By Member</a>
+			</div>
+		</div>
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>
+			<a href='setting/setting.html' class='item'>Setting</a>
+			<a href='help/help.html' class='item'>Help</a>
+			<a href='index.html' class='item'>Logout</a>
+		</div>
+	</div>
+
+	<div class='ui container' id='homepage'>
+		<h1 class='ui center aligned dividing header' id='titleheader'>JOB LOADING MANAGEMENT SYSTEM</h1>
+		<form class='ui form'>        
+			<div class='inline fields'>
+				<div class='field'>
+					<label><h3 class='ui header' id='titleheader2'>Summary Month</h3></label>
+					<select class='ui search inverted dropdown' id='jobmonth'>
+						<option selected>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					</select>
+				</div>
+				<label>-</label>
+				<div class='field'>
+					<input id='jobyear' type='text' name='jobyear' size=5 value='2018'>
+				</div>
+				<div class='field'>
+					<img class='ui centered mini image' src='images/loading.gif' id='ajaxloading' style='display:none;'>
+				</div>  
+			</div>
+		</form>
+
+		<table class='ui selectable sortable center aligned table'>
+			<thead>
+				<tr>
+					<th id='tableheader'>Proj. Code</th>
+					<th id='tableheader'>Job Name</th>
+					<th id='tableheader'>Hours</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>PROJ01</td>
+					<td class='left aligned'>Design</td>
+					<td>16</td>
+				</tr>
+				<tr>
+					<td>PROJ02</td>
+					<td class='left aligned'>Create report</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>PROJ03</td>
+					<td class='left aligned'>Design</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>PROJ04</td>
+					<td class='left aligned'>Meeting</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>PROJ05</td>
+					<td class='left aligned'>Business trip</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<td>PROJ06</td>
+					<td class='left aligned'>Design</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan=2 id='tablefooter'>Total</th>
+					<th id='tablefooter'>65</th>
+				</tr>
+			</tfoot>
+		</table>
+
+		<div class='ui divider'></div>
+	</div>
+</body>
+</html>

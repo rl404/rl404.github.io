@@ -1,0 +1,201 @@
+<html>
+<head>
+	<title>Job Loading</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='../css/semantic.min.css' rel='stylesheet'>
+	<link href='../css/main.css' rel='stylesheet'>
+	<script src='../scripts/jquery.min.js'></script>
+	<script src='../scripts/semantic.min.js'></script>
+	<script src='../scripts/sortable.js'></script>
+	<script src='../scripts/main.js'></script>
+	<script src='../scripts/loader.js'></script>
+	<script src='../scripts/fixedheader.js'></script>
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='../homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			Entry
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../update/update.html' class='item'>Job Hours</a>
+				<a href='../input/job.html' class='item'>New Job</a>
+				<a href='../input/project.html' class='item'>New Project</a>
+				<a href='../input/dept.html' class='item'>New Dept./Sect.</a>
+				<a href='../input/staff.html' class='item'>New Member</a>
+			</div>
+		</div>
+
+		<a href='../list/joblist.html' class='item'>Job List</a>
+		<a href='../list/projectlist.html' class='item'>Project List</a>
+		<a href='../list/stafflist.html' class='item'>Member List</a>
+		<a href='../list/deptlist.html' class='item'>Dept./Sect. List</a>
+		<a href='../viewer/viewer.html' class='item'>Viewer</a>
+
+		<div class='ui simple dropdown item'>
+			Report
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../report/project.html' class='item'>By Project</a>
+				<a href='../report/dept.html' class='item'>By Dept</a>
+				<a href='../report/job.html' class='item'>By Job</a>
+				<a href='../report/staff.html' class='item'>By Member</a>
+			</div>
+		</div>
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>
+			<a href='../setting/setting.html' class='item'>Setting</a>
+			<a href='../help/help.html' class='item'>Help</a>
+			<a href='../index.html' class='item'>Logout</a>
+		</div>
+	</div>
+
+	<div class="ui container" id='homepage'>
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Updated successfully. 
+			</div>
+		</div>
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Deleted successfully. 
+			</div>
+		</div>
+		<div class='ui red message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Something wrong. 
+			</div>
+		</div>
+		<div class="ui secondary menu">
+			<div class="item">
+				<h2 id='titleheader'>Project List</h2>
+			</div>
+			<div class='item' id='titleheader2'>
+				5 results
+			</div>
+			<div class="right menu">
+				<div class="item">
+					<form action="" method="GET" id="projectsearchform">
+						<div class="ui icon input">					
+							<input type="text" name="search" placeholder="Search Project...">
+							<i class="search link icon" onclick="submitForm('projectsearchform');"></i>				
+						</div>
+						<button type="submit" style="display: none;">asd</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class='ui checkbox' id='oldprojectcheckbox'>
+			<input type='checkbox' value='1' id='oldprojectcheck'>
+			<label>Show old projects</label>
+		</div>
+		<table class='ui compact sortable selectable definition center aligned table'>
+			<thead class='full-width'>
+				<tr>
+					<th id='tableheader'>No</th>				
+					<th id='tableheader'>Project Code</th>
+					<th id='tableheader'>Project Name</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editProject("1");' style='position:absolute;margin-left:-70px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteProject("1");' style='position:absolute;margin-left:-100px;margin-top:-5px;'></i>
+					1.
+				</td>
+				<td>PROJ01</td>
+				<td>Project name 1</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editProject("1");' style='position:absolute;margin-left:-70px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteProject("1");' style='position:absolute;margin-left:-100px;margin-top:-5px;'></i>
+					2.
+				</td>
+				<td>PROJ02</td>
+				<td>Project name 2</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editProject("1");' style='position:absolute;margin-left:-70px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteProject("1");' style='position:absolute;margin-left:-100px;margin-top:-5px;'></i>
+					3.
+				</td>
+				<td>PROJ03</td>
+				<td>Project name 3</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editProject("1");' style='position:absolute;margin-left:-70px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteProject("1");' style='position:absolute;margin-left:-100px;margin-top:-5px;'></i>
+					4.
+				</td>
+				<td>PROJ04</td>
+				<td>Project name 4</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editProject("1");' style='position:absolute;margin-left:-70px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteProject("1");' style='position:absolute;margin-left:-100px;margin-top:-5px;'></i>
+					5.
+				</td>
+				<td>PROJ05</td>
+				<td>Project name 5</td>
+			</tr>
+			<tr class='oldproject' style='display:none;'>
+				<td>
+					<i class='link green large edit icon' onclick='editProject("1");' style='position:absolute;margin-left:-70px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteProject("1");' style='position:absolute;margin-left:-100px;margin-top:-5px;'></i>
+					6.
+				</td>
+				<td>PROJ06</td>
+				<td>Project name 6</td>
+			</tr>
+		</table>
+
+		<!-- Modal for edit project -->
+		<div class="ui modal editmodal">
+			<div class="header modalform" id='titleheader2'>EDIT PROJECT DETAIL</div>
+			<div class="content modalform" id='editprojectcontent'>
+				<form action='' method='post' class='ui form' id='editprojectform'>
+					<div class='two fields'>
+						<div class='required field'>
+							<label id='titleheader'>Project Code</label>
+							<input type='text' name='projectcode' id='projectcode' value='PROJ01' onkeydown='upperCaseF(this)' required>
+						</div>
+						<div class='required field'>
+							<label id='titleheader'>Project Name</label>
+							<input type='text' name='projectname' value='Project name 1' required>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="actions modalform">		   
+				<div class="ui green button" onclick="submitForm('editprojectform');">Update</div>
+				<div class="ui red cancel button">Cancel</div>
+			</div>
+		</div>
+
+		<!-- Modal for delete project -->
+		<div class="ui basic modal deletemodal">
+			<div class="header" id='titleheader2'>Are you sure you want to delete this project?</div>
+			<div class="content" id='deleteprojectcontent'>
+				<h3 class='ui header' id='titleheader3'>Project Code : <span style='color:white;'>PROJ01</span><br>
+					Project Name : <span style='color:white;'>Project name 1</span>
+				</h3>
+			</div>
+			<div class="actions">		   
+				<div class="ui green button" onclick="submitForm('deleteprojectform');">Yes</div>
+				<div class="ui red cancel button">No</div>
+			</div>
+		</div>
+	</div>
+	<div class='ui divider'></div>
+</body>
+</html>

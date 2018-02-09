@@ -1,0 +1,210 @@
+<html>
+<head>
+	<title>Job Loading</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='../css/semantic.min.css' rel='stylesheet'>
+	<link href='../css/main.css' rel='stylesheet'>
+	<script src='../scripts/jquery.min.js'></script>
+	<script src='../scripts/semantic.min.js'></script>
+	<script src='../scripts/sortable.js'></script>
+	<script src='../scripts/main.js'></script>
+	<script src='../scripts/loader.js'></script>
+	<script src='../scripts/fixedheader.js'></script>
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='../homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			Entry
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../update/update.html' class='item'>Job Hours</a>
+				<a href='../input/job.html' class='item'>New Job</a>
+				<a href='../input/project.html' class='item'>New Project</a>
+				<a href='../input/dept.html' class='item'>New Dept./Sect.</a>
+				<a href='../input/staff.html' class='item'>New Member</a>
+			</div>
+		</div>
+
+		<a href='../list/joblist.html' class='item'>Job List</a>
+		<a href='../list/projectlist.html' class='item'>Project List</a>
+		<a href='../list/stafflist.html' class='item'>Member List</a>
+		<a href='../list/deptlist.html' class='item'>Dept./Sect. List</a>
+		<a href='../viewer/viewer.html' class='item'>Viewer</a>
+
+		<div class='ui simple dropdown item'>
+			Report
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../report/project.html' class='item'>By Project</a>
+				<a href='../report/dept.html' class='item'>By Dept</a>
+				<a href='../report/job.html' class='item'>By Job</a>
+				<a href='../report/staff.html' class='item'>By Member</a>
+			</div>
+		</div>
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>
+			<a href='../setting/setting.html' class='item'>Setting</a>
+			<a href='../help/help.html' class='item'>Help</a>
+			<a href='../index.html' class='item'>Logout</a>
+		</div>
+	</div>
+
+	<div class="ui container" id='homepage'>
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Updated successfully. 
+			</div>
+		</div>
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Deleted successfully. 
+			</div>
+		</div>
+		<div class='ui red message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Something wrong. 
+			</div>
+		</div>
+
+		<div class="ui secondary menu">
+			<div class="item">	
+				<h2 id='titleheader'>Department List</h2>
+			</div>
+			<div class='item' id='titleheader2'>
+				5 results
+			</div>
+
+			<div class="right menu">
+				<div class="item">
+					<form action="deptlist.php" method="GET" id="deptsearchform">
+						<div class="ui icon input">					
+							<input type="text" name="search" placeholder="Search dept/sect...">
+							<i class="search link icon" onclick="submitForm('deptsearchform');"></i>				
+						</div>
+						<button type="submit" style="display: none;">asd</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class='ui checkbox' id='olddeptcheckbox'>
+			<input type='checkbox' value='1' id='olddeptcheck'>
+			<label>Show old dept.</label>
+		</div>
+		<table class='ui compact sortable selectable definition center aligned table'>
+			<thead class='full-width'>
+				<tr>
+					<th id='tableheader'>No</th>				
+					<th id='tableheader'>Department Name</th>
+					<th id='tableheader'>Dept. Code</th>	
+					<th id='tableheader'>Section Name</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editDept();' style='position:absolute;margin-left:-50px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteDept();' style='position:absolute;margin-left:-80px;margin-top:-5px;'></i>
+				1.</td>
+				<td class='left aligned'>Department name 1</td>
+				<td>DEPT01</td>
+				<td class='left aligned'>Section name 1</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editDept();' style='position:absolute;margin-left:-50px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteDept();' style='position:absolute;margin-left:-80px;margin-top:-5px;'></i>
+				2.</td>
+				<td class='left aligned'>Department name 2</td>
+				<td>DEPT02</td>
+				<td class='left aligned'>Section name 2</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editDept();' style='position:absolute;margin-left:-50px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteDept();' style='position:absolute;margin-left:-80px;margin-top:-5px;'></i>
+				3.</td>
+				<td class='left aligned'>Department name 3</td>
+				<td>DEPT03</td>
+				<td class='left aligned'>Section name 3</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editDept();' style='position:absolute;margin-left:-50px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteDept();' style='position:absolute;margin-left:-80px;margin-top:-5px;'></i>
+				4.</td>
+				<td class='left aligned'>Department name 4</td>
+				<td>DEPT04</td>
+				<td class='left aligned'>Section name 4</td>
+			</tr>
+			<tr>
+				<td>
+					<i class='link green large edit icon' onclick='editDept();' style='position:absolute;margin-left:-50px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteDept();' style='position:absolute;margin-left:-80px;margin-top:-5px;'></i>
+				5.</td>
+				<td class='left aligned'>Department name 5</td>
+				<td>DEPT05</td>
+				<td class='left aligned'>Section name 5</td>
+			</tr>
+			<tr class='olddept' style='display:none;'>
+				<td>
+					<i class='link green large edit icon' onclick='editDept();' style='position:absolute;margin-left:-50px;margin-top:-3px;'></i>
+					<i class='link red large remove icon' onclick='deleteDept();' style='position:absolute;margin-left:-80px;margin-top:-5px;'></i>
+				6.</td>
+				<td class='left aligned'>Department name 6</td>
+				<td>DEPT06</td>
+				<td class='left aligned'>Section name 6</td>
+			</tr>
+		</table>
+
+		<!-- Modal for edit dept -->
+		<div class="ui modal editmodal">
+			<div class="header modalform" id='titleheader2'>EDIT DEPARTMENT DETAIL</div>
+			<div class="content modalform" id='editdeptcontent'>
+				<form action='' method='post' class='ui form' id='editdeptform'>
+					<div class='two fields'>
+						<div class='required field'>
+							<label id='titleheader'>Department Name</label>
+							<input type='text' name='deptname' value='Department name' required>
+						</div>
+
+						<div class='required field'>
+							<label id='titleheader'>Department Code</label>
+							<input type='text' name='deptcode' value='DEPT01' onkeydown='upperCaseF(this)' required>
+						</div>
+					</div>
+					<div class='field'>
+						<label id='titleheader'>Section Name</label>
+						<input type='text' name='sectname' value='Section name'>
+					</div>
+				</form>
+			</div>
+			<div class="actions modalform">		   
+				<div class="ui green button" onclick="submitForm('editdeptform');">Update</div>
+				<div class="ui red cancel button">Cancel</div>
+			</div>
+		</div>
+
+		<!-- Modal for delete dept -->
+		<div class="ui basic modal deletemodal">
+			<div class="header" id='titleheader2'>Are you sure you want to delete this dept. / sect.?</div>
+			<div class="content" id='deletedeptcontent'>
+				<h3 class='ui header' id='titleheader3'>Dept. Name : <span style='color:white;'>Department name (DEPT01)</span><br>
+					Sect. Name : <span style='color:white;'>Section name</span>
+				</h3>
+
+				</div>
+				<div class="actions">		   
+					<div class="ui green button" onclick="submitForm('deletedeptform');">Yes</div>
+					<div class="ui red cancel button">No</div>
+				</div>
+			</div>
+		</div>
+		<div class='ui divider'></div>
+	</body>
+	</html>

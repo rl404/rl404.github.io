@@ -1,0 +1,392 @@
+<html>
+<head>
+	<title>Job Loading</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='../css/semantic.min.css' rel='stylesheet'>
+	<link href='../css/main.css' rel='stylesheet'>
+	<script src='../scripts/jquery.min.js'></script>
+	<script src='../scripts/semantic.min.js'></script>
+	<script src='../scripts/sortable.js'></script>
+	<script src='../scripts/main.js'></script>
+	<script src='../scripts/loader.js'></script>
+	<script src='../scripts/fixedheader.js'></script>
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='../homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			Entry
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../update/update.html' class='item'>Job Hours</a>
+				<a href='../input/job.html' class='item'>New Job</a>
+				<a href='../input/project.html' class='item'>New Project</a>
+				<a href='../input/dept.html' class='item'>New Dept./Sect.</a>
+				<a href='../input/staff.html' class='item'>New Member</a>
+			</div>
+		</div>
+
+		<a href='../list/joblist.html' class='item'>Job List</a>
+		<a href='../list/projectlist.html' class='item'>Project List</a>
+		<a href='../list/stafflist.html' class='item'>Member List</a>
+		<a href='../list/deptlist.html' class='item'>Dept./Sect. List</a>
+		<a href='../viewer/viewer.html' class='item'>Viewer</a>
+
+		<div class='ui simple dropdown item'>
+			Report
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../report/project.html' class='item'>By Project</a>
+				<a href='../report/dept.html' class='item'>By Dept</a>
+				<a href='../report/job.html' class='item'>By Job</a>
+				<a href='../report/staff.html' class='item'>By Member</a>
+			</div>
+		</div>
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>
+			<a href='../setting/setting.html' class='item'>Setting</a>
+			<a href='../help/help.html' class='item'>Help</a>
+			<a href='../index.html' class='item'>Logout</a>
+		</div>
+	</div>
+	<div class="ui container">
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Updated successfully. 
+			</div>
+		</div>
+
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Deleted successfully. 
+			</div>
+		</div>
+
+		<div class='ui red message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Please fill both Job name and Project code. 
+			</div>
+		</div>
+
+		<h1 class='ui center aligned dividing header' id='titleheader'>
+			UPDATE WORK HOUR
+		</h1>	
+
+		<form class='ui form'>		
+			<div class='inline fields'>
+				<div class='field'>
+					<select id='jobweek'>
+						<option>Week 1</option>
+						<option>Week 2</option>
+						<option>Week 3</option>
+						<option>Week 4</option>
+					</select>
+				</div>
+				<div class='field'>
+					<select id='jobmonth'>
+						<option selected>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					</select>
+				</div>
+				<label>-</label>
+				<div class='field'>
+					<input id='jobyear' type='text' name='jobyear' size=5 value='2018'>
+				</div>
+				<div class='field'>
+					<img class='ui centered mini image' src='../images/loading.gif' id='ajaxloading' style='display:none;'>
+				</div>					
+			</div>
+		</form>
+
+		<form class='ui form' id='ajaxupdatetable'>
+			<table class='ui compact selectable definition center aligned celled table'>
+				<thead class='full-width'>
+					<tr>
+						<th class='one wide' id='tableheader'>No</th>					
+						<th class='four wide' id='tableheader'>Job Name</th>
+						<th class='two wide' id='tableheader'>Proj. Code</th>
+						<th class='one wide' id='weekendtext'>1<br>Sun</th>
+						<th class='one wide' id='todaytext'>2<br>Mon</th>
+						<th class='one wide' id='tableheader'>3<br>Tue</th>
+						<th class='one wide' id='tableheader'>4<br>Wed</th>
+						<th class='one wide' id='tableheader'>5<br>Thu</th>
+						<th class='one wide' id='tableheader'>6<br>Fri</th>
+						<th class='one wide' id='tableheader'>7<br>Sat</th>
+						<th class='one wide' id='tableheader'>Total Week</th>
+						<th class='one wide' id='tableheader'>Total Month</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1.</td>
+						<td class='left aligned'>
+							<b>Job 001</b><br>
+							Job description 001 of Job 001
+						</td>
+						<td>PROJ01</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='3'>
+							</div>
+						</td>
+						<td id='todaytext2'>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='4' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='7'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td id='tabletotal'>10</td>
+						<td id='tabletotal'>21</td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td class='left aligned'>
+							<b>Job 002</b><br>
+							Job description 001 of Job 002
+						</td>
+						<td>PROJ02</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='3'>
+							</div>
+						</td>
+						<td id='todaytext2'>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='4' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='7'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' value='2'>
+							</div>
+						</td>
+						<td id='tabletotal'>10</td>
+						<td id='tabletotal'>21</td>
+					</tr>
+
+					<tr>
+						<td>3.</td>
+						<td>
+							<div class='field'>
+								<select id='job' class='inputtable'>
+									<option value='' disabled selected hidden>Job Name</option>
+									<optgroup class='centeroption' label='--- COMMON JOB ---'>
+										<optgroup label='Report'>
+											<option>Create draft</option>
+											<option>Create report</option>
+											<option>Approval</option>
+										</optgroup>
+										<optgroup label='Meeting'>
+											<option>Plan meeting</option>
+											<option>Approval</option>
+											<option>Send invitation</option>
+											<option>Meeting</option>
+										</optgroup>
+										<optgroup label='Trip'>
+											<option>Plan trip</option>
+											<option>Approval</option>
+											<option>Trip duration</option>
+										</optgroup>
+									</optgroup>
+									<optgroup class='centeroption' label='--- ADMINITRATOR JOB ---'>
+										<optgroup label='Documentation'>
+											<option>Sort out document</option>
+											<option>Review</option>
+											<option>Approval</option>
+										</optgroup>
+										<optgroup label='Supplies'>
+											<option>Calculate</option>
+											<option>Review</option>
+											<option>Approval</option>
+											<option>Call supplier</option>
+										</optgroup>
+										<optgroup label='Scheduling'>
+											<option>Information gathering</option>
+											<option>Check date</option>
+											<option>Review</option>
+											<option>Approval</option>
+										</optgroup>
+									</optgroup>
+									<optgroup class='centeroption' label='--- DEPT1 JOB ---'>
+										<optgroup label='Job1'>
+											<option>JobDesc1</option>
+											<option>JobDesc2</option>
+											<option>JobDesc3</option>
+										</optgroup>
+										<optgroup label='Job2'>
+											<option>JobDesc1</option>
+											<option>JobDesc2</option>
+											<option>JobDesc3</option>
+											<option>JobDesc4</option>
+										</optgroup>
+										<optgroup label='Job3'>
+											<option>JobDesc1</option>
+											<option>JobDesc2</option>
+											<option>JobDesc3</option>
+											<option>JobDesc4</option>
+										</optgroup>
+									</optgroup>
+								</select>
+							</div>
+						</td>		
+						<td>
+							<div class='field'>
+								<select id='project' class='center aligned inputtable'>
+									<option value='' disabled hidden selected>Project</option>
+									<option>PROJ01 - ProjName</option>
+									<option>PROJ02 - ProjName</option>
+									<option>PROJ03 - ProjName</option>
+									<option>PROJ04 - ProjName</option>
+								</select>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td id='todaytext2'>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td>
+							<div class='field'>
+								<input type='text' class='center aligned inputtable' size='3' onchange='this.value = this.value.replace(/,/g, ".")'>
+							</div>
+						</td>
+						<td id='tabletotal'></td>
+						<td id='tabletotal'></td>
+					</tr>
+				</tbody>
+
+				<tfoot class='full-width'>
+					<tr>
+						<th colspan=3 id='tablefooter'>Total Day Hours</th>
+						<th id='tablefooter'>6</th>
+						<th id='todaytext'>	8</th>
+						<th id='tablefooter'>4</th>
+						<th id='tablefooter'>4</th>
+						<th id='tablefooter'>4</th>
+						<th id='tablefooter'>
+							14
+							<span class='detailjobview' data-tooltip='You have worked for more than 12 hours. Are you sure? Don&#39;t work too hard.' data-position='top center'><i class='link help icon'></i>
+							</span>
+						</th>
+						<th id='tablefooter'>4</th>
+						<th id='tablefooter'>20</th>
+						<th id='tablefooter'>42</th>
+					</tr>
+				</tfoot>
+			</table>
+
+			<div class='inline fields'>
+				<div class='field'><button class='ui yellow button' type='submit'>UPDATE</button></div>
+				<div class='field'>
+					<button class='ui red button' onclick='window.open("../list/joblist.html","newwindow", "width=800,height=500");return false;'>			
+						View Job List
+					</button>
+				</div>
+				<div class='field'>
+					<button class='ui blue button' onclick='window.open("../list/projectlist.html","newwindow", "width=800,height=500");return false;'>			
+						View Project List
+					</button>
+				</div>
+				<div class='field'>
+					<a><div data-tooltip='Change the job hour to 0 and click update first. Then, click this button.'>
+						<div class='ui black button'>Delete Empty Job Hour</div>
+					</div></a>
+				</div>
+				<div class='field'>
+					<a href='../help/help.html'>Need help?</a>
+				</div>
+			</div>
+		</form>	
+
+		<div class='ui divider'></div>
+	</div>
+
+	<datalist id='joblist'>
+		
+	</datalist>
+</body>
+</html>

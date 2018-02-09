@@ -1,0 +1,92 @@
+/* Custom Stylesheet */
+body{     
+  background-image: url(../images/bg2.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header{
+  position: relative;
+}
+
+.ibg-bg {
+  position: absolute;
+}
+
+.footer {
+  display: block;
+  background-color: rgba(107, 122, 143,1);
+  color: white;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  line-height: 20px;
+  bottom: 0;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.footer:hover {
+  background-color: rgba(107, 122, 143,0.5);
+  opacity: 1;
+}
+
+span{
+  /*color: red;*/
+}
+
+#toyotalogo {
+  position: absolute;
+  height: 50px;
+  top: 30px;
+  left: 0px;
+  z-index: 5;
+}
+
+h1 {
+  margin-bottom: 0px !important;
+}
+
+#screensaver{
+  background-image:url(../images/rain.gif),url(../images/rain.gif),url(../images/rain.gif),url(../images/ubw2.png);
+  background-size:747px 5000px,747px 1000px,747px 100%,100%;
+  background-position: 0 0, 50% 0,0 0, center;
+
+  display: block;
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;left:0;
+  z-index: 50;
+}
+
+#superheader:hover{
+  background: url(../images/sienta.png) no-repeat;
+  background-size:100px;
+  animation: sg 6s linear infinite; 
+  -webkit-animation: sg 6s linear infinite; 
+}
+
+@keyframes sg {
+  0% { background-position: 120% 30px}
+  100% { background-position: -10% 30px;}
+}
+
+
+@-webkit-keyframes sg {
+  0% { background-position: 120% 30px;}
+  100% { background-position: -10% 30px;}
+}
+
+a:hover{
+  cursor:pointer;
+  color:black;
+}
+
+.docsegment:hover{
+  background-color: rgba(255,255,255,0.5);
+}
+
+a{
+  color:black;
+}
