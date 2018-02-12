@@ -1,0 +1,154 @@
+<html>
+<head>
+	<title>TS Online</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='../css/semantic.min.css' rel='stylesheet'>
+	<link href='../css/main.css' rel='stylesheet'>
+	<link href='../css/calendar.css' rel='stylesheet'>
+
+	<script src='../scripts/jquery.min.js'></script>
+	<script src='../scripts/semantic.min.js'></script>
+	<script src='../scripts/sortable.js'></script>
+	<script src='../scripts/main.js'></script>
+	<script src='../scripts/calendar.js'></script>
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='../homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			TS Request
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../request/request.html' class='item'>Add New</a>
+				<a href='../request/deliver.html' class='item'>Deliver</a>
+			</div>
+		</div>
+		<a href='../update/partno.html' class='item'>
+			Update Part No
+		</a>
+		<div class='ui simple dropdown item'>
+			Update TS Rev.
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../update/tsauto.html' class='item'>Auto</a>
+				<a href='../update/tsmanual.html' class='item'>Manual</a>
+			</div>
+		</div>
+		<div class='ui simple dropdown item'>
+			List
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../list/ts.html' class='item'>TS x Supplier</a>
+				<a href='../list/supplier.html' class='item'>Supplier x TS</a>
+				
+				<div class='ui left pointing dropdown link item'>
+					<i class='dropdown icon'></i>
+					<span class='text'>Contact</span>
+					<div class='menu'>
+						<a href='../list/contact.html' class='item'>Contact List</a>
+						<a href='../update/contact.html' class='item'>Update Contact</a>
+					</div>
+				</div>	
+				
+				<div class='ui left pointing dropdown link item'>
+					<i class='dropdown icon'></i>
+					<span class='text'>History</span>
+					<div class='menu'>
+						<a href='../list/datats.html' class='item'>TS</a>
+						<a href='../list/datasupplier.html' class='item'>Request</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class='ui simple dropdown item'>
+			Cover Letter
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../export/export.html' class='item'>Auto</a>
+				<a href='../export/exportmanual.html' class='item'>Manual</a>
+			</div>
+		</div>
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>					
+			<a href='../help/help.pdf' target='_blank' class='item'>Help</a>
+			<a href='../setting/setting.html' class='item'>Setting</a>
+			<a href='../index.html' class='item'>Logout</a>
+		</div>
+	</div>
+
+	<div class="ui container">
+
+		<div class="ui secondary menu">
+			<div class="item">	
+				<h1 id='titleheader2'>Supplier Contact List</h1>
+			</div>
+			<div class='item' id='titleheader1'>
+				5 results
+			</div>
+
+			<!-- Search box -->
+			<div class="right menu">
+				<div class="item">
+					<form id="datasearchform">
+						<div class="ui icon input">					
+							<input type="text" name="search" placeholder="Search TS or Supplier...">
+							<i class="search link icon" onclick="submitForm('datasearchform');"></i>					
+						</div>
+						<button type="submit" style="display: none;">a</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<table class='ui compact sortable selectable definition table'>
+			<thead class='full-width'>
+				<tr>
+					<th id='tableheader' class='center aligned'>No</th>
+					<th id='tableheader' class='center aligned'>Supplier Name</th>
+					<th id='tableheader' class='center aligned'>Dept. Name</th>
+					<th id='tableheader' class='center aligned'>Contant Person</th>		
+					<th id='tableheader' class='center aligned'>Email</th>
+				</tr>
+			</thead>
+			<tr>
+				<td class='center aligned'>1.</td>
+				<td><a>PT. Supplier Name 1</a></td>
+				<td>Department Name 1</td>
+				<td>Staff Name 1</td>
+				<td>email@email.com</td>
+			</tr>
+			<tr>
+				<td class='center aligned'>1.</td>
+				<td><a>PT. Supplier Name 1</a></td>
+				<td>Department Name 1</td>
+				<td>Staff Name 1</td>
+				<td>email@email.com</td>
+			</tr>
+			<tr>
+				<td class='center aligned'>1.</td>
+				<td><a>PT. Supplier Name 1</a></td>
+				<td>Department Name 1</td>
+				<td>Staff Name 1</td>
+				<td>email@email.com</td>
+			</tr>
+			<tr>
+				<td class='center aligned'>1.</td>
+				<td><a>PT. Supplier Name 1</a></td>
+				<td>Department Name 1</td>
+				<td>Staff Name 1</td>
+				<td>email@email.com</td>
+			</tr>
+			<tr>
+				<td class='center aligned'>1.</td>
+				<td><a>PT. Supplier Name 1</a></td>
+				<td>Department Name 1</td>
+				<td>Staff Name 1</td>
+				<td>email@email.com</td>
+			</tr>
+		</table>
+	</div>
+	<div class="ui divider"></div>
+</body>
+</html>

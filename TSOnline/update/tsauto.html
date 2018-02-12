@@ -1,0 +1,161 @@
+<html>
+<head>
+	<title>TS Online</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='../css/semantic.min.css' rel='stylesheet'>
+	<link href='../css/main.css' rel='stylesheet'>
+	<link href='../css/calendar.css' rel='stylesheet'>
+
+	<script src='../scripts/jquery.min.js'></script>
+	<script src='../scripts/semantic.min.js'></script>
+	<script src='../scripts/sortable.js'></script>
+	<script src='../scripts/main.js'></script>
+	<script src='../scripts/calendar.js'></script>
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='../homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			TS Request
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../request/request.html' class='item'>Add New</a>
+				<a href='../request/deliver.html' class='item'>Deliver</a>
+			</div>
+		</div>
+		<a href='../update/partno.html' class='item'>
+			Update Part No
+		</a>
+		<div class='ui simple dropdown item'>
+			Update TS Rev.
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../update/tsauto.html' class='item'>Auto</a>
+				<a href='../update/tsmanual.html' class='item'>Manual</a>
+			</div>
+		</div>
+		<div class='ui simple dropdown item'>
+			List
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../list/ts.html' class='item'>TS x Supplier</a>
+				<a href='../list/supplier.html' class='item'>Supplier x TS</a>
+				
+				<div class='ui left pointing dropdown link item'>
+					<i class='dropdown icon'></i>
+					<span class='text'>Contact</span>
+					<div class='menu'>
+						<a href='../list/contact.html' class='item'>Contact List</a>
+						<a href='../update/contact.html' class='item'>Update Contact</a>
+					</div>
+				</div>	
+				
+				<div class='ui left pointing dropdown link item'>
+					<i class='dropdown icon'></i>
+					<span class='text'>History</span>
+					<div class='menu'>
+						<a href='../list/datats.html' class='item'>TS</a>
+						<a href='../list/datasupplier.html' class='item'>Request</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class='ui simple dropdown item'>
+			Cover Letter
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../export/export.html' class='item'>Auto</a>
+				<a href='../export/exportmanual.html' class='item'>Manual</a>
+			</div>
+		</div>
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>					
+			<a href='../help/help.pdf' target='_blank' class='item'>Help</a>
+			<a href='../setting/setting.html' class='item'>Setting</a>
+			<a href='../index.html' class='item'>Logout</a>
+		</div>
+	</div>
+
+	<div class="ui container">
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Added successfully. Notification email has been sent.
+			</div>
+		</div>
+		<div class='ui red message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Something wrong. 
+			</div>
+		</div>
+
+		<!-- Title -->
+		<h1 class="ui header" id='titleheader2'>
+			Update TS Revision
+		</h1>
+
+		<!-- Form -->
+		<form class="ui form">
+
+			<!-- Textarea for pasting TS from email -->
+			<div class="field">
+				<label>Paste the TS new revision here:</label>
+				<textarea name="tsno" id="tsarea"
+				placeholder="･TSxxxx　REV.x　Content"></textarea>
+			</div>
+
+			<!-- Convert button -->
+			<button class='ui red inverted button' type="submit" id="convertts">Convert</button>
+		</form>		
+		
+		<!-- Bottom title -->
+		<h5 class='ui header'>Converted TS:</h5>
+
+		<!-- Converted TS result -->
+		<div id="convertedts" style='display: none;'>
+			<form class='ui form' id='tsautoupdate'>
+				<input type='hidden' value='1' name='type'>
+				<div class='inline fields'>
+					<label>Issue Date:</label>
+
+					<div class='ui calendar calendarinput'>						
+						<div class='ui input left icon'>
+							<i class='calendar icon'></i>
+							<input type='text' name='reqdate' placeholder='date' value='". date('Y-M-d')."'>
+						</div>
+					</div>					
+				</div>
+				<table class='ui celled table'>
+					<thead><tr>
+						<th class='center aligned' id='tableheader'>TS No</th>
+						<th class='center aligned' id='tableheader'>Rev.</th>
+						<th class='center aligned' id='tableheader'>Content</th>
+					</tr></thead>
+					<tr>
+						<td class='center aligned' id='existedts' colspan=3>Already in Database</td>
+					</tr>
+					<tr>
+						<td><input type='text' name='tsno[]' value='TS0001' class='center aligned' required></td>
+						<td>
+							<div data-tooltip='Newer revision found. (Rev.2)' data-position='right center'>
+								<input type='text' name='rev[]' value='1' class='center aligned' id='existedts' required>
+							</div>
+						</td>
+						<td><textarea name='content[]' rows=2>Content 1</textarea></td>
+					</tr>
+					<tr>
+						<td><input type='text' name='tsno[]' value='TS0002' class='center aligned' required></td>
+						<td><input type='text' name='rev[]' value='1' class='center aligned' required></td>
+						<td><textarea name='content[]' rows=2>Content 2</textarea></td>
+					</tr>
+				</table>
+				<input class='ui inverted red button' type="button" onclick="location.href='';" value="Submit" />
+			</form>
+		</div>
+	</div>
+	<div class="ui divider"></div>
+</body>
+</html>

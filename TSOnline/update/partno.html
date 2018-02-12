@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>TS Online</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='../css/semantic.min.css' rel='stylesheet'>
+	<link href='../css/main.css' rel='stylesheet'>
+	<link href='../css/calendar.css' rel='stylesheet'>
+
+	<script src='../scripts/jquery.min.js'></script>
+	<script src='../scripts/semantic.min.js'></script>
+	<script src='../scripts/sortable.js'></script>
+	<script src='../scripts/main.js'></script>
+	<script src='../scripts/calendar.js'></script>
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='../homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			TS Request
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../request/request.html' class='item'>Add New</a>
+				<a href='../request/deliver.html' class='item'>Deliver</a>
+			</div>
+		</div>
+		<a href='../update/partno.html' class='item'>
+			Update Part No
+		</a>
+		<div class='ui simple dropdown item'>
+			Update TS Rev.
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../update/tsauto.html' class='item'>Auto</a>
+				<a href='../update/tsmanual.html' class='item'>Manual</a>
+			</div>
+		</div>
+		<div class='ui simple dropdown item'>
+			List
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../list/ts.html' class='item'>TS x Supplier</a>
+				<a href='../list/supplier.html' class='item'>Supplier x TS</a>
+				
+				<div class='ui left pointing dropdown link item'>
+					<i class='dropdown icon'></i>
+					<span class='text'>Contact</span>
+					<div class='menu'>
+						<a href='../list/contact.html' class='item'>Contact List</a>
+						<a href='../update/contact.html' class='item'>Update Contact</a>
+					</div>
+				</div>	
+				
+				<div class='ui left pointing dropdown link item'>
+					<i class='dropdown icon'></i>
+					<span class='text'>History</span>
+					<div class='menu'>
+						<a href='../list/datats.html' class='item'>TS</a>
+						<a href='../list/datasupplier.html' class='item'>Request</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class='ui simple dropdown item'>
+			Cover Letter
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../export/export.html' class='item'>Auto</a>
+				<a href='../export/exportmanual.html' class='item'>Manual</a>
+			</div>
+		</div>
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>					
+			<a href='../help/help.pdf' target='_blank' class='item'>Help</a>
+			<a href='../setting/setting.html' class='item'>Setting</a>
+			<a href='../index.html' class='item'>Logout</a>
+		</div>
+	</div>
+
+	<div class="ui container">
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Added successfully. 
+			</div>
+		</div>
+		<div class='ui red message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Something wrong. 
+			</div>
+		</div>
+
+		<!-- Title -->
+		<h1 class='ui center aligned header' id='titleheader2'>UPDATE PART NUMBER INFO</h1>
+		<div class="ui divider"></div>
+		<div class='ui very relaxed grid'>
+			<div class='two column row'>
+				<div class='column'>
+					<h3 class='ui header'>Part No X TS No</h3>
+					<!-- Form -->
+					<form class='ui form' id='partnoform1'>
+						
+						<div class="field">
+							<label>Part Number</label>
+							<input type="text" name="partno" id="partno" form='partnoform1' onkeydown="upperCaseF(this)" required>
+						</div>
+
+						<!-- TS input table -->
+						<div class="field">
+							<table class='ui compact sortable selectable definition center aligned table' id='newrow'>
+								
+								<!-- Table header -->
+								<thead class='full-width'><tr>
+									<th class='center aligned' id='tableheader'>TS Number</th>
+								</tr></thead>							
+								
+								<!-- Empty input -->
+								<tr>
+									<td><input class='inputtable' name='tsno[]' id='tsno' type='text' form='partnoform1' onkeydown="upperCaseF(this)" required></td>	
+								</tr>	
+
+								<!-- For cloning -->
+								<tr id='emptyrow' style="display:none;">
+									<td><input class='inputtable' name='tsno[]' id='tsno' type='text' form='partnoform1' onkeydown="upperCaseF(this)"></td>	
+								</tr>						
+							</table>		
+						</div>
+
+						<!-- Button to add new row -->
+						<div class='field'>
+							<div tabindex="0" class="ui fluid vertical basic animated button" onclick="addNewRow()">
+								<div class="visible content"><i class='plus icon'></i></div>
+								<div class="hidden content">
+									Add new row
+								</div>
+							</div>
+						</div>
+						<input class='ui inverted red button' type="button" onclick="location.href='';" value="Update" />
+					</form>					
+				</div>
+
+				<div class="ui vertical divider">or</div>
+
+				<div class='column'>	
+					<h3 class='ui header'>TS No X Part No</h3>			
+					<!-- Form -->
+					<form class='ui form' id='partnoform2'>
+
+						<!-- Supplier name textbox + datalist -->
+						<div class="field">
+							<label>TS Number</label>
+							<input type="text" name="tsno" id="tsno" form='partnoform2' onkeydown="upperCaseF(this)" required>
+						</div>
+
+						<!-- TS input table -->
+						<div class="field">
+							<table class='ui compact sortable selectable definition center aligned table' id='newrow2'>
+
+								<!-- Table header -->
+								<thead class='full-width'><tr>
+									<th class='center aligned' id='tableheader'>Part Number</th>
+								</tr></thead>							
+
+								<!-- Empty input -->
+								<tr>
+									<td><input class='inputtable' name='partno[]' id='partno' type='text' form='partnoform2' onkeydown="upperCaseF(this)" required></td>
+								</tr>	
+
+								<!-- For cloning -->
+								<tr id='emptyrow2' style="display:none;">
+									<td><input class='inputtable' name='partno[]' id='partno' type='text' form='partnoform2' onkeydown="upperCaseF(this)"></td>
+								</tr>						
+							</table>		
+						</div>
+
+						<!-- Button to add new row -->
+						<div class='field'>
+							<div tabindex="0" class="ui fluid vertical basic animated button" onclick="addNewRow2()">
+								<div class="visible content"><i class='plus icon'></i></div>
+								<div class="hidden content">
+									Add new row
+								</div>
+							</div>
+						</div>
+						<input class='ui inverted red button' type="button" onclick="location.href='';" value="Update" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
