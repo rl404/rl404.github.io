@@ -130,67 +130,12 @@ $(document).ready(function() {
    // Send all data in table to pdf creator on export/export2convert.php
    $('#coverletterconvertbutton').click(function (event) {
       event.preventDefault();  // Do not run the default action
-      var submittedsetdate = 0;
-      var submitteddiv = document.getElementById("inputdiv").value;
-      var submittedpic = document.getElementById("inputpic").value; 
-      var submittedreqdate = document.getElementById("reqdate").value; 
-      var submittedsupplier = document.getElementById("suppliername").value;
-      var submittedts = [];
-      $("input[name='tsno']").each(function() {submittedts.push($(this).val());});
-      var submittedrev = [];
-      $("input[name='rev']").each(function() {submittedrev.push($(this).val());});       
-      var submittedmodel = [];
-      $("input[name='model']").each(function() {submittedmodel.push($(this).val());});
-      var submittedpart = [];
-      $("input[name='part']").each(function() {submittedpart.push($(this).val());});
-
-      if ($('#senddate').is(':checked')) {
-         submittedsetdate = 1;
-      }
-
-      $.ajax({
-         type: 'POST',
-         url:  'export2convert1.php',
-         data: { pic: submittedpic,
-            div: submitteddiv,
-            supplier: submittedsupplier, 
-            ts: submittedts, 
-            rev: submittedrev,
-            model: submittedmodel,
-            part: submittedpart,
-            setdate: submittedsetdate,
-            reqdate: submittedreqdate }
-         })
-      .done( function (responseText) {
-         $('#requestconvert').html(responseText);
-      })
+      $('#pdfletter').show();
    });
 
-   // Send all data in the form to pdf creator on export/exportmanual.php
-   $(".container").on("click", "#coverlettercreatebutton", function(event){
+   $('#coverlettercreatebutton').click(function (event) {
       event.preventDefault();  // Do not run the default action
-      var submittedsupp = document.getElementById("inputsupp").value;
-      var submitteddiv = document.getElementById("inputdiv").value;
-      var submittedpic = document.getElementById("inputpic").value;
-      
-      var submittedts = $("input[id='inputts']").map(function(){return $(this).val();}).get();
-      var submittedrev = $("input[id='inputrev']").map(function(){return $(this).val();}).get();
-      var submittedmodel = $("input[id='inputmodel']").map(function(){return $(this).val();}).get();
-      var submittedpart = $("input[id='inputpart']").map(function(){return $(this).val();}).get();
-      
-      var submittedday = document.getElementById("reqdate").value;
-
-      $.ajax({
-         type: 'POST',
-         url:  'export2convert1.php',
-         data: { ts: submittedts, rev: submittedrev, supplier: submittedsupp,
-            model: submittedmodel, part: submittedpart, day: submittedday, 
-            pic: submittedpic,
-            div: submitteddiv }
-         })
-      .done( function (responseText) {
-         $('#manualconvert').html(responseText);
-      })
+      $('#pdfletter').show();
    });
 
 });

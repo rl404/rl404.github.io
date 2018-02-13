@@ -81,16 +81,18 @@
 	<div class="ui container">
 
 		<div class="ui secondary menu">
-			<div class="item">	
-				<h1 id='titleheader2'>Supplier Contact List</h1>
+			<div class="item">		
+
+				<h1 id='titleheader2'>Request Data List</h1>
 			</div>
 			<div class='item' id='titleheader1'>
 				5 results
 			</div>
 
-			<!-- Search box -->
 			<div class="right menu">
 				<div class="item">
+
+					<!-- Search box -->
 					<form id="datasearchform">
 						<div class="ui icon input">					
 							<input type="text" name="search" placeholder="Search TS or Supplier...">
@@ -102,52 +104,98 @@
 			</div>
 		</div>
 
-		<table class='ui compact sortable selectable definition table'>
+		<table class='ui collapsing table'>
+			<tr>
+				<td onclick='submitForm();' id='selected-tdpage'>1</td>
+				<td onclick='submitForm();' id='tdpage'>2</td>
+				<td onclick='submitForm();' id='tdpage'>3</td>
+				<td onclick='submitForm();' id='tdpage'>4</td>
+			</tr>
+		</table>
+
+		<table class='ui compact sortable selectable definition table center aligned'>
 			<thead class='full-width'>
 				<tr>
-					<th id='tableheader' class='center aligned'>No</th>
-					<th id='tableheader' class='center aligned'>Supplier Name</th>
-					<th id='tableheader' class='center aligned'>Dept. Name</th>
-					<th id='tableheader' class='center aligned'>Contant Person</th>		
-					<th id='tableheader' class='center aligned'>Email</th>
+					<th id='tableheader'>No</th>
+					<th id='tableheader'>Supplier Name</th>
+					<th id='tableheader'>TS No</th>
+					<th id='tableheader'>Rev.</th>		
+					<th id='tableheader'>Model</th>
+					<th id='tableheader'>Part Number</th>		
+					<th id='tableheader'>Request Date</th>	
+					<th id='tableheader'>Delivery Date</th>	
+					<th id='tableheader'>Receiver</th>					
+					<th id='tableheader'>PIC</th>		
 				</tr>
 			</thead>
 			<tr>
-				<td class='center aligned'>1.</td>
-				<td><a>PT. Supplier Name 1</a></td>
-				<td>Department Name 1</td>
-				<td>Staff Name 1</td>
-				<td>email@email.com</td>
+				<td>1.</td>
+				<td class='left aligned'><a>PT. Supplier Name 1</a></td>
+				<td><div class='tdtsno'><a>TS0001</a></div></td>
+				<td>2</td>
+				<td>MODEL001</td>
+				<td>PART001</td>
+				<td>2018-1-1</td>
+				<td>2018-1-1</td>
+				<td>Receiver Name</td>
+				<td>Uploader Name</td>
 			</tr>
 			<tr>
-				<td class='center aligned'>1.</td>
-				<td><a>PT. Supplier Name 1</a></td>
-				<td>Department Name 1</td>
-				<td>Staff Name 1</td>
-				<td>email@email.com</td>
+				<td>2.</td>
+				<td class='left aligned'><a>PT. Supplier Name 1</a></td>
+				<td><div class='tdtsno'><a>TS0001</a></div></td>
+				<td id='existedts' data-tooltip='Latest rev is 2 (2018-1-2)' data-position='right center'>1</td>
+				<td>MODEL001</td>
+				<td>PART001</td>
+				<td>2018-1-1</td>
+				<td>2018-1-1</td>
+				<td>Receiver Name</td>
+				<td>Uploader Name</td>
 			</tr>
 			<tr>
-				<td class='center aligned'>1.</td>
-				<td><a>PT. Supplier Name 1</a></td>
-				<td>Department Name 1</td>
-				<td>Staff Name 1</td>
-				<td>email@email.com</td>
+				<td>3.</td>
+				<td class='left aligned'><a>PT. Supplier Name 2</a></td>
+				<td><div class='tdtsno'><a>TS0001</a></div></td>
+				<td>2</td>
+				<td>MODEL001</td>
+				<td>PART001</td>
+				<td>2018-1-1</td>
+				<td>2018-1-1</td>
+				<td>Receiver Name</td>
+				<td>Uploader Name</td>
 			</tr>
 			<tr>
-				<td class='center aligned'>1.</td>
-				<td><a>PT. Supplier Name 1</a></td>
-				<td>Department Name 1</td>
-				<td>Staff Name 1</td>
-				<td>email@email.com</td>
+				<td>4.</td>
+				<td class='left aligned'><a>PT. Supplier Name 3</a></td>
+				<td><div class='tdtsno'><a>TS0001</a></div></td>
+				<td>2</td>
+				<td>MODEL001</td>
+				<td>PART001</td>
+				<td>2018-1-1</td>
+				<td>2018-1-1</td>
+				<td>Receiver Name</td>
+				<td>Uploader Name</td>
 			</tr>
 			<tr>
-				<td class='center aligned'>1.</td>
-				<td><a>PT. Supplier Name 1</a></td>
-				<td>Department Name 1</td>
-				<td>Staff Name 1</td>
-				<td>email@email.com</td>
+				<td>5.</td>
+				<td class='left aligned'><a>PT. Supplier Name 4</a></td>
+				<td><div class='tdtsno'><a>TS0001</a></div></td>
+				<td>2</td>
+				<td>MODEL001</td>
+				<td>PART001</td>
+				<td>2018-1-1</td>
+				<td>2018-1-1</td>
+				<td>Receiver Name</td>
+				<td>Uploader Name</td>
 			</tr>
 		</table>
+
+		<table class='ui table collapsing'><tr>
+			<td id='selected-tdpage'>1</td>
+			<td id='tdpage'>2</td>
+			<td id='tdpage'>3</td>
+			<td id='tdpage'>4</td>
+		</tr></table>
 	</div>
 	<div class="ui divider"></div>
 </body>
