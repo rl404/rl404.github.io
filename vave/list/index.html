@@ -1,0 +1,175 @@
+<html>
+<head>
+	<title>VAVE</title>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+	<link href='../css/semantic.min.css' rel='stylesheet'>
+	<link href='../css/main.css' rel='stylesheet'>
+	<link href='../css/pagination.css' rel='stylesheet'>
+	<link href='../css/calendar.css' rel='stylesheet'>
+
+	<script src='../scripts/jquery.min.js'></script>
+	<script src='../scripts/semantic.min.js'></script>
+	<script src='../scripts/sortable.js'></script>
+
+	<script src='../scripts/pagination.js'></script>
+	<script src='../scripts/pagination2.js'></script>
+	<script src='../scripts/natural.js'></script>
+	<script src='../scripts/calendar.js'></script>
+
+	<script src='../scripts/main.js'></script>
+	<script src='../scripts/loader.js'></script>
+
+	<script src='../scripts/fixedheader.js'></script>
+	<script src='../scripts/echarts/dist/echarts.min.js'></script>		
+</head>
+<body>
+	<div class='ui inverted menu' id='superheader'>
+		<a href='../homepage.html' class='item'>
+			Homepage
+		</a>
+		<div class='ui simple dropdown item'>
+			Proposal Process
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../input/inputproposal.html' class='item'>New/Edit Idea</a>
+				<a href='../input/input.html' class='item'>Process Proposal</a>
+			</div>
+		</div>
+		<div class='ui simple dropdown item'>
+			List
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../list/index.html' class='item'>Proposal Detail</a>
+				<a href='../list/list.html' class='item'>Process</a>
+			</div>
+		</div>
+		<a href='../download/download.html' class='item'>
+			Download
+		</a>
+		<div class='ui simple dropdown item'>
+			Report
+			<i class='dropdown icon'></i>
+			<div class='menu'>
+				<a href='../report/cost.html' class='item'>Cost Reduction Report</a>
+				<a href='../report/process.html' class='item'>Process Report</a>
+			</div>
+		</div>
+
+		<div class='right menu'>
+			<div class='header item'>Welcome, Admin</div>
+			<a href='../index.html' class='item'>Logout</a>
+		</div>
+	</div>
+
+	<div class="ui container">
+		<div class='ui green message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Delete successfully. 
+			</div>
+		</div>
+		<div class='ui red message'>
+			<i class='close icon'></i>
+			<div class='header'>
+				Something wrong. 
+			</div>
+		</div>
+
+		<div class="ui secondary menu">
+			<div class="item">	
+				<h1 id='titleheader2'>VAVE List</h1>
+			</div>
+		</div>
+
+		<table class='ui compact selectable celled table' id='3000list' cellspacing='0'>
+			<thead><tr>
+				<th id='tableheader' class='center aligned'>No</th>
+				<th id='tableheader' class='center aligned'>Proposer No</th>	
+				<th id='tableheader' class='center aligned'>Manufacturer No</th>				
+				<th id='tableheader' class='center aligned'>Designer</th>					
+				<th id='tableheader' class='center aligned'>Model</th>	
+				<th id='tableheader' class='center aligned'>Part No</th>
+				<th id='tableheader' class='center aligned'>Part Name</th>
+				<th id='tableheader' class='center aligned'>Proposal</th>
+				<th id='tableheader' class='center aligned'>Proposal2</th>
+				<th id='tableheader' class='center aligned'>Cost Reduction / Vehicle (IDR)</th>
+				<th id='tableheader' class='center aligned'>Proposer Date</th>
+				<th id='tableheader' class='center aligned'>TMC Status</th>
+			</tr></thead>
+
+			<tr>
+				<td class='center aligned tooltip'>
+					1.
+					<span class='tooltiptext'>
+						Status:<br>
+						<b>-PE</b>: <i class='red remove icon'></i><br>
+						<b>-PPEQ</b>: <i class='orange clone icon'></i><br>
+						<b>-PuD</b>: <i class='yellow edit icon'></i><br>
+						<b>-EA</b>: <i class='green checkmark icon'></i><br>
+						<b>-TMC</b>: <i class='help icon'></i>
+					</span>
+					<a onclick="window.open('../images/design/example.png','newwindow', 'width=800,height=500');return false;">	
+						<i class='link red large file pdf outline icon' style='position:absolute;margin-left:-60px;margin-top:-20px;'></i>
+					</a>
+				</td>					
+				<td class='center aligned tooltip'><a>TD001<span class='tooltiptext'>MNFC001</span></a></td>
+				<td class='center aligned'>MNFC001</td>
+				<td class='center aligned'>Designer Name</td>
+				<td class='center aligned'>MODEL001</td>
+				<td class='center aligned'>PART001</td>
+				<td class='left aligned'>Part Name 001</td>
+				<td class='center aligned tooltip'>Design type
+					<span class='tooltiptext'>
+						<b>Old Design:</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum est eget ultrices ultrices. <br><br>
+						<b>New Design:</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum est eget ultrices ultrices. 
+					</span>
+				</td>
+				<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum est eget ultrices ultrices.</td>
+				<td class='right aligned tooltip'>1,000,000
+					<span class='tooltiptext'>
+						<b>Cost Reduction / PC:</b> 100<br>
+						<b>Piece / Month:</b> 1,000<br>
+						<b>Cost Impact / Year:</b> 1,000,000
+					</span>
+				</td>
+				<td class='center aligned tooltip'>2018-1-1
+					<span class='tooltiptext'>
+						<b>Proposed Date:</b> 2018-1-1<br>
+						<b>PPEQ Received Date:</b> 2018-1-1<br>
+						<b>EA Received Date:</b> 2018-1-1<br>
+						<b>TMC Replied Date:</b> 2018-1-1<br>
+					</span>
+				</td>
+				<td class='center aligned tooltip'>O
+					<span class='tooltiptext'>
+						Date: 2018-1-1<br><br>
+						ECI No: ECI001<br>
+						<a onclick="window.open('../images/design/example.png', 'newwindow', 'width=800,height=500');return false;">	
+							<i class='link green large file pdf outline icon'></i>
+						</a>
+					</span>
+
+					<div class='vaveedit'>
+						<i class='large link red remove icon' onclick='deletevave();' style='position:absolute;margin-left:50px;margin-top:-10px;z-index:10;'></i>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="ui divider"></div>
+
+	<div class="ui basic modal deletemodal">
+		<div class="header" id='titleheader2'>Are you sure you want to delete this proposal?</div>
+		<div class="content" id='deletevavecontent'>
+			<h3 class='ui header' id='titleheader3'>
+				Manufacturer No : <span style='color:white;'>MNFC001</span><br>
+				Proposer No : <span style='color:white;'>TD001</span>
+			</h3>
+		</div>
+		<div class="actions">		   
+			<div class="ui green button" onclick="submitForm();">Yes</div>
+			<div class="ui red cancel button">No</div>
+		</div>
+	</div>
+</body>
+</html>
