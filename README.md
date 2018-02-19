@@ -50,7 +50,7 @@ Internal web-based system to manage document distribution between Toyota Japan, 
 - Monthly summary graph
 - Responsive pages
 
-## VAVE System[VAVE System](https://rl404.github.io/vave)
+## VAVE System
 ![vave_pic](https://raw.githubusercontent.com/rl404/rl404.github.io/master/vave/images/vave.png)
 ([Preview](https://rl404.github.io/vave) / [Code](https://github.com/rl404/Toyota-Internship/tree/master/vave))
 ### Environment
