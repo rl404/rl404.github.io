@@ -1,7 +1,8 @@
 # PORTFOLIO
 
-## [RESUME](https://rl404.github.io)
+## Resume 
 ![resume_pic](https://raw.githubusercontent.com/rl404/rl404.github.io/master/images/resume.png)
+([Preview](https://rl404.github.io))
 ### Description
 Contains all of my information and experience just like normal resume or CV including all of my works or portfolio.
 ### Environment
@@ -10,8 +11,9 @@ Contains all of my information and experience just like normal resume or CV incl
 - Template: [ceevee](https://www.styleshout.com/free-templates/ceevee/)
 - JS: [ScrollReveal](https://scrollrevealjs.org/)
 
-## [TS Online System](https://rl404.github.io/TSOnline)
+## TS Online System 
 ![tsonline_pic](https://raw.githubusercontent.com/rl404/rl404.github.io/master/TSOnline/images/tsonline.png)
+([Preview](https://rl404.github.io/TSOnline) / [Code](https://github.com/rl404/Toyota-Internship/tree/master/TSOnline/TSOnline%20final))
 ### Description
 Internal web-based system to manage document distribution between Toyota Japan, Toyota Indonesia, and Toyota Supplier in Indonesia. Keeping track of revision of every documents sent from Toyota Japan and comparing with the revision of documents owned by suppliers.
 ### Environment
@@ -29,8 +31,9 @@ Internal web-based system to manage document distribution between Toyota Japan, 
 - Convert document request to PDF (using [FPDF](http://www.fpdf.org/))
 - Responsive pages
 
-## [Job Loading System](https://rl404.github.io/JobLoading)
+## Job Loading System
 ![jobloading_pic](https://raw.githubusercontent.com/rl404/rl404.github.io/master/JobLoading/images/jobloading.png)
+([Preview](https://rl404.github.io/JobLoading) / [Code](https://github.com/rl404/Toyota-Internship/tree/master/JobLoading/JobLoading%20final))
 ### Environment
 - PHP Framework: Native
 - CSS Framework: [Semantic UI](https://semantic-ui.com/)
@@ -47,8 +50,9 @@ Internal web-based system to manage document distribution between Toyota Japan, 
 - Monthly summary graph
 - Responsive pages
 
-## [VAVE System](https://rl404.github.io/vave)
+## VAVE System[VAVE System](https://rl404.github.io/vave)
 ![vave_pic](https://raw.githubusercontent.com/rl404/rl404.github.io/master/vave/images/vave.png)
+([Preview](https://rl404.github.io/vave) / [Code](https://github.com/rl404/Toyota-Internship/tree/master/vave))
 ### Environment
 - PHP Framework: Native
 - CSS Framework: [Semantic UI](https://semantic-ui.com/)
