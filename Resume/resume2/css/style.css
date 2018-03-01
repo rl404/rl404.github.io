@@ -1218,10 +1218,12 @@ body {
 .contact {
     padding: 20px;
     height: 155px;
+    text-align: center;
 }
 
-.contact p {
+.contact .big-contact {
     text-align: center;
+    font-size: 25px;
 }
 
 .contact p i {
@@ -1239,10 +1241,10 @@ body {
     border-radius: 50%;
     height: 50px;
     line-height: 50px;
-    padding: 0;
+    padding: 13px 20px 15px 20px;
     width: 50px;
     margin: 0 5px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .contact-details .social-media a + .tooltip > .tooltip-inner {
