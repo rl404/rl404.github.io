@@ -766,7 +766,7 @@ body {
 
 /* ( b ) Experience Section */
 
-.experience {
+.experience, .skills2{
     background: #E94C6F;
 }
 
@@ -774,7 +774,7 @@ body {
     color: #fff;
 }
 
-.experience-container {
+.experience-container{
     position: relative;
     margin-bottom: 50px;
     margin-top: 25px;
@@ -841,18 +841,18 @@ body {
 
 /* ( c ) Skills Section */
 
-.skill-container {
+.skill-container, .skill2-container {
     text-align: center;
     padding: 20px 15px;
 }
 
-.skill {
+.skill, .skill2 {
     text-align: center;
     padding: 20px 0;
     position: relative;
 }
 
-.skill span {
+.skill span, .skill2 span {
     color: #343333;
     font-size: 18px;
     left: 50%;
@@ -863,6 +863,10 @@ body {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.skills2 h2, .skills2 h3, .skill2 span {
+    color: #fff;
 }
 
                     /*--------------------
@@ -1039,12 +1043,15 @@ body {
     text-align: center;
 }
 
-.popup_content a {
+.preview-box {
+    margin: 30px auto;
+    text-align: center;
+}
+.preview-box a{
     border: 1px solid #E94C6F;
     color: #E94C6F;
-    display: block;
     width: 150px;
-    margin: 30px auto;
+    margin: 10px;
     padding: 10px 25px;
     text-decoration: none;
     text-align: center;

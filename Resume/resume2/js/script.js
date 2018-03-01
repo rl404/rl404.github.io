@@ -193,6 +193,16 @@ $(document).ready(function () {
             lineCap: 'butt'
         });
 
+        $('.skill2').easyPieChart({
+            barColor: '#fff',
+            trackColor: '#ec6784',
+            scaleColor: '#ec6784',
+            scaleLength: 8,
+            lineWidth: 8,
+            size: 150,
+            lineCap: 'butt'
+        });
+
     });
 
     /*  -------------------------------
