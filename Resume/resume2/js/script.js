@@ -257,7 +257,7 @@ $(document).ready(function () {
         
         $.ajax({
             type: "POST",
-            url: "php/contact.php",
+            url: "https://rl404-storage.000webhostapp.com/resume2/contact.php",
             data: $('#contactForm').serialize(),
             success: function (msg) {
                 if (msg == 'SEND') {
