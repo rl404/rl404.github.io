@@ -1,0 +1,27 @@
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.subtitle {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.subtitle:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.row {
+    margin-bottom: 20px;
+}
