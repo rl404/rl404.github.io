@@ -15,7 +15,22 @@ var Data = {
     "resume": "https://www.dropbox.com/s/wsgw2269m6ns2jx/Resume.pdf?dl=0",
     "experience": [
         {
-            "position": "Backend Developer (Golang)",
+            "position": "Backend Developer",
+            "company": "Mola TV",
+            "location": "Jakarta, Indonesia",
+            "team": "Backend Team",
+            "startDate": "Oct 2020",
+            "endDate": "Current",
+            "link": "https://mola.tv",
+            "work": [
+                "Developed and maintained back-end micro-services.",
+                "Implemented circuit-breaker.",
+                "Implemented unit-testing.",
+                "Implemented auto-generated swagger documentation."
+            ]
+        },
+        {
+            "position": "Backend Developer",
             "company": "E-mas",
             "location": "Jakarta, Indonesia",
             "team": "Tech Team",
@@ -36,7 +51,9 @@ var Data = {
             "endDate": "Nov 2019",
             "link": "https://www.docotel.com",
             "work": [
-                "Leading developer operation team to maintain all handed-over projects from developer and ready-to-used by public. Including client-side and server-side."
+                "Leading developer operation team to maintain all handed-over projects from developer and ready-to-used by public. Including client-side and server-side.",
+                "Implemented CI-CD for automatic deployment.",
+                "Developed bot for transaction notification."
             ]
         },
         {
@@ -54,7 +71,7 @@ var Data = {
             ]
         },
         {
-            "position": "Web Developer (PHP)",
+            "position": "Web Developer",
             "company": "Docotel World",
             "location": "Jakarta, Indonesia",
             "team": "Developer Division",
@@ -140,6 +157,10 @@ var Data = {
             "level": 4
         },
         {
+            "name": "NodeJS",
+            "level": 0
+        },
+        {
             "name": "MySQL",
             "level": 4
         },
@@ -152,12 +173,32 @@ var Data = {
             "level": 3
         },
         {
+            "name": "MongoDB",
+            "level": 3
+        },
+        {
             "name": "Redis",
             "level": 3
         },
         {
+            "name": "Memcache",
+            "level": 0
+        },
+        {
             "name": "RabbitMQ",
             "level": 3
+        },
+        {
+            "name": "NSQ",
+            "level": 0
+        },
+        {
+            "name": "Elasticsearch",
+            "level": 0
+        },
+        {
+            "name": "Kibana",
+            "level": 0
         },
         {
             "name": "Git",
@@ -198,20 +239,43 @@ var Data = {
         "personal": [
             {
                 "name": "go-malscraper",
-                "description": "Scraping/parsing MyAnimeList website to a usefule and easy-to-use data.",
+                "description": "Library to scrap/parse MyAnimeList website to a useful and easy-to-use data. This project is part of Malscraper project.",
                 "link": "https://github.com/rl404/go-malscraper",
                 "tag": [
+                    "go"
+                ]
+            },
+            {
+                "name": "mal-api",
+                "description": "REST API wrapper using <i>go-malscraper</i>.",
+                "link": "https://github.com/rl404/mal-api",
+                "tag": [
                     "go",
-                    "postgresql",
                     "redis",
+                    "elasticsearch",
+                    "kibana",
+                    "docker"
+                ]
+            },
+            {
+                "name": "mal-db",
+                "description": "REST API and database using go-malscraper. Used by <i>MyAnimeList Drive-Thru</i> as backend. This project is part of Malscraper project.",
+                "link": "https://github.com/rl404/mal-db",
+                "tag": [
+                    "go",
+                    "posgtresql",
+                    "redis",
+                    "rabbitmq",
+                    "elasticsearch",
+                    "kibana",
                     "docker",
                     "kubernetes"
                 ]
             },
             {
                 "name": "MyAnimeList Drive-Thru",
-                "description": "Quick access to MyAnimeList content with simpler and more modern style.",
-                "link":"https://github.com/rl404/mal-web",
+                "description": "Quick access to MyAnimeList content with simpler and more modern style. Using <i>mal-db</i> as backend. This project is part of Malscraper project.",
+                "link": "https://github.com/rl404/mal-web",
                 "tag": [
                     "nodejs",
                     "react",
@@ -220,7 +284,42 @@ var Data = {
                 ]
             },
             {
-                "name": "Image-Randomizer",
+                "name": "mal-plugin",
+                "description": "Library for generalizing interface for various cache and pubsub usage. This project is part of Malscraper project.",
+                "link": "https://github.com/rl404/mal-plugin",
+                "tag": [
+                    "go",
+                    "redis",
+                    "memcache",
+                    "rabbitmq",
+                    "nsq"
+                ]
+            },
+            {
+                "name": "mal-cover",
+                "description": "Auto generate MyAnimeList anime/manga CSS cover.",
+                "link": "https://github.com/rl404/mal-cover",
+                "tag": [
+                    "go",
+                    "docker",
+                    "kubernetes"
+                ]
+            },
+            {
+                "name": "Nyaa X Discord",
+                "description": "Discord bot to notify Nyaa updates.",
+                "link": "https://github.com/rl404/nyaa-x-discord",
+                "tag": [
+                    "go",
+                    "mongodb",
+                    "docker",
+                    "kubernetes",
+                    "elasticsearch",
+                    "kibana"
+                ]
+            },
+            {
+                "name": "Image Randomizer",
                 "description": "Simple website to generate random image from chosen image list.",
                 "link": "https://github.com/rl404/image-randomizer",
                 "tag": [
@@ -250,9 +349,9 @@ var Data = {
             },
             {
                 "name": "Skrap",
-                "description":"An online mobile application for selling any kind of gold including jewelry, second-hand gold, and various type of precious gold metal.",
+                "description": "An online mobile application for selling any kind of gold including jewelry, second-hand gold, and various type of precious gold metal.",
                 "link": "http://skrap.id",
-                "tag":[
+                "tag": [
                     "go",
                     "beego",
                     "mysql",
@@ -261,18 +360,18 @@ var Data = {
             },
             {
                 "name": "Doco Ticketing",
-                "description":"A support ticket system used to communicate between internal divisions in Docotel World company and their clients.",
+                "description": "A support ticket system used to communicate between internal divisions in Docotel World company and their clients.",
                 "link": "http://helpdesk.docotel.net",
-                "tag":[
+                "tag": [
                     "php",
                     "mysql"
                 ]
             },
             {
                 "name": "AHU Online",
-                "description":"A public service online system owned by the Directorate of General Legal Administration, Ministry of Law and Human Rights of the Republic of Indonesia.",
+                "description": "A public service online system owned by the Directorate of General Legal Administration, Ministry of Law and Human Rights of the Republic of Indonesia.",
                 "link": "http://ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -280,9 +379,9 @@ var Data = {
             },
             {
                 "name": "AHU Notariat",
-                "description":"A public service online system to manage all notary-related activities in Indonesia including registration, examination, assignment, documentation, etc. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage all notary-related activities in Indonesia including registration, examination, assignment, documentation, etc. This project is part of AHU-Online project.",
                 "link": "http://ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -290,9 +389,9 @@ var Data = {
             },
             {
                 "name": "AHU SABH",
-                "description":"A public service online system to manage all law firm (company, foundation, and association) activities in Indonesia including name-ordering, establishment, alteration, and other transaction. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage all law firm (company, foundation, and association) activities in Indonesia including name-ordering, establishment, alteration, and other transaction. This project is part of AHU-Online project.",
                 "link": "http://ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -300,9 +399,9 @@ var Data = {
             },
             {
                 "name": "AHU Wasiat",
-                "description":"A public service online system to manage all testament letter related activities in Indonesia including reporting, ordering, and applying. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage all testament letter related activities in Indonesia including reporting, ordering, and applying. This project is part of AHU-Online project.",
                 "link": "http://ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -310,9 +409,9 @@ var Data = {
             },
             {
                 "name": "AHU Billing",
-                "description":"A public service online system to manage all bill and voucher payment used in AHU-Online. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage all bill and voucher payment used in AHU-Online. This project is part of AHU-Online project.",
                 "link": "http://ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -320,9 +419,9 @@ var Data = {
             },
             {
                 "name": "AHU Simpadhu",
-                "description":"A REST API micro service to manage voucher transaction between AHU-Online and Simponi (online non-tax state revenue system owned by Ministry of Finance in Indonesia).This project is part of AHU-Online project.",
+                "description": "A REST API micro service to manage voucher transaction between AHU-Online and Simponi (online non-tax state revenue system owned by Ministry of Finance in Indonesia).This project is part of AHU-Online project.",
                 "link": "",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -330,18 +429,18 @@ var Data = {
             },
             {
                 "name": "AHU Fidusia",
-                "description":"A public service online system to manage transferring of property (mostly vehicle) ownership rights in Indonesia. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage transferring of property (mostly vehicle) ownership rights in Indonesia. This project is part of AHU-Online project.",
                 "link": "http://fidusia.ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "mysql"
                 ]
             },
             {
                 "name": "AHU PPNS",
-                "description":"A public service online system to manage all civil servant investigator related activities in Indonesia including registration, examination, alteration, assignment, documentation, etc. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage all civil servant investigator related activities in Indonesia including registration, examination, alteration, assignment, documentation, etc. This project is part of AHU-Online project.",
                 "link": "http://ppns.ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -349,9 +448,9 @@ var Data = {
             },
             {
                 "name": "AHU Pewarganegaraan",
-                "description":"A public service online system to manage documentation for intermarriage that want to be Indonesian citizen. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage documentation for intermarriage that want to be Indonesian citizen. This project is part of AHU-Online project.",
                 "link": "http://pewarganegaraan.ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -359,9 +458,9 @@ var Data = {
             },
             {
                 "name": "AHU Legalisasi",
-                "description":"A public service online system to manage all document legalization activities in Indonesia including registration, application, and verification. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage all document legalization activities in Indonesia including registration, application, and verification. This project is part of AHU-Online project.",
                 "link": "http://legalisasi.ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii2",
                     "mysql"
@@ -369,9 +468,9 @@ var Data = {
             },
             {
                 "name": "AHU Parpol",
-                "description":"A public service online system to manage all political party transaction in Indonesia including establishment, alteration, and approval. This project is part of AHU-Online project.",
+                "description": "A public service online system to manage all political party transaction in Indonesia including establishment, alteration, and approval. This project is part of AHU-Online project.",
                 "link": "http://parpol.ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii2",
                     "mysql"
@@ -379,9 +478,9 @@ var Data = {
             },
             {
                 "name": "E-Kerja",
-                "description":"An internal service online system to manage all activity schedule and plan in one calendar used by General Legal Administration (AHU) employees.",
+                "description": "An internal service online system to manage all activity schedule and plan in one calendar used by General Legal Administration (AHU) employees.",
                 "link": "http://e-kerja.ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii2",
                     "mysql"
@@ -389,9 +488,9 @@ var Data = {
             },
             {
                 "name": "PNBP DJKI",
-                "description":"A public service online system to manage all intellectual property non-tax state revenue paymentin Indonesia.",
+                "description": "A public service online system to manage all intellectual property non-tax state revenue paymentin Indonesia.",
                 "link": "http://simpaki.dgip.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii2",
                     "oracle"
@@ -399,9 +498,9 @@ var Data = {
             },
             {
                 "name": "PNBP Channel",
-                "description":"A REST API micro service to manage all voucher transaction between PNBP-DJKI and Simponi (online non-tax state revenue system owned by Ministry of Finance in Indonesia).",
+                "description": "A REST API micro service to manage all voucher transaction between PNBP-DJKI and Simponi (online non-tax state revenue system owned by Ministry of Finance in Indonesia).",
                 "link": "http://simpaki.dgip.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii2",
                     "oracle"
@@ -409,9 +508,9 @@ var Data = {
             },
             {
                 "name": "Paten",
-                "description":"A public service online system to manage all patent application in Indonesia. This project is using PNBP-Channel service to manage its voucher payment and transaction.",
+                "description": "A public service online system to manage all patent application in Indonesia. This project is using PNBP-Channel service to manage its voucher payment and transaction.",
                 "link": "http://paten.dgip.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii2",
                     "oracle"
@@ -419,9 +518,9 @@ var Data = {
             },
             {
                 "name": "Desain Industri",
-                "description":"A public service online system to manage all industrial design application in Indonesia. This project is using PNBP-Channel service to manage its voucher payment and transaction.",
+                "description": "A public service online system to manage all industrial design application in Indonesia. This project is using PNBP-Channel service to manage its voucher payment and transaction.",
                 "link": "http://desainindustri.dgip.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii2",
                     "oracle"
@@ -429,9 +528,9 @@ var Data = {
             },
             {
                 "name": "Epasti",
-                "description":"An internal service online system to manage all secretariat administration activities in General Legal Administration office (AHU) including salary, mailing, finance, business travel report, etc. This project is part of AHU-Online project.",
+                "description": "An internal service online system to manage all secretariat administration activities in General Legal Administration office (AHU) including salary, mailing, finance, business travel report, etc. This project is part of AHU-Online project.",
                 "link": "http://e-office.ahu.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "yii2",
@@ -440,9 +539,9 @@ var Data = {
             },
             {
                 "name": "E-saki",
-                "description":"An internal service online system to manage all secretariat administration activities in Intellectual Property office (DJKI) including salary, mailing, finance, business travel report, etc.",
+                "description": "An internal service online system to manage all secretariat administration activities in Intellectual Property office (DJKI) including salary, mailing, finance, business travel report, etc.",
                 "link": "http://e-saki.dgip.go.id",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -450,9 +549,9 @@ var Data = {
             },
             {
                 "name": "Imigration DB Migration",
-                "description":"A web-based tool to manage passport data migration from all immigration in Indonesia and all Indonesian embassies in foreign countries to a central database in Jakarta. Migrating from MySQL to Oracle.",
+                "description": "A web-based tool to manage passport data migration from all immigration in Indonesia and all Indonesian embassies in foreign countries to a central database in Jakarta. Migrating from MySQL to Oracle.",
                 "link": "",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql",
@@ -461,9 +560,9 @@ var Data = {
             },
             {
                 "name": "Makarim",
-                "description":"A web informationfor a leading business law firm in Indonesia offering a full range of corporate, banking, litigation and specialist legal services to national and international clients.",
+                "description": "A web informationfor a leading business law firm in Indonesia offering a full range of corporate, banking, litigation and specialist legal services to national and international clients.",
                 "link": "http://makarim.com",
-                "tag":[
+                "tag": [
                     "php",
                     "yii",
                     "mysql"
@@ -471,27 +570,27 @@ var Data = {
             },
             {
                 "name": "TS Online",
-                "description":"An online system to manage vehicle-parts-alteration document distribution between Toyota Indonesia, Toyota Japan, and Toyota’s suppliers.",
+                "description": "An online system to manage vehicle-parts-alteration document distribution between Toyota Indonesia, Toyota Japan, and Toyota’s suppliers.",
                 "link": "",
-                "tag":[
+                "tag": [
                     "php",
                     "mysql"
                 ]
             },
             {
                 "name": "Job Loading",
-                "description":"An online system to manage all engineer in Engineering Division works and activities hour and summarize them into a graph.",
+                "description": "An online system to manage all engineer in Engineering Division works and activities hour and summarize them into a graph.",
                 "link": "",
-                "tag":[
+                "tag": [
                     "php",
                     "mysql"
                 ]
             },
             {
                 "name": "VAVE",
-                "description":"An online system to manage vehicle-alteration document process between Engineering Division and Purchasing Division.",
+                "description": "An online system to manage vehicle-alteration document process between Engineering Division and Purchasing Division.",
                 "link": "",
-                "tag":[
+                "tag": [
                     "php",
                     "mysql"
                 ]

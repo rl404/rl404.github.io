@@ -111,20 +111,20 @@
 
   var skillArea = "<div class='row'>";
   Data.skill.forEach(l => {
-    var title = "<div class='col-6'>";
+    var title = "<div class='col-lg-3 col-md-4 col-6'>";
     title += l.name;
     title += "</div>";
 
-    var data = "<div class='col-6 subtitle'>";
-    for (let index = 0; index < l.level; index++) {
-      data += "<i class='fas fa-star'></i>";
-    }
-    for (let index = 0; index < 5 - l.level; index++) {
-      data += "<i class='far fa-star'></i>";
-    }
-    data += "</div>";
+    // var data = "<div class='col-6 subtitle'>";
+    // for (let index = 0; index < l.level; index++) {
+    //   data += "<i class='fas fa-star'></i>";
+    // }
+    // for (let index = 0; index < 5 - l.level; index++) {
+    //   data += "<i class='far fa-star'></i>";
+    // }
+    // data += "</div>";
 
-    skillArea += title + data;
+    skillArea += title;
   })
   skillArea += "</div>";
   $('#skill').html(skillArea);
