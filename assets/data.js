@@ -330,17 +330,6 @@ var Data = {
                     "docker",
                     "kubernetes"
                 ]
-            },
-            {
-                "name": "Nyaa X Discord",
-                "description": "Discord bot to notify Nyaa new updates according to your filter/query.",
-                "link":"https://github.com/rl404/nyaa-x-discord",
-                "tag": [
-                    "go",
-                    "mongodb",
-                    "docker",
-                    "kubernetes"
-                ]
             }
         ],
         "work": [
