@@ -4,7 +4,7 @@
 
   var detailArea = "<div class='row'>";
   detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 subtitle'><i class="fas fa-map-marker-alt"></i> ${Data.address}</div>`;
-  detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 subtitle'><i class="fas fa-phone"></i> ${Data.phone}</div>`;
+  // detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 subtitle'><i class="fas fa-phone"></i> ${Data.phone}</div>`;
   detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 subtitle'><i class="fas fa-envelope"></i> ${Data.email}</div>`;
   detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 subtitle'><a href='${Data.github.link}' target='_blank'><i class="fab fa-github"></i> ${Data.github.name}</a></div>`;
   detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 subtitle'><a href='${Data.linkedin.link}' target='_blank'><i class="fab fa-linkedin-in"></i> ${Data.linkedin.name}</a></div>`;
