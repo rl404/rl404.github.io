@@ -238,6 +238,17 @@ var Data = {
     "project": {
         "personal": [
             {
+                "name": "Hayasui",
+                "description": "Discord bot to get anime/manga/character/people data with interactive response message.",
+                "link": "https://github.com/rl404/hayasui",
+                "tag": [
+                    "go",
+                    "redis",
+                    "docker",
+                    "kubernetes"
+                ]
+            },
+            {
                 "name": "go-malscraper",
                 "description": "Library to scrap/parse MyAnimeList website to a useful and easy-to-use data. This project is part of Malscraper project.",
                 "link": "https://github.com/rl404/go-malscraper",
