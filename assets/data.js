@@ -20,7 +20,7 @@ var Data = {
             "location": "Jakarta, Indonesia",
             "team": "Backend Team",
             "startDate": "Oct 2020",
-            "endDate": "Current",
+            "endDate": "Jul 2021",
             "link": "https://mola.tv",
             "work": [
                 "Developed and maintained back-end micro-services.",
@@ -238,6 +238,14 @@ var Data = {
     "project": {
         "personal": [
             {
+                "name": "Verniy",
+                "description": "Unofficial Anilist graphql api wrapper.",
+                "link": "https://github.com/rl404/verniy",
+                "tag": [
+                    "go"
+                ]
+            },
+            {
                 "name": "Hayasui",
                 "description": "Discord bot to get anime/manga/character/people data with interactive response message.",
                 "link": "https://github.com/rl404/hayasui",
@@ -344,6 +352,19 @@ var Data = {
             }
         ],
         "work": [
+            {
+                "name": "Mola TV",
+                "description": "An online video streaming platform.",
+                "link": "https://mola.tv/",
+                "tag": [
+                    "go",
+                    "mysql",
+                    "redis",
+                    "nsq",
+                    "docker",
+                    "kubernetes"
+                ]
+            },
             {
                 "name": "E-mas",
                 "description": "An online mobile application for buying, selling, and withdrawing digital gold.",
