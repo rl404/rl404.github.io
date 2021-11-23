@@ -18,12 +18,12 @@ var Data = {
             "position": "Backend Developer",
             "company": "eDOT",
             "location": "Jakarta, Indonesia",
-            "team": "Backend Team",
+            "team": "IT Division",
             "startDate": "Aug 2020",
             "endDate": "Current",
             "link": "https://edot.id",
             "work": [
-                "Developed and maintained payment services.",
+                "Developed and maintained payment service.",
                 "Connected and implemented various payment gateway API and library.",
                 "Developed various micro-site for campaign.",
             ]
