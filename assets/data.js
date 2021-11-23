@@ -16,6 +16,20 @@ var Data = {
     "experience": [
         {
             "position": "Backend Developer",
+            "company": "eDOT",
+            "location": "Jakarta, Indonesia",
+            "team": "Backend Team",
+            "startDate": "Aug 2020",
+            "endDate": "Current",
+            "link": "https://edot.id",
+            "work": [
+                "Developed and maintained payment services.",
+                "Connected and implemented various payment gateway API and library.",
+                "Developed various micro-site for campaign.",
+            ]
+        },
+        {
+            "position": "Backend Developer",
             "company": "Mola TV",
             "location": "Jakarta, Indonesia",
             "team": "Backend Team",
@@ -238,6 +252,38 @@ var Data = {
     "project": {
         "personal": [
             {
+                "name": "OVO-go",
+                "description": "Unofficial golang API wrapper for ovo.id.",
+                "link": "https://github.com/rl404/ovo-go",
+                "tag": [
+                    "go"
+                ]
+            },
+            {
+                "name": "Xfers-go",
+                "description": "Unofficial golang API wrapper for xfers (V4 Indonesia).",
+                "link": "https://github.com/rl404/xfers-go",
+                "tag": [
+                    "go"
+                ]
+            },
+            {
+                "name": "Flip-go",
+                "description": "Unofficial golang API wrapper for flip.id.",
+                "link": "https://github.com/rl404/flip-go",
+                "tag": [
+                    "go"
+                ]
+            },
+            {
+                "name": "Fairy",
+                "description": "General tools for easier and simpler development.",
+                "link": "https://github.com/rl404/fairy",
+                "tag": [
+                    "go"
+                ]
+            },
+            {
                 "name": "Verniy",
                 "description": "Unofficial Anilist graphql api wrapper.",
                 "link": "https://github.com/rl404/verniy",
@@ -352,6 +398,18 @@ var Data = {
             }
         ],
         "work": [
+            {
+                "name": "Richeese x MLBB",
+                "description": "Campaign for Richeese Factory and Mobile Legend collaboration",
+                "link": "https://rfxmlbb.edot.id/",
+                "tag": [
+                    "go",
+                    "mysql",
+                    "redis",
+                    "rabbitmq",
+                    "docker",
+                ]
+            },
             {
                 "name": "Mola TV",
                 "description": "An online video streaming platform.",
