@@ -19,7 +19,7 @@ var Data = {
             "company": "eDOT",
             "location": "Jakarta, Indonesia",
             "team": "IT Division",
-            "startDate": "Aug 2020",
+            "startDate": "Aug 2021",
             "endDate": "Current",
             "link": "https://edot.id",
             "work": [
