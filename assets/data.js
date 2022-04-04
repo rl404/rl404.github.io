@@ -26,6 +26,8 @@ var Data = {
                 "Developed and maintained payment service.",
                 "Connected and implemented various payment gateway API and library.",
                 "Developed various micro-site for campaign.",
+                "Set up http logging and application performance metrics monitoring.",
+                "Set up CI-CD for automated migration and deployment."
             ]
         },
         {
@@ -215,6 +217,14 @@ var Data = {
             "level": 0
         },
         {
+            "name": "Prometheus",
+            "level": 3
+        },
+        {
+            "name": "Grafana",
+            "level": 3
+        },
+        {
             "name": "Git",
             "level": 4
         },
@@ -399,8 +409,51 @@ var Data = {
         ],
         "work": [
             {
+                "name": "eLOG",
+                "description": "An online service for renting vehicle and sending goods.",
+                "link": "https://www.elog.co.id/",
+                "tag": [
+                    "nodejs",
+                    "mysql",
+                    "redis",
+                    "prometheus",
+                    "grafana"
+                ]
+            },
+            {
+                "name": "MLBB Philippine",
+                "description": "Campaign for eDOT philippine and Mobile Legend collaboration.",
+                "link": "https://mlbb.edot.ph/",
+                "tag": [
+                    "go",
+                    "mysql",
+                    "redis",
+                    "docker",
+                    "prometheus",
+                    "grafana",
+                    "elasticsearch",
+                    "kibana"
+                ]
+            },
+            {
+                "name": "Wheel of Fortune",
+                "description": "Discount voucher campaign for eDOT.",
+                "link": "https://fortune-wheel.edot.id/",
+                "tag": [
+                    "go",
+                    "mysql",
+                    "redis",
+                    "rabbitmq",
+                    "docker",
+                    "prometheus",
+                    "grafana",
+                    "elasticsearch",
+                    "kibana"
+                ]
+            },
+            {
                 "name": "Richeese x MLBB",
-                "description": "Campaign for Richeese Factory and Mobile Legend collaboration",
+                "description": "Campaign for Richeese Factory and Mobile Legend collaboration.",
                 "link": "https://rfxmlbb.edot.id/",
                 "tag": [
                     "go",
@@ -408,6 +461,26 @@ var Data = {
                     "redis",
                     "rabbitmq",
                     "docker",
+                    "prometheus",
+                    "grafana",
+                    "elasticsearch",
+                    "kibana"
+                ]
+            },
+            {
+                "name": "ePayment",
+                "description": "Payment service used by various projects in eDOT.",
+                "link": "",
+                "tag": [
+                    "go",
+                    "mysql",
+                    "redis",
+                    "rabbitmq",
+                    "docker",
+                    "prometheus",
+                    "grafana",
+                    "elasticsearch",
+                    "kibana"
                 ]
             },
             {
