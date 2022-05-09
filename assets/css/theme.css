@@ -1,0 +1,24 @@
+.background-theme {
+  background: var(--backgroundColor);
+  color: var(--textPrimaryColor);
+  transition: 0.5s;
+}
+
+a {
+  color: var(--textPrimaryColor);
+  transition: 0.5s;
+}
+
+a:hover {
+  color: var(--icon);
+}
+
+hr {
+  background: var(--line);
+  transition: 0.5s;
+}
+
+i[class^='fa'],
+li::marker {
+  color: var(--icon);
+}
