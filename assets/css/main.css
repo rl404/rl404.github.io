@@ -1,27 +1,65 @@
-.container {
-    margin-top: 100px;
-    margin-bottom: 100px;
+#main-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.subtitle {
-    opacity: 0.5;
-    transition: 0.5s;
+.hover {
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
-.subtitle:hover {
-    opacity: 1;
-    transition: 0.5s;
+.hover:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .row {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#setting-icons {
+  position: fixed;
+  text-align: right;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
+}
+
+#setting-icons i {
+  font-size: 30px;
+}
+
+#setting-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#setting-area {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  height: auto;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#setting-area #setting-close-button {
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  top: 0px;
+  padding: 10px;
+}
+
+#setting-area .setting-content {
+  display: none;
 }
