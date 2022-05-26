@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Isekai Manga Recommendation</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Isekai manga recommendation." />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link type="text/css" rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/lib/fontawesome/css/all.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row vh-100">
+        <div class="col-12 col-md-6" id="left-area">
+          <div id="question-area"></div>
+          <a href="list.html" id="list-link" target="_blank" class="text-muted">Full manga list</a>
+        </div>
+        <div class="col-12 col-md-6" id="right-area">
+          <div class="container" id="option-area"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="manga-modal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Manga Detail</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 p-2">
+                  <div id="manga-title"></div>
+                  <div id="manga-title2"></div>
+                  <div id="manga-badge"></div>
+                </div>
+                <div class="col-12 col-sm-6 p-2">
+                  <div id="manga-image"></div>
+                </div>
+                <div class="col-12 col-sm-6 p-2">
+                  <div id="manga-description"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div id="manga-link"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/question.js"></script>
+    <script type="text/javascript" src="assets/manga.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
