@@ -16,6 +16,8 @@ type manga struct {
 	Role        string `json:"role"`
 	Skill       string `json:"skill"`
 	AntiHero    bool   `json:"antiHero"`
+	Recommended bool   `json:"recommended"`
+	NSFW        bool   `json:"nsfw"`
 }
 
 func main() {
@@ -46,6 +48,8 @@ func main() {
 			Role:        d[5],
 			Skill:       d[6],
 			AntiHero:    toBool(d[7]),
+			Recommended: toBool(d[8]),
+			NSFW:        toBool(d[9]),
 		}
 	}
 
