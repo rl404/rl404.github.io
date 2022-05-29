@@ -14,7 +14,7 @@
         searchable: false,
       },
       {
-        target: 7,
+        target: 9,
         searchable: false,
       },
     ],
@@ -28,11 +28,13 @@ function fillTable() {
   table += `<th>ID</th>`;
   table += `<th>Title JP</th>`;
   table += `<th>Title EN</th>`;
-  table += `<th>Race</th>`;
-  table += `<th>Role/Job</th>`;
-  table += `<th>Weapon/Skill</th>`;
-  table += `<th>Anti-hero</th>`;
-  table += `<th>Action</th>`;
+  table += `<th class="text-center">Race</th>`;
+  table += `<th class="text-center">Role/Job</th>`;
+  table += `<th class="text-center">Weapon/Skill</th>`;
+  table += `<th class="text-center">Anti-hero</th>`;
+  table += `<th class="text-center">Recommended</th>`;
+  table += `<th class="text-center">NSFW</th>`;
+  table += `<th class="text-center">Action</th>`;
   table += `</tr>`;
   table += `</thead>`;
   table += `<tbody>`;
@@ -41,11 +43,13 @@ function fillTable() {
     table += `<td>${id}</td>`;
     table += `<td>${m.title}</td>`;
     table += `<td>${m.title2}</td>`;
-    table += `<td>${m.race}</td>`;
-    table += `<td>${m.role}</td>`;
-    table += `<td>${m.skill}</td>`;
-    table += `<td>${m.antiHero}</td>`;
-    table += `<td><button class='btn btn-outline-light btn-block option-button' onclick='setManga(${id})' data-toggle="modal" data-target="#manga-modal">Detail</button></td>`;
+    table += `<td class="text-center">${m.race}</td>`;
+    table += `<td class="text-center">${m.role}</td>`;
+    table += `<td class="text-center">${m.skill}</td>`;
+    table += `<td class="text-center">${m.antiHero ? `<span class="badge badge-warning">anti-hero</span>` : ''}</td>`;
+    table += `<td class="text-center">${m.recommended ? `<span class="badge badge-success">recommended</span>` : ''}</td>`;
+    table += `<td class="text-center">${m.nsfw ? `<span class="badge badge-danger">nsfw</span>` : ''}</td>`;
+    table += `<td class="text-center"><button class='btn btn-outline-light btn-block option-button' onclick='setManga(${id})' data-toggle="modal" data-target="#manga-modal">Detail</button></td>`;
     table += `</tr>`;
   });
   table += `</tbody>`;
@@ -73,7 +77,9 @@ function setManga(mID) {
   badge += `<span class="badge badge-primary">${m.race}</span> `;
   badge += `<span class="badge badge-primary">${m.role}</span> `;
   badge += `<span class="badge badge-primary">${m.skill}</span> `;
-  badge += m.antiHero ? `<span class="badge badge-warning">anti-hero</span>` : '';
+  badge += m.antiHero ? `<span class="badge badge-warning">anti-hero</span> ` : '';
+  badge += m.recommended ? `<span class="badge badge-success">recommended</span> ` : '';
+  badge += m.nsfw ? `<span class="badge badge-danger">nsfw</span> ` : '';
   $('#manga-badge').html(badge);
 
   mDesc = `<p>${m.description}</p>`;
