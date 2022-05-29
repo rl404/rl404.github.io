@@ -7,6 +7,8 @@ var Mangas = {
     role: 'summoner',
     skill: 'summoner',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   100923: {
     title: 'Jaryuu Tensei',
@@ -16,6 +18,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'dragon',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   103144: {
     title: 'Tensei shitara Ken deshita',
@@ -25,6 +29,8 @@ var Mangas = {
     role: 'master',
     skill: 'sword',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   103364: {
     title: 'Isekai Mahou wa Okureteru!',
@@ -34,6 +40,8 @@ var Mangas = {
     role: 'magician',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   104241: {
     title: 'Mairimashita! Iruma-kun',
@@ -43,6 +51,8 @@ var Mangas = {
     role: 'student',
     skill: 'bow',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   104322: {
     title: 'Risou no Himo Seikatsu',
@@ -52,6 +62,8 @@ var Mangas = {
     role: 'prince',
     skill: 'immense mana',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   105029: {
     title: 'Parallel Paradise',
@@ -61,6 +73,8 @@ var Mangas = {
     role: 'hero',
     skill: 'sword',
     antiHero: true,
+    recommended: false,
+    nsfw: true,
   },
   105328: {
     title: 'Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu',
@@ -70,6 +84,8 @@ var Mangas = {
     role: 'holy knight',
     skill: 'sword + magic',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   105747: {
     title: 'Tondemo Skill de Isekai Hourou Meshi',
@@ -79,6 +95,8 @@ var Mangas = {
     role: 'cook',
     skill: 'supermarket',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   106300: {
     title: 'Butsuri-san de Musou shitetara Motemote ni Narimashita',
@@ -88,6 +106,8 @@ var Mangas = {
     role: 'alchemist',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   106608: {
     title: 'Isekai Meikyuu de Harem wo',
@@ -97,6 +117,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'job change',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   106788: {
     title: 'Maou no Kawaii Yamada wa Yoiko',
@@ -106,6 +128,8 @@ var Mangas = {
     role: 'student',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   106810: {
     title: 'Chiyu Mahou no Machigatta Tsukaikata: Senjou wo Kakeru Kaifuku Youin',
@@ -115,6 +139,8 @@ var Mangas = {
     role: 'hero',
     skill: 'healer',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   107110: {
     title: 'Maou no Hisho',
@@ -124,6 +150,8 @@ var Mangas = {
     role: 'secretary',
     skill: 'strategist',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   107138: {
     title: 'Tensei Kyuuketsuki-san wa Ohirune ga Shitai: Please Take Care of Me.',
@@ -133,6 +161,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'vampire',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   107261: {
     title: 'Kemono Michi',
@@ -142,6 +172,8 @@ var Mangas = {
     role: 'wrestle',
     skill: 'physical strength',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   107893: {
     title: 'Isekai Onsen ni Tensei shita Ore no Kounou ga Tondemosugiru',
@@ -151,6 +183,8 @@ var Mangas = {
     role: 'onsen',
     skill: 'healer',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   108197: {
     title: 'Kaifuku Jutsushi no Yarinaoshi',
@@ -160,6 +194,8 @@ var Mangas = {
     role: 'hero',
     skill: 'healer',
     antiHero: true,
+    recommended: false,
+    nsfw: true,
   },
   108598: {
     title: 'Yasei no Last Boss ga Arawareta!: Kokuyoku no Haou',
@@ -169,6 +205,8 @@ var Mangas = {
     role: 'overlord',
     skill: 'magic',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   109649: {
     title: 'Makikomarete Isekai Teni suru Yatsu wa, Taitei Cheat',
@@ -178,6 +216,8 @@ var Mangas = {
     role: 'slave master',
     skill: 'magic',
     antiHero: true,
+    recommended: false,
+    nsfw: true,
   },
   109770: {
     title: 'Shirokuma Tensei: Mori no Shugoshin ni Natta zo Densetsu',
@@ -187,6 +227,8 @@ var Mangas = {
     role: 'villager',
     skill: 'physical strength',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   109931: {
     title: 'Shingan no Yuusha',
@@ -196,6 +238,8 @@ var Mangas = {
     role: 'hero',
     skill: 'log',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   110288: {
     title: 'Slime Taoshite 300-nen, Shiranai Uchi ni Level Max ni Nattemashita',
@@ -205,6 +249,8 @@ var Mangas = {
     role: 'witch',
     skill: 'magic',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   110460: {
     title: 'Isekai Nonbiri Nouka',
@@ -214,6 +260,8 @@ var Mangas = {
     role: 'farmer',
     skill: 'farming tool',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   111287: {
     title: 'Seichou Cheat de Nandemo Dekiruyou ni Natta ga, Mushoku dake wa Yamerarenaiyou desu',
@@ -223,6 +271,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'exp boost',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   111846: {
     title: 'Isekai de Saikyou no Tsue ni Tensei shita Ore ga Iyagaru Shoujo wo Muriyari Mahou Shoujo ni P suru!',
@@ -232,6 +282,8 @@ var Mangas = {
     role: 'magic wand',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   112684: {
     title: 'Mata no Okoshi wo!',
@@ -241,6 +293,8 @@ var Mangas = {
     role: '-',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   113081: {
     title: 'Wanwan Monogatari: Kanemochi no Inu ni Shite to wa Itta ga, Fenrir ni Shiro to wa Ittenee!',
@@ -250,6 +304,8 @@ var Mangas = {
     role: 'pet',
     skill: 'fenrir',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   113152: {
     title: 'Sekkaku Cheat wo Moratte Isekai ni Teni shita n dakara, Suki na You ni Ikitemitai',
@@ -259,6 +315,8 @@ var Mangas = {
     role: 'merchant',
     skill: 'healer',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   113178: {
     title: 'Tensei shitara Dragon no Tamago datta: Ibara no Dragon Road',
@@ -268,6 +326,8 @@ var Mangas = {
     role: 'dragon',
     skill: 'dragon',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   113194: {
     title: 'S-Rank Monster no "Behemoth" dakedo, Neko to Machigawarete Elf Musume no Pet toshite Kurashitemasu',
@@ -277,6 +337,8 @@ var Mangas = {
     role: 'pet',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   113716: {
     title: 'Gacha wo Mawashite Nakama wo Fuyasu: Saikyou no Bishoujo Gundan wo Tsukuriagero',
@@ -286,6 +348,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'gacha',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   113752: {
     title: 'Kuma Kuma Kuma Bear',
@@ -295,6 +359,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'bear',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   113999: {
     title: 'Succubus ni Tensei shita node Milk wo Shiborimasu',
@@ -304,6 +370,8 @@ var Mangas = {
     role: 'waitress',
     skill: 'ejaculate magic',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   114568: {
     title: 'Ride-On King',
@@ -313,6 +381,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'physical strength',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   114595: {
     title: 'Game of Familia: Kazoku Senki',
@@ -322,6 +392,8 @@ var Mangas = {
     role: 'magician',
     skill: 'strategist',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   114849: {
     title: 'Yondome wa Iya na Shizokusei Majutsushi',
@@ -331,6 +403,8 @@ var Mangas = {
     role: 'king',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   115067: {
     title: 'Ansatsusha de Aru Ore no Status ga Yuusha yori mo Akiraka ni Tsuyoi no da ga',
@@ -340,6 +414,8 @@ var Mangas = {
     role: 'assassin',
     skill: 'sword',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   115156: {
     title: 'Saikyou no Shuzoku ga Ningen Datta Ken',
@@ -349,6 +425,8 @@ var Mangas = {
     role: 'human',
     skill: 'physical strength',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   115200: {
     title: 'Maou ni Natta node, Dungeon Tsukutte Jingai Musume to Honobono suru',
@@ -358,6 +436,8 @@ var Mangas = {
     role: 'demon lord',
     skill: 'dungeon master',
     antiHero: true,
+    recommended: false,
+    nsfw: false,
   },
   115310: {
     title: 'Isekai Shoukan wa Nidome desu',
@@ -367,6 +447,8 @@ var Mangas = {
     role: 'hero',
     skill: 'sword',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   115978: {
     title: 'Taberu dake de Level Up!: Damegami to Issho ni Isekai Musou',
@@ -376,6 +458,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'eat',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   116167: {
     title: 'Jimi na Kensei wa Soredemo Saikyou desu',
@@ -385,6 +469,8 @@ var Mangas = {
     role: 'swordman',
     skill: 'sword',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   116772: {
     title: 'Kono Yuusha ga Ore Tueee Kuse ni Shinchou sugiru',
@@ -394,6 +480,8 @@ var Mangas = {
     role: 'hero',
     skill: 'cautious',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   117595: {
     title: 'Isekai Shuukyou e Youkoso!',
@@ -403,6 +491,8 @@ var Mangas = {
     role: '-',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   117886: {
     title: 'Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru',
@@ -412,6 +502,8 @@ var Mangas = {
     role: 'assassin',
     skill: 'assassin',
     antiHero: true,
+    recommended: false,
+    nsfw: false,
   },
   119022: {
     title: 'Kage no Jitsuryokusha ni Naritakute!',
@@ -421,6 +513,8 @@ var Mangas = {
     role: 'assassin',
     skill: 'sword',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   119098: {
     title: 'Isekai Kitchen: Around 30 Eiyoushi no Second Life',
@@ -430,6 +524,8 @@ var Mangas = {
     role: 'cook',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   119152: {
     title: 'Lv2 kara Cheat datta Motoyuusha Kouho no Mattari Isekai Life',
@@ -439,6 +535,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   119156: {
     title: 'Moto Sekai 1-i no Sub-Chara Ikusei Nikki: Hai Player, Isekai wo Kouryakuchuu!',
@@ -448,6 +546,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'all round',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   119625: {
     title: 'Level 1 dakedo Unique Skill de Saikyou desu',
@@ -457,6 +557,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'gun',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   121083: {
     title: 'Ookami wa Nemuranai',
@@ -466,6 +568,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'sword',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   122265: {
     title: 'Sono Ossan, Isekai de Nishuume Play wo Mankitsuchuu',
@@ -475,6 +579,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'sword + magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   122650: {
     title: 'Hazurewaku no "Joutai Ijou Skill" de Saikyou ni Natta Ore ga Subete wo Juurin suru made',
@@ -484,6 +590,8 @@ var Mangas = {
     role: 'hero',
     skill: 'abnormal status',
     antiHero: true,
+    recommended: false,
+    nsfw: false,
   },
   122775: {
     title: 'Nito no Taida na Isekai Shoukougun: Saijakushoku "Healer" nanoni Saikyou wa Cheat desu ka?',
@@ -493,6 +601,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'healer',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   123067: {
     title: 'Maou to Ore no Hangyakuki',
@@ -502,6 +612,8 @@ var Mangas = {
     role: 'hero',
     skill: 'sword',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   123093: {
     title: 'Fantasy Bishoujo Juniku Ojisan to',
@@ -511,6 +623,8 @@ var Mangas = {
     role: 'hero',
     skill: 'physical strength',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   124543: {
     title: 'Maou-sama ni Shoukan sareta kedo Kotoba ga Tsuujinai.',
@@ -520,6 +634,8 @@ var Mangas = {
     role: '-',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   124797: {
     title: 'Jikan Teishi Yuusha',
@@ -529,6 +645,8 @@ var Mangas = {
     role: 'hero',
     skill: 'time stop',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   124995: {
     title: 'Salaryman ga Isekai ni Ittara Shitennou ni Natta Hanashi',
@@ -538,6 +656,8 @@ var Mangas = {
     role: 'employee',
     skill: 'strategist',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   125498: {
     title: 'Mezametara Saikyou Soubi to Uchuusenmochi Datta node, Ikkodate Mezashite Youhei toshite Jiyuu ni Ikitai',
@@ -547,6 +667,8 @@ var Mangas = {
     role: 'merchant',
     skill: 'pilot',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   125904: {
     title: 'Houkago wa, Isekai Kissa de Coffee wo',
@@ -556,6 +678,8 @@ var Mangas = {
     role: 'cafe owner',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   127075: {
     title: 'Isekai Sniper wa Onna Senshi no Mofumofu Pet',
@@ -565,6 +689,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'gun',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   129229: {
     title: 'Goshujinsama to Yuku Isekai Survival!',
@@ -574,6 +700,8 @@ var Mangas = {
     role: 'slave',
     skill: 'minecraft',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   129759: {
     title: 'Isekai Mokushiroku Mynoghra: Hametsu no Bunmei de Hajimeru Sekai Seifuku',
@@ -583,6 +711,8 @@ var Mangas = {
     role: 'king',
     skill: 'summoner',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   130204: {
     title: 'Kami no Techigai de Shindara Cheat Gun Tsumi de Isekai ni Hourikomaremashita',
@@ -592,6 +722,8 @@ var Mangas = {
     role: 'adventurer',
     skill: '?',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   131228: {
     title: 'Isekai Kuimetsu no Same',
@@ -601,6 +733,8 @@ var Mangas = {
     role: 'student',
     skill: 'summoner',
     antiHero: true,
+    recommended: false,
+    nsfw: false,
   },
   131255: {
     title: 'Tensei Gotoki de Nigerareru to demo, Niisan?',
@@ -610,6 +744,8 @@ var Mangas = {
     role: 'student',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   133078: {
     title: 'Valhalla Ochinchin-kan',
@@ -619,6 +755,8 @@ var Mangas = {
     role: 'slave',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   134764: {
     title: 'Isekai Furin: Maou Toubatsu kara 10-nen, Tsuma to wa Less no Motoyuusha to, Otto wo Nakushita Onna Senshi',
@@ -628,6 +766,8 @@ var Mangas = {
     role: 'hero',
     skill: 'sword',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   13801: {
     title: 'Drifters',
@@ -637,6 +777,8 @@ var Mangas = {
     role: 'warrior',
     skill: 'sword',
     antiHero: true,
+    recommended: false,
+    nsfw: false,
   },
   48397: {
     title: 'No Game No Life',
@@ -646,6 +788,8 @@ var Mangas = {
     role: 'king',
     skill: 'strategist',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   49331: {
     title: 'Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?',
@@ -655,6 +799,8 @@ var Mangas = {
     role: 'student',
     skill: 'physical strength',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   66685: {
     title: 'Kekkon Yubiwa Monogatari',
@@ -664,6 +810,8 @@ var Mangas = {
     role: 'hero',
     skill: 'sword',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   67615: {
     title: 'Tate no Yuusha no Nariagari',
@@ -673,6 +821,8 @@ var Mangas = {
     role: 'hero',
     skill: 'shield',
     antiHero: true,
+    recommended: false,
+    nsfw: false,
   },
   6778: {
     title: 'Rotte no Omocha!',
@@ -682,6 +832,8 @@ var Mangas = {
     role: 'butler',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: true,
   },
   70259: {
     title: 'Mushoku Tensei: Isekai Ittara Honki Dasu',
@@ -691,6 +843,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   74695: {
     title: 'Re:Zero kara Hajimeru Isekai Seikatsu',
@@ -700,6 +854,8 @@ var Mangas = {
     role: 'knight',
     skill: 'time loop',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   74701: {
     title: 'Ore to Kawazu-san no Isekai Hourouki',
@@ -709,6 +865,8 @@ var Mangas = {
     role: 'magician',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   80187: {
     title: 'Pochi Kuro',
@@ -718,6 +876,8 @@ var Mangas = {
     role: 'slave',
     skill: '-',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   80385: {
     title: 'Kono Subarashii Sekai ni Shukufuku wo!',
@@ -727,6 +887,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'high luck',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   81667: {
     title: 'Overlord',
@@ -736,6 +898,8 @@ var Mangas = {
     role: 'king',
     skill: 'magic',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   82399: {
     title: 'Konjiki no Word Master: Yuusha Yonin ni Makikomareta Unique Cheat',
@@ -745,6 +909,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'magic',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   83021: {
     title: 'Death March kara Hajimaru Isekai Kyousoukyoku',
@@ -754,6 +920,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   86043: {
     title: 'Isekai de "Kuro no Iyashi Te" tte Yobareteimasu',
@@ -763,6 +931,8 @@ var Mangas = {
     role: 'magician',
     skill: 'healer',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   87609: {
     title: 'Tensei shitara Slime Datta Ken',
@@ -772,6 +942,8 @@ var Mangas = {
     role: 'demon lord',
     skill: 'sword + magic',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   89161: {
     title: 'Hisshou Dungeon Unei Houhou',
@@ -781,6 +953,8 @@ var Mangas = {
     role: 'dungeon master',
     skill: 'strategist',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   90117: {
     title: 'Tsuki ga Michibiku Isekai Douchuu',
@@ -790,6 +964,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'magic',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   91656: {
     title: 'Gun-Ota ga Mahou Sekai ni Tensei shitara, Gendai Heiki de Guntai Harem wo Tsukucchaimashita!?',
@@ -799,6 +975,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'gun',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   91714: {
     title: 'Isekai Maou to Shoukan Shoujo no Dorei Majutsu',
@@ -808,6 +986,8 @@ var Mangas = {
     role: 'demon lord',
     skill: 'magic',
     antiHero: true,
+    recommended: true,
+    nsfw: true,
   },
   95353: {
     title: 'Kumo desu ga, Nani ka?',
@@ -817,6 +997,8 @@ var Mangas = {
     role: 'spider',
     skill: 'spider',
     antiHero: false,
+    recommended: true,
+    nsfw: false,
   },
   96528: {
     title: 'Arifureta Shokugyou de Sekai Saikyou',
@@ -826,6 +1008,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'gun',
     antiHero: true,
+    recommended: false,
+    nsfw: false,
   },
   98156: {
     title: 'Maken no Daydreamer',
@@ -835,6 +1019,8 @@ var Mangas = {
     role: 'adventurer',
     skill: 'melee',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   98436: {
     title: 'Youjo Senki',
@@ -844,6 +1030,8 @@ var Mangas = {
     role: 'commander',
     skill: 'gun',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   98820: {
     title: 'Dungeon Seeker',
@@ -853,6 +1041,8 @@ var Mangas = {
     role: 'hunter',
     skill: 'half monster',
     antiHero: true,
+    recommended: true,
+    nsfw: false,
   },
   99313: {
     title: 'Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu!',
@@ -862,6 +1052,8 @@ var Mangas = {
     role: 'student',
     skill: 'strategist',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
   99377: {
     title: 'Kenja no Mago',
@@ -871,5 +1063,7 @@ var Mangas = {
     role: 'student',
     skill: 'magic',
     antiHero: false,
+    recommended: false,
+    nsfw: false,
   },
 };

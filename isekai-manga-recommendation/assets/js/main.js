@@ -63,6 +63,9 @@ function setManga(mID) {
   badge += `<span class="badge badge-primary">${m.role}</span> `;
   badge += `<span class="badge badge-primary">${m.skill}</span> `;
   badge += m.antiHero ? `<span class="badge badge-warning">anti-hero</span>` : '';
+  badge += m.antiHero ? `<span class="badge badge-warning">anti-hero</span> ` : '';
+  badge += m.recommended ? `<span class="badge badge-success">recommended</span> ` : '';
+  badge += m.nsfw ? `<span class="badge badge-danger">nsfw</span> ` : '';
   $('#manga-badge').html(badge);
 
   mDesc = `<p>${m.description}</p>`;
