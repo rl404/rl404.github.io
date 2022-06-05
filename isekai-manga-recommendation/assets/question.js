@@ -284,7 +284,7 @@ var Questions = {
   },
   44: {
     question: 'Cook',
-    options: [{ manga: 105747 }, { manga: 119098 }],
+    options: [{ manga: 105747 }, { manga: 119098 }, { manga: 110081 }],
     prev: 37,
   },
   45: {
