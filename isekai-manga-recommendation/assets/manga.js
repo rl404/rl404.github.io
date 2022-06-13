@@ -582,6 +582,17 @@ var Mangas = {
     recommended: true,
     nsfw: false,
   },
+  121731: {
+    title: 'Realist Maou ni Yoru Seiikinaki Isekai Kaikaku',
+    title2: 'The Legend of Rebuilding World Realist Demon King',
+    description: "Seventy-two feudal demon lords vie for power. The weakest among them is also the youngest: Ashtarot, who retains memories from his human life as a researcher. While he possesses neither an army nor immense power, his talent is his pragmatism. From killing potential heroes before they gain power to using underhanded tricks and lies, everything is fair game for the 72nd demon lord.  \u003cbr\u003e\u003cbr\u003eAshtarot's ultimate goal is to dominate the other demon lords—whether by conquering them or allying with them—and ascend as the Demon King. Accompanied by the demon maid Eve and his subordinates, Ashtarot makes a name for himself as the demon lord who will use any tactic to win—utilizing the power known as realism!",
+    race: 'human',
+    role: 'demon lord',
+    skill: 'magic',
+    antiHero: false,
+    recommended: false,
+    nsfw: false,
+  },
   122265: {
     title: 'Sono Ossan, Isekai de Nishuume Play wo Mankitsuchuu',
     title2: 'The Old Man Who Got a Second Round in Another World',
