@@ -802,6 +802,17 @@ var Mangas = {
     recommended: false,
     nsfw: false,
   },
+  146277: {
+    title: 'Oneesama to Watashi: Ojousama ga Isekai Tensei',
+    title2: 'My Sister and Giant: A Young Lady is Reborn in Another World.',
+    description: '-',
+    race: 'human',
+    role: '-',
+    skill: '-',
+    antiHero: false,
+    recommended: true,
+    nsfw: false,
+  },
   48397: {
     title: 'No Game No Life',
     title2: '\nNo Game, No Life',
