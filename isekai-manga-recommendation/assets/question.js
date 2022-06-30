@@ -259,7 +259,7 @@ var Questions = {
   },
   39: {
     question: 'Adventurer',
-    options: [{ manga: 130204 }, { manga: 115156 }, { manga: 119156 }, { manga: 113752 }, { manga: 115978 }, { manga: 111287 }, { manga: 113716 }, { manga: 91656 }, { manga: 119625 }, { manga: 122775 }, { manga: 80385 }, { manga: 106608 }, { manga: 83021 }, { manga: 119152 }, { manga: 70259 }, { manga: 90117 }, { manga: 114568 }, { manga: 121083 }, { manga: 122265 }],
+    options: [{ manga: 130204 }, { manga: 115156 }, { manga: 115917 }, { manga: 119156 }, { manga: 113752 }, { manga: 115978 }, { manga: 111287 }, { manga: 113716 }, { manga: 91656 }, { manga: 119625 }, { manga: 122775 }, { manga: 80385 }, { manga: 106608 }, { manga: 83021 }, { manga: 119152 }, { manga: 70259 }, { manga: 90117 }, { manga: 114568 }, { manga: 121083 }, { manga: 122265 }],
     prev: 37,
   },
   40: {
@@ -349,7 +349,7 @@ var Questions = {
   },
   57: {
     question: 'Summoner',
-    options: [{ manga: 100377 }],
+    options: [{ manga: 100377 }, { manga: 136309 }],
     prev: 37,
   },
   58: {
