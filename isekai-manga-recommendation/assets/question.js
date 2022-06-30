@@ -249,6 +249,7 @@ var Questions = {
       { answer: 'Swordman', next: 58 },
       { answer: 'Witch', next: 59 },
       { answer: 'Wrestle', next: 60 },
+      { answer: 'Tamer', next: 61 },
     ],
     prev: 26,
   },
@@ -349,7 +350,7 @@ var Questions = {
   },
   57: {
     question: 'Summoner',
-    options: [{ manga: 100377 }],
+    options: [{ manga: 100377 }, { manga: 136309 }],
     prev: 37,
   },
   58: {
@@ -365,6 +366,11 @@ var Questions = {
   60: {
     question: 'Wrestle',
     options: [{ manga: 107261 }],
+    prev: 37,
+  },
+  61: {
+    question: 'Tamer',
+    options: [{ manga: 115917 }],
     prev: 37,
   },
 };
