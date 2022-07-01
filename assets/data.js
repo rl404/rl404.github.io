@@ -20,7 +20,7 @@ var Data = {
             "location": "Jakarta, Indonesia",
             "team": "IT Division",
             "startDate": "Aug 2021",
-            "endDate": "Current",
+            "endDate": "Jun 2022",
             "link": "https://edot.id",
             "work": [
                 "Developed and maintained payment service.",
@@ -261,6 +261,17 @@ var Data = {
     ],
     "project": {
         "personal": [
+            {
+                "name": "Naka",
+                "description": "Discord bot for playing youtube song.",
+                "link": "https://github.com/rl404/naka",
+                "tag": [
+                    "go",
+                    "redis",
+                    "docker",
+                    "kubernetes"
+                ]
+            },
             {
                 "name": "OVO-go",
                 "description": "Unofficial golang API wrapper for ovo.id.",
