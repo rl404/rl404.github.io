@@ -16,6 +16,16 @@ var Data = {
   experience: [
     {
       position: 'Backend Developer',
+      company: 'GovTech Edu',
+      location: 'Jakarta, Indonesia',
+      team: 'IT Division',
+      startDate: 'Jul 2022',
+      endDate: 'Current',
+      link: 'https://govtechedu.id',
+      work: ['Developed and maintained micro-services.'],
+    },
+    {
+      position: 'Backend Developer',
       company: 'eDOT',
       location: 'Jakarta, Indonesia',
       team: 'IT Division',
@@ -188,15 +198,15 @@ var Data = {
       level: 3,
     },
     {
-      name: 'Memcache',
-      level: 0,
-    },
-    {
       name: 'RabbitMQ',
       level: 3,
     },
     {
       name: 'NSQ',
+      level: 0,
+    },
+    {
+      name: 'Google-Pubsub',
       level: 0,
     },
     {
@@ -227,10 +237,6 @@ var Data = {
       name: 'Kubernetes',
       level: 3,
     },
-    {
-      name: 'React',
-      level: 2,
-    },
   ],
   language: [
     {
@@ -252,6 +258,12 @@ var Data = {
   ],
   project: {
     personal: [
+      {
+        name: 'Akizuki',
+        description: 'View and edit your MyAnimeList anime and manga list in a more modern design with custom tags editor. ',
+        link: 'https://github.com/rl404/akizuki',
+        tag: ['nodejs', 'react'],
+      },
       {
         name: 'Sekai',
         description: 'Convert your MyAnimeList anime list to force-directed graph and see your anime world. Using <i>akatsuki</i> as backend.',
@@ -358,6 +370,13 @@ var Data = {
       },
     ],
     work: [
+      {
+        name: 'Kampus Merdeka',
+        description:
+          'An online service for providing students with the opportunity to hone their skills by going directly into real world and working as a career preparation step. This is part of the independent learning policy by the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek).',
+        link: 'https://kampusmerdeka.kemdikbud.go.id/',
+        tag: ['go', 'mysql', 'redis', 'google-pubsub', 'grafana', 'docker', 'kubernetes'],
+      },
       {
         name: 'eLOG',
         description: 'An online service for renting vehicle and sending goods.',
@@ -548,7 +567,7 @@ var Data = {
       {
         name: 'Makarim',
         description:
-          'A web informationfor a leading business law firm in Indonesia offering a full range of corporate, banking, litigation and specialist legal services to national and international clients.',
+          'A web information for a leading business law firm in Indonesia offering a full range of corporate, banking, litigation and specialist legal services to national and international clients.',
         link: 'http://makarim.com',
         tag: ['php', 'yii', 'mysql'],
       },

@@ -14,7 +14,7 @@
   detailArea += '</div>';
   $('#details').html(detailArea);
 
-  $('#experience-count').html(`(${Data.experience.length})`);
+  $('#experience-count').html(` — ${Data.experience.length}`);
 
   var expArea = "<div class='row'>";
   Data.experience.forEach((e) => {
@@ -39,7 +39,7 @@
   expArea += '</div>';
   $('#experience').html(expArea);
 
-  $('#education-count').html(`(${Data.education.length})`);
+  $('#education-count').html(` — ${Data.education.length}`);
 
   var eduArea = "<div class='row'>";
   Data.education.forEach((e) => {
@@ -63,7 +63,7 @@
   eduArea += '</div>';
   $('#education').html(eduArea);
 
-  $('#activity-count').html(`(${Data.activity.length})`);
+  $('#activity-count').html(` — ${Data.activity.length}`);
 
   var actArea = "<div class='row'>";
   Data.activity.forEach((e) => {
@@ -87,7 +87,7 @@
   actArea += '</div>';
   $('#activity').html(actArea);
 
-  $('#language-count').html(`(${Data.language.length})`);
+  $('#language-count').html(` — ${Data.language.length}`);
 
   var langArea = "<div class='row'>";
   Data.language.forEach((l) => {
@@ -109,11 +109,11 @@
   langArea += '</div>';
   $('#language').html(langArea);
 
-  $('#skill-count').html(`(${Data.skill.length})`);
+  $('#skill-count').html(` — ${Data.skill.length}`);
 
   var skillArea = "<div class='row'>";
   Data.skill.forEach((l) => {
-    var title = "<div class='col-lg-3 col-md-4 col-6'>";
+    var title = "<div class='col-xl-3 col-lg-4 col-md-6 col-6'>";
     title += l.name;
     title += '</div>';
 
@@ -131,7 +131,7 @@
   skillArea += '</div>';
   $('#skill').html(skillArea);
 
-  $('#project-count').html(`(${Data.project.personal.length + Data.project.work.length})`);
+  $('#project-count').html(` — ${Data.project.personal.length + Data.project.work.length}`);
 
   var projArea = "<div class='row'>";
   Data.project.personal.forEach((p) => {
@@ -161,7 +161,9 @@
     themeForm += "<div class='col-lg-2 col-md-3 col-sm-4 col-6'>";
     theme.forEach((t) => {
       themeForm += "<div class='form-check'>";
-      themeForm += `<input class="form-check-input" type="radio" name="theme" value="${t.key}" id="${t.key}-radio" onchange="updateTheme('${t.key}')" ${themeName === t.key && 'checked'}>`;
+      themeForm += `<input class="form-check-input" type="radio" name="theme" value="${t.key}" id="${t.key}-radio" onchange="updateTheme('${
+        t.key
+      }')" ${themeName === t.key && 'checked'}>`;
       themeForm += `<label class="form-check-label" for="${t.key}-radio">${t.name}</label>`;
       themeForm += '</div>';
     });
