@@ -10,7 +10,7 @@
   detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 hover'><i class="fas fa-envelope"></i> ${Data.email}</div>`;
   detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 hover'><a href='${Data.github.link}' target='_blank'><i class="fab fa-github"></i> ${Data.github.name}</a></div>`;
   detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 hover'><a href='${Data.linkedin.link}' target='_blank'><i class="fab fa-linkedin-in"></i> ${Data.linkedin.name}</a></div>`;
-  detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 hover'><a href='${Data.resume}' target='_blank'><i class="fas fa-file-pdf"></i> Resume</a></div>`;
+  // detailArea += `<div class='col-lg-3 col-md-4 col-sm-6 hover'><a href='${Data.resume}' target='_blank'><i class="fas fa-file-pdf"></i> Resume</a></div>`;
   detailArea += '</div>';
   $('#details').html(detailArea);
 
