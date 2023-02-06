@@ -259,6 +259,12 @@ var Data = {
   project: {
     personal: [
       {
+        name: 'Hibiki',
+        description: 'MyAnimeList manga database dump and REST API. Successor of my <i>mal-db</i>.',
+        link: 'https://github.com/rl404/hibiki',
+        tag: ['go', 'mongodb', 'redis', 'google pubsub', 'newrelic', 'docker', 'kubernetes'],
+      },
+      {
         name: 'Akizuki',
         description: 'View and edit your MyAnimeList anime and manga list in a more modern design with custom tags editor. ',
         link: 'https://github.com/rl404/akizuki',
