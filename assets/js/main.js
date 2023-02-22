@@ -1,6 +1,4 @@
 (function () {
-  $('[data-toggle="tooltip"]').tooltip();
-
   $('#name').html(Data.name);
   $('#summary').html(Data.summary);
 
@@ -131,21 +129,30 @@
   skillArea += '</div>';
   $('#skill').html(skillArea);
 
-  $('#project-count').html(` — ${Data.project.personal.length + Data.project.work.length}`);
+  var projCountTooltip = `<div class="text-left"><i class="fas fa-user"></i> ${Data.project.personal.length} personal<br><i class="fas fa-building"></i> ${Data.project.work.length} work</div>`;
+  $('#project-count').html(
+    `<span data-toggle='tooltip' title='${projCountTooltip}' data-placement='right' data-html='true'>— ${
+      Data.project.personal.length + Data.project.work.length
+    }</span>`,
+  );
 
   var projArea = "<div class='row'>";
   Data.project.personal.forEach((p) => {
     projArea += "<div class='col-sm-6'>";
     projArea += `<h5 class='title'>${p.link !== '' ? `<a href='${p.link}' target='_blank'>${p.name}</a>` : p.name}</h5>`;
     projArea += `<p>${p.description}</p>`;
-    projArea += `<p class='hover'><i class='fas fa-tag'></i> ${p.tag.join(', ')}</p>`;
+    projArea += `<p class='hover'>`;
+    projArea += `<i class='fas fa-user' data-toggle='tooltip' title='personal project' data-placement='left'></i> `;
+    projArea += `<i class='fas fa-tag'></i> ${p.tag.join(', ')}</p>`;
     projArea += '</div>';
   });
   Data.project.work.forEach((p) => {
     projArea += "<div class='col-sm-6'>";
     projArea += `<h5 class='title'>${p.link !== '' ? `<a href='${p.link}' target='_blank'>${p.name}</a>` : p.name}</h5>`;
     projArea += `<p>${p.description}</p>`;
-    projArea += `<p class='hover'><i class='fas fa-tag'></i> ${p.tag.join(', ')}</p>`;
+    projArea += `<p class='hover'>`;
+    projArea += `<i class='fas fa-building' data-toggle='tooltip' title='work project' data-placement='left'></i> `;
+    projArea += `<i class='fas fa-tag'></i> ${p.tag.join(', ')}</p>`;
     projArea += '</div>';
   });
   projArea += '</div>';
@@ -171,6 +178,8 @@
   });
   themeForm += '</div></form>';
   $('#theme-form').html(themeForm);
+
+  $('[data-toggle="tooltip"]').tooltip();
 
   updateTheme(themeName);
 })();
