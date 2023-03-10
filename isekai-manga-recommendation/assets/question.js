@@ -355,7 +355,7 @@ var Questions = {
   },
   52: {
     question: 'Merchant',
-    options: [{ manga: 125498 }, { manga: 113152 }],
+    options: [{ manga: 125498 }, { manga: 113152 }, { manga: 147137 }],
     prev: 37,
   },
   53: {
