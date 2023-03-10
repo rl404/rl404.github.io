@@ -921,6 +921,18 @@ var Mangas = {
     recommended: false,
     nsfw: false,
   },
+  147137: {
+    title: 'Ataerareta Skill wo Tsukatte Kasei de Isekai Bijo-tachi to Ichaicha shitai',
+    title2: 'I want to use the skills given to earn money and flirt with beauties from other worlds.',
+    description:
+      'That day, Ichita Yamada was working part-time as usual. When he opened the back door after finishing his part-time job, he found a blank space and a person who called himself God. It was by chance that he was chosen by God to go to another world. He was perplexed, but decided to live anyway. Thinking about how to survive in this other world using the skills he received from God, he tries his best to have a physical relationship with a beautiful woman in this other world.',
+    race: 'human',
+    role: 'merchant',
+    skill: 'potion maker',
+    antiHero: false,
+    recommended: false,
+    nsfw: true,
+  },
   152415: {
     title: 'Tensei Colosseum: Saijaku Skill de Saikyou no Onna-tachi wo Kouryaku shite Dorei Harem Tsukurimasu',
     title2: 'Reincarnation Coliseum',
