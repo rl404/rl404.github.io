@@ -230,6 +230,7 @@ var Questions = {
       { answer: 'Unknown', next: 38 },
       { answer: 'Adventurer', next: 39 },
       { answer: 'Alchemist', next: 40 },
+      { answer: 'Aristocrat', next: 63 },
       { answer: 'Assassin', next: 41 },
       { answer: 'Butler', next: 42 },
       { answer: 'Cafe Owner', next: 43 },
@@ -407,5 +408,10 @@ var Questions = {
     question: 'Gladiator',
     options: [{ manga: 152415 }],
     prev: 27,
+  },
+  63: {
+    question: 'Aristocrat',
+    options: [{ manga: 127781 }],
+    prev: 37,
   },
 };

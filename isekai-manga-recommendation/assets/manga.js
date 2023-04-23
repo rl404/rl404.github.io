@@ -790,6 +790,19 @@ var Mangas = {
     recommended: false,
     nsfw: true,
   },
+  127781: {
+    title:
+      'Tensei Kizoku, Kantei Skill de Nariagaru: Jakushou Ryouchi wo Uketsuida node, Yuushuu na Jinzai wo Fuyashiteitara, Saikyou Ryouchi ni Natteta',
+    title2: "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World",
+    description:
+      'An ordinary salaryman dies one day and is reborn as Ars Louvent, the son of a noble. Although he isn\'t talented in magic or swordplay, he does have one skill that no one else possesses: "Appraisal." Using this ability, Ars can determine a person\'s current strength, how much potential they hold, and where their talents rest.  \u003cbr\u003e\u003cbr\u003eThis skill is especially useful in the present situation of the country. The government is corrupt, revolts occur more often than not, and nobles far and wide are strengthening their fortifications in preparation for an all-out war. With this in mind, Ars realizes he too must prepare by gathering talented people.  \u003cbr\u003e\u003cbr\u003eFrom a persecuted foreigner unparalleled with the sword, a slave with an unknown talent for magic, to a timid boy with an unquenchable thirst for knowledge—Ars begins to surround himself with people to support him, aiming to create the most powerful territory.',
+    race: 'human',
+    role: 'aristocrat',
+    skill: 'appraisal',
+    antiHero: false,
+    recommended: true,
+    nsfw: false,
+  },
   129229: {
     title: 'Goshujinsama to Yuku Isekai Survival!',
     title2: 'Survival in Another World with My Mistress!',
