@@ -259,6 +259,18 @@ var Data = {
   project: {
     personal: [
       {
+        name: 'Amatsukaze',
+        description: 'Visualize vtuber data from wikia to more modern website pages. Using <i>shimakaze</i> as backend.',
+        link: 'https://github.com/rl404/amatsukaze',
+        tag: ['nodejs', 'sveltekit'],
+      },
+      {
+        name: 'Shimakaze',
+        description: 'Vtuber wikia scraper and REST API.',
+        link: 'https://github.com/rl404/shimakaze',
+        tag: ['go', 'mongodb', 'redis', 'google pubsub', 'newrelic', 'docker', 'kubernetes'],
+      },
+      {
         name: 'Hibiki',
         description: 'MyAnimeList manga database dump and REST API. Successor of my <i>mal-db</i>.',
         link: 'https://github.com/rl404/hibiki',
