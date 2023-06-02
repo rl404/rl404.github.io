@@ -25,7 +25,7 @@ var Data = {
       work: [
         'Developed and maintained micro-services.',
         'Developed and maintained internal libraries.',
-        'Improved CI-CD pipeline related with Docker building.',
+        'Improved CI-CD pipeline related to Docker building.',
         'Improved logging for error tracing.',
       ],
     },
@@ -263,6 +263,12 @@ var Data = {
   ],
   project: {
     personal: [
+      {
+        name: 'Inazuma',
+        description: 'Explore manga in manga style. Using <i>hibiki</i> as backend.',
+        link: 'https://github.com/rl404/inazuma',
+        tag: ['nodejs', 'sveltekit'],
+      },
       {
         name: 'Amatsukaze',
         description: 'Visualize vtuber data from wikia to more modern website pages. Using <i>shimakaze</i> as backend.',
