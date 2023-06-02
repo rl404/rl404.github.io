@@ -22,7 +22,12 @@ var Data = {
       startDate: 'Jul 2022',
       endDate: 'Current',
       link: 'https://govtechedu.id',
-      work: ['Developed and maintained micro-services.'],
+      work: [
+        'Developed and maintained micro-services.',
+        'Developed and maintained internal libraries.',
+        'Improved CI-CD pipeline related with Docker building.',
+        'Improved logging for error tracing.',
+      ],
     },
     {
       position: 'Backend Developer',
