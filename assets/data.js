@@ -1,7 +1,7 @@
 var Data = {
   name: 'Axel Oktavian Antonio',
   summary: 'Just your everyday backend developer who likes trying new things. Also has some knowledge in frontend and devops area.',
-  address: 'Bekasi, Indonesia',
+  address: 'Bekasi, Indonesia, 17131',
   phone: '+6282122653795',
   email: 'axel.rl.404@gmail.com',
   github: {
@@ -169,96 +169,30 @@ var Data = {
       description: ['Taught basic Java programming to 3 junior students'],
     },
   ],
-  skill: [
-    {
-      name: 'Go',
-      level: 5,
-    },
-    {
-      name: 'PHP',
-      level: 4,
-    },
-    {
-      name: 'NodeJS',
-      level: 0,
-    },
-    {
-      name: 'MySQL',
-      level: 4,
-    },
-    {
-      name: 'PostgreSQL',
-      level: 4,
-    },
-    {
-      name: 'Oracle',
-      level: 3,
-    },
-    {
-      name: 'MongoDB',
-      level: 3,
-    },
-    {
-      name: 'Redis',
-      level: 3,
-    },
-    {
-      name: 'RabbitMQ',
-      level: 3,
-    },
-    {
-      name: 'NSQ',
-      level: 0,
-    },
-    {
-      name: 'Google-Pubsub',
-      level: 0,
-    },
-    {
-      name: 'Elasticsearch',
-      level: 0,
-    },
-    {
-      name: 'Kibana',
-      level: 0,
-    },
-    {
-      name: 'Prometheus',
-      level: 3,
-    },
-    {
-      name: 'Grafana',
-      level: 3,
-    },
-    {
-      name: 'Git',
-      level: 4,
-    },
-    {
-      name: 'Docker',
-      level: 4,
-    },
-    {
-      name: 'Kubernetes',
-      level: 3,
-    },
-  ],
+  skill: {
+    language: ['Go', 'PHP', 'JavaScript'],
+    database: ['MySQL', 'PostgreSQL', 'Oracle', 'MongoDB', 'Redis'],
+    pubsub: ['RabbitMQ', 'NSQ', 'Google-Pubsub'],
+    monitoring: ['Elasticsearch', 'Kibana', 'Prometheus', 'Grafana'],
+    version: ['Git', 'Github', 'Gitlab'],
+    devops: ['Docker', 'Kubernetes'],
+  },
   language: [
     {
       name: 'Indonesia',
-      level: 5,
+      level: 'Native',
     },
     {
       name: 'English',
-      level: 4,
+      level: 'Proficient',
     },
     {
       name: 'Thai',
-      level: 1,
+      level: 'Beginner',
     },
     {
       name: 'Japanese',
-      level: 1,
+      level: 'Beginner',
     },
   ],
   project: {
@@ -404,7 +338,7 @@ var Data = {
         description:
           'An online service for providing students with the opportunity to hone their skills by going directly into real world and working as a career preparation step. This is part of the independent learning policy by the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek).',
         link: 'https://kampusmerdeka.kemdikbud.go.id/',
-        tag: ['go', 'mysql', 'redis', 'google-pubsub', 'grafana', 'docker', 'kubernetes'],
+        tag: ['go', 'mysql', 'redis', 'google-pubsub', 'docker', 'kubernetes'],
       },
       {
         name: 'eLOG',

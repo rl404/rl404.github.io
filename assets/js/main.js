@@ -89,44 +89,63 @@
 
   var langArea = "<div class='row'>";
   Data.language.forEach((l) => {
-    var title = "<div class='col-6'>";
-    title += l.name;
-    title += '</div>';
-
-    var data = "<div class='col-6 hover'>";
-    for (let index = 0; index < l.level; index++) {
-      data += "<i class='fas fa-star'></i>";
-    }
-    for (let index = 0; index < 5 - l.level; index++) {
-      data += "<i class='far fa-star'></i>";
-    }
-    data += '</div>';
-
-    langArea += title + data;
+    langArea += "<p class='col-12'>";
+    langArea += l.name;
+    langArea += "<span class='hover'>";
+    langArea += ' — ' + l.level;
+    langArea += '</span>';
+    langArea += '</p>';
   });
   langArea += '</div>';
   $('#language').html(langArea);
 
-  $('#skill-count').html(` — ${Data.skill.length}`);
+  $('#skill-count').html(
+    ` — ${
+      Data.skill.language.length +
+      Data.skill.database.length +
+      Data.skill.pubsub.length +
+      Data.skill.monitoring.length +
+      Data.skill.version.length +
+      Data.skill.devops.length
+    }`,
+  );
 
   var skillArea = "<div class='row'>";
-  Data.skill.forEach((l) => {
-    var title = "<div class='col-xl-3 col-lg-4 col-md-6 col-6'>";
-    title += l.name;
-    title += '</div>';
+  skillArea += "<div class='col-6'>";
+  skillArea += "<div class='hover'>Language</div>";
+  skillArea += '<p>';
+  skillArea += Data.skill.language.join(', ');
+  skillArea += '</p></div>';
 
-    // var data = "<div class='col-6 hover'>";
-    // for (let index = 0; index < l.level; index++) {
-    //   data += "<i class='fas fa-star'></i>";
-    // }
-    // for (let index = 0; index < 5 - l.level; index++) {
-    //   data += "<i class='far fa-star'></i>";
-    // }
-    // data += "</div>";
+  skillArea += "<div class='col-6'>";
+  skillArea += "<div class='hover'>Database</div>";
+  skillArea += '<p>';
+  skillArea += Data.skill.database.join(', ');
+  skillArea += '</p></div>';
 
-    skillArea += title;
-  });
-  skillArea += '</div>';
+  skillArea += "<div class='col-6'>";
+  skillArea += "<div class='hover'>Pubsub</div>";
+  skillArea += '<p>';
+  skillArea += Data.skill.pubsub.join(', ');
+  skillArea += '</p></div>';
+
+  skillArea += "<div class='col-6'>";
+  skillArea += "<div class='hover'>Monitoring</div>";
+  skillArea += '<p>';
+  skillArea += Data.skill.monitoring.join(', ');
+  skillArea += '</p></div>';
+
+  skillArea += "<div class='col-6'>";
+  skillArea += "<div class='hover'>Version Control</div>";
+  skillArea += '<p>';
+  skillArea += Data.skill.version.join(', ');
+  skillArea += '</p></div>';
+
+  skillArea += "<div class='col-6'>";
+  skillArea += "<div class='hover'>DevOps</div>";
+  skillArea += '<p>';
+  skillArea += Data.skill.devops.join(', ');
+  skillArea += '</p></div>';
   $('#skill').html(skillArea);
 
   var projCountTooltip = `<div class="text-left"><i class="fas fa-user"></i> ${Data.project.personal.length} personal<br><i class="fas fa-building"></i> ${Data.project.work.length} work</div>`;
