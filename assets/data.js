@@ -217,7 +217,7 @@ var Data = {
       },
       {
         name: 'Hibiki',
-        description: 'MyAnimeList manga database dump and REST API. Successor of my <i>mal-db</i>.',
+        description: 'MyAnimeList manga database dump and REST API.',
         link: 'https://github.com/rl404/hibiki',
         tag: ['go', 'mongodb', 'redis', 'google pubsub', 'newrelic', 'docker', 'kubernetes'],
       },
@@ -235,7 +235,7 @@ var Data = {
       },
       {
         name: 'Akatsuki',
-        description: 'MyAnimeList anime database dump and REST API. Successor of my <i>mal-db</i>.',
+        description: 'MyAnimeList anime database dump and REST API.',
         link: 'https://github.com/rl404/akatsuki',
         tag: ['go', 'posgtresql', 'redis', 'google pubsub', 'newrelic', 'docker', 'kubernetes'],
       },
@@ -265,7 +265,7 @@ var Data = {
       },
       {
         name: 'Fairy',
-        description: 'General tools for easier and simpler development. Successor of my <i>mal-plugin</i> library.',
+        description: 'General tools for easier and simpler development.',
         link: 'https://github.com/rl404/fairy',
         tag: ['go'],
       },
@@ -282,38 +282,6 @@ var Data = {
         tag: ['go', 'redis', 'docker', 'kubernetes'],
       },
       {
-        name: 'go-malscraper',
-        description: 'Library to scrap/parse MyAnimeList website to a useful and easy-to-use data. This project is part of Malscraper project.',
-        link: 'https://github.com/rl404/go-malscraper',
-        tag: ['go'],
-      },
-      {
-        name: 'mal-api',
-        description: 'REST API wrapper using <i>go-malscraper</i>.',
-        link: 'https://github.com/rl404/mal-api',
-        tag: ['go', 'redis', 'elasticsearch', 'kibana', 'docker'],
-      },
-      {
-        name: 'mal-db',
-        description:
-          'REST API and database using go-malscraper. Used by <i>MyAnimeList Drive-Thru</i> as backend. This project is part of Malscraper project.',
-        link: 'https://github.com/rl404/mal-db',
-        tag: ['go', 'posgtresql', 'redis', 'rabbitmq', 'elasticsearch', 'kibana', 'docker', 'kubernetes'],
-      },
-      {
-        name: 'MyAnimeList Drive-Thru',
-        description:
-          'Quick access to MyAnimeList content with simpler and more modern style. Using <i>mal-db</i> as backend. This project is part of Malscraper project.',
-        link: 'https://github.com/rl404/mal-web',
-        tag: ['nodejs', 'react', 'docker', 'kubernetes'],
-      },
-      {
-        name: 'mal-plugin',
-        description: 'Library for generalizing interface for various cache and pubsub usage. This project is part of Malscraper project.',
-        link: 'https://github.com/rl404/mal-plugin',
-        tag: ['go', 'redis', 'memcache', 'rabbitmq', 'nsq'],
-      },
-      {
         name: 'mal-cover',
         description: 'Auto generate MyAnimeList anime/manga CSS cover.',
         link: 'https://github.com/rl404/mal-cover',
@@ -323,7 +291,7 @@ var Data = {
         name: 'Nyaa X Discord',
         description: 'Discord bot to notify Nyaa updates.',
         link: 'https://github.com/rl404/nyaa-x-discord',
-        tag: ['go', 'mongodb', 'docker', 'kubernetes', 'elasticsearch', 'kibana'],
+        tag: ['go', 'mongodb', 'docker', 'kubernetes'],
       },
       {
         name: 'Image Randomizer',
