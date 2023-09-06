@@ -198,6 +198,12 @@ var Data = {
   project: {
     personal: [
       {
+        name: 'Ikazuchi',
+        description: 'Explore anime database with Bakemonogatari theme. Using <i>akatsuki</i> as backend.',
+        link: 'https://github.com/rl404/ikazuchi',
+        tag: ['nodejs', 'react'],
+      },
+      {
         name: 'Inazuma',
         description: 'Explore manga in manga style. Using <i>hibiki</i> as backend.',
         link: 'https://github.com/rl404/inazuma',
