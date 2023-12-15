@@ -958,6 +958,18 @@ var Mangas = {
     recommended: false,
     nsfw: true,
   },
+  156907: {
+    title: 'Isekai Koushoku Musouroku: Isekai Tensei no Chie to Chikara wo, Tada Hitasura xxxx suru Tame ni Tsukau ',
+    title2: 'Using the Wisdom from My Isekai Reincarnation Only for Sex',
+    description:
+      'The protagonist, "Sao" has been reborn with his memories from his past life. He\'s born as a son of a rural villager, but his true identity is a reincarnated person with cheat abilities and the knowledge of the modern world. With the class "Rod Master," he received as he grows up, and the many skills that came up with it, he can defeat enemies, help people, and even for sex.',
+    race: 'human',
+    role: 'rod master',
+    skill: 'rod',
+    antiHero: false,
+    recommended: false,
+    nsfw: true,
+  },
   48397: {
     title: 'No Game No Life',
     title2: '\nNo Game, No Life',

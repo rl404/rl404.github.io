@@ -244,6 +244,7 @@ var Questions = {
       { answer: 'Magician', next: 51 },
       { answer: 'Merchant', next: 52 },
       { answer: 'Prince', next: 53 },
+      { answer: 'Rod Master', next: 64 },
       { answer: 'Secretary', next: 54 },
       { answer: 'Slave', next: 55 },
       { answer: 'Student', next: 56 },
@@ -412,6 +413,11 @@ var Questions = {
   63: {
     question: 'Aristocrat',
     options: [{ manga: 127781 }],
+    prev: 37,
+  },
+  64: {
+    question: 'Rod Master',
+    options: [{ manga: 156907 }],
     prev: 37,
   },
 };
