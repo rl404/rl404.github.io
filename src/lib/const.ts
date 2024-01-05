@@ -2,7 +2,16 @@ export const data = {
 	name: 'Axel Oktavian Antonio',
 	summary:
 		'Just your everyday backend developer who likes trying new things. Also has some knowledge in frontend and devops area.',
-	address: 'Bekasi, Indonesia, 17131',
+	birth: {
+		place: 'Surabaya, Indonesia',
+		date: '1995-10-06'
+	},
+	gender: 'Male',
+	address: {
+		region: 'Bekasi',
+		country: 'Indonesia',
+		postalCode: '17131'
+	},
 	phone: '+6282122653795',
 	email: 'axel.rl.404@gmail.com',
 	github: {

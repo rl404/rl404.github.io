@@ -9,7 +9,7 @@
 <section class="grid grid-cols-12">
 	<div class="hover col-span-12 flex items-center gap-1 sm:col-span-6 md:col-span-4 lg:col-span-3">
 		<LocationIcon class="h-4 w-4 text-primary" />
-		<span>{data.address}</span>
+		<span>{data.address.region}, {data.address.country}, {data.address.postalCode}</span>
 	</div>
 	<div class="hover col-span-12 flex items-center gap-1 sm:col-span-6 md:col-span-4 lg:col-span-3">
 		<EnvelopIcon class="h-4 w-4 text-primary" />

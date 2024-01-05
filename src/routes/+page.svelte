@@ -8,11 +8,14 @@
 	import Language from './Language.svelte';
 	import Name from './Name.svelte';
 	import Project from './Project.svelte';
+	import Schema from './Schema.svelte';
 	import Skill from './Skill.svelte';
 	import Summary from './Summary.svelte';
 </script>
 
 <Head />
+
+<Schema />
 
 <main class="container mx-auto my-24 grid max-w-6xl gap-4 px-4">
 	<Name />
