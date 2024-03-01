@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	const publicGAID = 'G-RD1JM9E22V';
-	const domain = 'https://www.googletagmanager.com';
-	const scriptID = 'google-analytics-script';
-
+	let publicGAID = 'G-RD1JM9E22V';
+	let domain = 'https://www.googletagmanager.com';
+	let scriptID = 'google-analytics-script';
 	let mounted = false;
 
 	async function addGoogleAnalyticsScript(
@@ -30,7 +29,9 @@
 		if (window.document.getElementById(scriptID)) return;
 
 		window.dataLayer = window.dataLayer || [];
-		window.gtag = () => window.dataLayer.push(arguments);
+		window.gtag = function () {
+			window.dataLayer.push(arguments);
+		};
 		window.gtag('js', new Date());
 		window.gtag('config', publicGAID);
 
