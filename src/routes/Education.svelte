@@ -30,7 +30,7 @@
 			</div>
 			<div class="col-span-12 flex flex-col sm:col-span-9">
 				<h3 class="text-xl font-bold">{edu.position}</h3>
-				<ul class="list-inside list-disc">
+				<ul class="list-disc pl-4">
 					{#each edu.tasks as w}
 						<li>{w}</li>
 					{/each}

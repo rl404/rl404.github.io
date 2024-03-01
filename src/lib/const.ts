@@ -33,6 +33,12 @@ export const data = {
 			endDate: 'Current',
 			link: 'https://govtechedu.id',
 			tasks: [
+				'Designed, developed, and maintained multiple scalable microservices. Ensured the reliablity and performance of the system by implementing best practices and clean codes.',
+				'Developed and maintained reusable internal libraries providing standarized functionality across multiple services.',
+				'Optimized the Docker-building related CI/CD pipeline, reducing building resource by 88% and storage by 84% through combining and reusing common Docker image.',
+				'Enhanced the error tracking by implementing structured logging and utilizing request context. Reduced the time to identify errors and improved log readability.'
+			],
+			simpleTasks: [
 				'Developed and maintained micro-services.',
 				'Developed and maintained internal libraries.',
 				'Improved CI-CD pipeline related to Docker building.',
