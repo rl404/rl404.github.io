@@ -54,6 +54,14 @@ export const data = {
 			endDate: 'Jun 2022',
 			link: 'https://edot.id',
 			tasks: [
+				'Spearheaded the development and implementation of coding standard and best pratices, ensuring the consistency and quality across all projects.',
+				'Designed, developed, and maintained a secure and scalable payment service used by various internal projects.',
+				'Integrated multiple payment gateway APIs and libraries, such as Xendit and Midtrans, to provide users vast and flexible payment options.',
+				'Designed, developed, and maintained various micro-sites for marketing campaigns, enhancing brand visibility and customer engagement.',
+				'Implemented logging and application performance monitoring (APM) tools, such as ELK stack and Prometheus, to track system performance and identify errors.',
+				'Established a continuous integration and continuous deployment (CI/CD) pipeline using Gitlab and Docker, automating the migration and deployment process for increased efficiency and reliability.'
+			],
+			simpleTasks: [
 				'Developed and maintained payment service.',
 				'Connected and implemented various payment gateway API and library.',
 				'Developed various micro-site for campaign.',
@@ -70,6 +78,12 @@ export const data = {
 			endDate: 'Jul 2021',
 			link: 'https://mola.tv',
 			tasks: [
+				'Developed and maintained back-end microservices, ensuring scalability, reliablity, and code code quality.',
+				'Implemented the circuit-breaker pattern for database and cache, improving system resilience and preventing cascading failures.',
+				'Developed and wrote unit tests, ensuring the correctness and reliability of the codebase.',
+				'Integrated Swagger to automatically generate API documentation, improving developer productivity and API usability.'
+			],
+			simpleTasks: [
 				'Developed and maintained back-end micro-services.',
 				'Implemented circuit-breaker.',
 				'Implemented unit-testing.',
@@ -85,6 +99,12 @@ export const data = {
 			endDate: 'Sep 2020',
 			link: 'https://www.e-mas.com',
 			tasks: [
+				'Designed, developed, and maintained back-end service, providing data access for front-end developers across web and mobile applications.',
+				'Collaborated with front-end developers to understand their requirements and ensure seamless integration with the API.',
+				'Implemented automated unit testing, ensuring code quality and reliability.',
+				'Implemented automated deployment, reducing manual effort and increasing efficiency.'
+			],
+			simpleTasks: [
 				'Developed and maintained back-end REST API for front-end developer (web and mobile application).',
 				'Automated back-end unit-testing and deployment.'
 			]
@@ -98,6 +118,12 @@ export const data = {
 			endDate: 'Nov 2019',
 			link: 'https://www.docotel.com',
 			tasks: [
+				'Led a team of 4 developers to maintain deployed projects, ensuring the stability and usability. This included both client-side and server-side projects.',
+				'Collaborated with cross-functional teams to ensure the readiness of their newly added features.',
+				'Implemented a continuous integration and continous deployment (CI/CD) pipeline using Gitlab, automating the deployment process to ensure the efficiency and reliability.',
+				'Designed and developed a Telegram bot to notify transaction error status, improving user experience and engagement.'
+			],
+			simpleTasks: [
 				'Leading developer operation team to maintain all handed-over projects from developer and ready-to-used by public. Including client-side and server-side.',
 				'Implemented CI-CD for automatic deployment.',
 				'Developed bot for transaction notification.'
@@ -112,6 +138,11 @@ export const data = {
 			endDate: 'Jan 2019',
 			link: 'https://www.docotel.com',
 			tasks: [
+				'Developed and maintained over 10 government-related web application, handling more than 1,500,000 transactions per month. Ensured high availability, security, and scalability.',
+				'Designed and developed tools to handle common and repeated client requests, improving efficiency and reducing manual effort.',
+				'Developed a web application for client to communicate with the Heldesk department, resulting in 500 tickets being created each month, improving customer support and issue resolution.'
+			],
+			simpleTasks: [
 				'Developed and maintained more than 10 government-related web applications with more than 1,500,000 transactions each month.',
 				'Developed various tools for handling common and repeated client request.',
 				'Developed web application for communicating between clients and Helpdesk department. 500 tickets created each month.'
@@ -126,6 +157,10 @@ export const data = {
 			endDate: 'Aug 2018',
 			link: 'https://www.docotel.com',
 			tasks: [
+				'Developed multiple web applications for notaries in Indonesia, ensuring compliance with governemt regulations and standards.',
+				'Conducted an analysis of database queries and suggested improvements to enhance query speed and optimize database performance.'
+			],
+			simpleTasks: [
 				'Developed various government-related web application for notaries in Indonesia.',
 				'Analyzed and suggested database query speed improvement.'
 			]
@@ -139,6 +174,11 @@ export const data = {
 			endDate: 'Oct 2017',
 			link: 'https://www.toyotaindonesiamanufacturing.co.id',
 			tasks: [
+				'Designed and developed a document management web application, providing an easy-to-use distribution system between Toyoa Japan, Toyota Indonesia, and their suppliers.',
+				'Designed and developed an engineer activities and work hour management web application, improving efficiency and transparency in tracking and managing engineers.',
+				'Designed and developed a document process management web application, streamlining the document process between the Engineering and Purchasing division, resulting in improved collaboration and efficiency.'
+			],
+			simpleTasks: [
 				'Developed document distribution management system between Toyota Japan, Toyota Indonesia, and Suppliers.',
 				'Developed engineer activities and works hour management system.',
 				'Developed document process management system between Engineering and Purchasing division.'
