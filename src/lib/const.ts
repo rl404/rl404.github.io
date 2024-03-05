@@ -33,9 +33,9 @@ export const data = {
 			endDate: 'Current',
 			link: 'https://govtechedu.id',
 			tasks: [
-				'Designed, developed, and maintained multiple scalable microservices. Ensured the reliablity and performance of the system by implementing best practices and clean codes.',
-				'Developed and maintained reusable internal libraries providing standarized functionality across multiple services.',
-				'Optimized the Docker-building related CI/CD pipeline, reducing building resource by 88% and storage by 84% through combining and reusing common Docker image.',
+				'Designed, developed, and maintained multiple scalable microservices. Ensured the reliability and performance of the system by implementing best practices and clean codes.',
+				'Developed and maintained reusable internal libraries, providing standardized functionality across multiple services.',
+				'Optimized the Docker-building-related CI/CD pipeline, reducing building resources by 88% and storage by 84% through combining and reusing common Docker images.',
 				'Enhanced the error tracking by implementing structured logging and utilizing request context. Reduced the time to identify errors and improved log readability.'
 			],
 			simpleTasks: [
@@ -54,9 +54,9 @@ export const data = {
 			endDate: 'Jun 2022',
 			link: 'https://edot.id',
 			tasks: [
-				'Spearheaded the development and implementation of coding standard and best pratices, ensuring the consistency and quality across all projects.',
+				'Spearheaded the development and implementation of coding standards and best practices, ensuring consistency and quality across all projects.',
 				'Designed, developed, and maintained a secure and scalable payment service used by various internal projects.',
-				'Integrated multiple payment gateway APIs and libraries, such as Xendit and Midtrans, to provide users vast and flexible payment options.',
+				'Integrated multiple payment gateway APIs and libraries, such as Xendit and Midtrans, to provide users with vast and flexible payment options.',
 				'Designed, developed, and maintained various micro-sites for marketing campaigns, enhancing brand visibility and customer engagement.',
 				'Implemented logging and application performance monitoring (APM) tools, such as ELK stack and Prometheus, to track system performance and identify errors.',
 				'Established a continuous integration and continuous deployment (CI/CD) pipeline using Gitlab and Docker, automating the migration and deployment process for increased efficiency and reliability.'
@@ -78,7 +78,7 @@ export const data = {
 			endDate: 'Jul 2021',
 			link: 'https://mola.tv',
 			tasks: [
-				'Developed and maintained back-end microservices, ensuring scalability, reliablity, and code code quality.',
+				'Developed and maintained back-end microservices, ensuring scalability, reliability, and code quality.',
 				'Implemented the circuit-breaker pattern for database and cache, improving system resilience and preventing cascading failures.',
 				'Developed and wrote unit tests, ensuring the correctness and reliability of the codebase.',
 				'Integrated Swagger to automatically generate API documentation, improving developer productivity and API usability.'
@@ -99,7 +99,7 @@ export const data = {
 			endDate: 'Sep 2020',
 			link: 'https://www.e-mas.com',
 			tasks: [
-				'Designed, developed, and maintained back-end service, providing data access for front-end developers across web and mobile applications.',
+				'Designed, developed, and maintained back-end services, providing data access for front-end developers across web and mobile applications.',
 				'Collaborated with front-end developers to understand their requirements and ensure seamless integration with the API.',
 				'Implemented automated unit testing, ensuring code quality and reliability.',
 				'Implemented automated deployment, reducing manual effort and increasing efficiency.'
@@ -138,9 +138,9 @@ export const data = {
 			endDate: 'Jan 2019',
 			link: 'https://www.docotel.com',
 			tasks: [
-				'Developed and maintained over 10 government-related web application, handling more than 1,500,000 transactions per month. Ensured high availability, security, and scalability.',
+				'Developed and maintained over 10 government-related web applications, handling more than 1,500,000 transactions per month. Ensured high availability, security, and scalability.',
 				'Designed and developed tools to handle common and repeated client requests, improving efficiency and reducing manual effort.',
-				'Developed a web application for client to communicate with the Heldesk department, resulting in 500 tickets being created each month, improving customer support and issue resolution.'
+				'Developed a web application for clients to communicate with the Heldesk department, resulting in 500 tickets being created each month, improving customer support and issue resolution.'
 			],
 			simpleTasks: [
 				'Developed and maintained more than 10 government-related web applications with more than 1,500,000 transactions each month.',
@@ -157,7 +157,7 @@ export const data = {
 			endDate: 'Aug 2018',
 			link: 'https://www.docotel.com',
 			tasks: [
-				'Developed multiple web applications for notaries in Indonesia, ensuring compliance with governemt regulations and standards.',
+				'Developed multiple web applications for notaries in Indonesia, ensuring compliance with government regulations and standards.',
 				'Conducted an analysis of database queries and suggested improvements to enhance query speed and optimize database performance.'
 			],
 			simpleTasks: [
@@ -174,9 +174,9 @@ export const data = {
 			endDate: 'Oct 2017',
 			link: 'https://www.toyotaindonesiamanufacturing.co.id',
 			tasks: [
-				'Designed and developed a document management web application, providing an easy-to-use distribution system between Toyoa Japan, Toyota Indonesia, and their suppliers.',
+				'Designed and developed a document management web application, providing an easy-to-use distribution system between Toyota Japan, Toyota Indonesia, and their suppliers.',
 				'Designed and developed an engineer activities and work hour management web application, improving efficiency and transparency in tracking and managing engineers.',
-				'Designed and developed a document process management web application, streamlining the document process between the Engineering and Purchasing division, resulting in improved collaboration and efficiency.'
+				'Designed and developed a document process management web application, streamlining the document process between the Engineering and Purchasing divisions, resulting in improved collaboration and efficiency.'
 			],
 			simpleTasks: [
 				'Developed document distribution management system between Toyota Japan, Toyota Indonesia, and Suppliers.',
