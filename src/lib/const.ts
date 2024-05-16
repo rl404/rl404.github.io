@@ -260,20 +260,20 @@ export const data = {
 			{
 				name: 'Ikazuchi',
 				description: 'Explore anime database with Bakemonogatari theme.',
-				link: 'https://github.com/rl404/ikazuchi',
+				link: 'https://ikazuchi.rl404.com',
 				tags: ['nodejs', 'react']
 			},
 			{
 				name: 'Inazuma',
 				description: 'Explore manga in manga style. Using "hibiki" as backend.',
-				link: 'https://github.com/rl404/inazuma',
+				link: 'https://inazuma.rl404.com',
 				tags: ['nodejs', 'sveltekit']
 			},
 			{
 				name: 'Amatsukaze',
 				description:
 					'Visualize vtuber data from wikia to more modern website pages. Using "shimakaze" as backend.',
-				link: 'https://github.com/rl404/amatsukaze',
+				link: 'https://amatsukaze.rl404.com',
 				tags: ['nodejs', 'sveltekit']
 			},
 			{
@@ -292,14 +292,14 @@ export const data = {
 				name: 'Akizuki',
 				description:
 					'View and edit your MyAnimeList anime and manga list in a more modern design with custom tags editor. ',
-				link: 'https://github.com/rl404/akizuki',
+				link: 'https://akizuki.rl404.com',
 				tags: ['nodejs', 'react']
 			},
 			{
 				name: 'Sekai',
 				description:
 					'Convert your MyAnimeList anime list to force-directed graph and see your anime world. Using "akatsuki" as backend.',
-				link: 'https://github.com/rl404/sekai',
+				link: 'https://sekai.rl404.com',
 				tags: ['nodejs', 'react']
 			},
 			{
@@ -366,17 +366,24 @@ export const data = {
 			{
 				name: 'Image Randomizer',
 				description: 'Simple website to generate random image from chosen image list.',
-				link: 'https://github.com/rl404/image-randomizer',
+				link: 'https://randomizer.rl404.com',
 				tags: ['go', 'postgresql', 'nodejs', 'react', 'docker', 'kubernetes']
 			}
 		],
 		work: [
 			{
+				name: 'Sistem Informasi Sumberdaya Terintegrasi (SISTER)',
+				description:
+					"An online service for serving portfolio, updating data, and processing career of all lecturers in Indonesia. This is part of the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek) to reduce lecturers' workload on updating their career activities.",
+				link: 'https://sister.kemdikbud.go.id/',
+				tags: ['php', 'postgresql', 'docker', 'kubernetes']
+			},
+			{
 				name: 'Kampus Merdeka',
 				description:
 					'An online service for providing students with the opportunity to hone their skills by going directly into real world and working as a career preparation step. This is part of the independent learning policy by the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek).',
 				link: 'https://kampusmerdeka.kemdikbud.go.id/',
-				tags: ['go', 'mysql', 'redis', 'google-pubsub', 'docker', 'kubernetes']
+				tags: ['go', 'postgresql', 'redis', 'google-pubsub', 'docker', 'kubernetes']
 			},
 			{
 				name: 'eLOG',
