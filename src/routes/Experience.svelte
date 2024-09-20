@@ -4,11 +4,19 @@
 	import LocationIcon from '$lib/components/icons/LocationIcon.svelte';
 	import UsersIcon from '$lib/components/icons/UsersIcon.svelte';
 	import { data } from '$lib/const';
+
+	let useSimple: boolean = false;
 </script>
 
-<div class="flex items-end gap-2">
-	<h2 class="text-3xl font-bold">Experience</h2>
-	<span class="hover">— {data.experiences.length.toLocaleString()}</span>
+<div class="flex items-center justify-between gap-2">
+	<div class="flex items-end gap-2">
+		<h2 class="text-3xl font-bold">Experience</h2>
+		<span class="hover">— {data.experiences.length.toLocaleString()}</span>
+	</div>
+	<div class="hover flex items-center gap-2">
+		<input id="useSimple" type="checkbox" bind:checked={useSimple} />
+		<label for="useSimple">Simpler Tasks</label>
+	</div>
 </div>
 
 <Border />
@@ -36,7 +44,7 @@
 			<div class="col-span-12 flex flex-col sm:col-span-9">
 				<h3 class="text-xl font-bold">{exp.position}</h3>
 				<ul class="list-disc pl-4">
-					{#each exp.tasks as w}
+					{#each useSimple ? exp.simpleTasks : exp.tasks as w}
 						<li>{w}</li>
 					{/each}
 				</ul>
