@@ -25,15 +25,34 @@ export const data = {
 	resume: 'https://www.dropbox.com/s/wsgw2269m6ns2jx/Resume.pdf?dl=0',
 	experiences: [
 		{
+			position: 'Tech Lead',
+			company: 'GovTech Edu',
+			location: 'Jakarta, Indonesia',
+			team: 'IT Division',
+			startDate: 'Jan 2024',
+			endDate: 'Current',
+			link: 'https://govtechedu.id',
+			tasks: [
+				'Led technical direction and guidance for the team alongside Engineering Manager, ensuring the successful delivery of features.',
+				'Migrated and improved legacy features, enhancing performance, scalability, and maintainability.',
+				'Designed and established the development environment and skeleton, enabling quicker, streamlined, and efficient coding practice.'
+			],
+			simpleTasks: [
+				'Led team from technical perspective.',
+				'Migrated and improved legacy features.',
+				'Provided skeleton and environment for development.'
+			]
+		},
+		{
 			position: 'Backend Developer',
 			company: 'GovTech Edu',
 			location: 'Jakarta, Indonesia',
 			team: 'IT Division',
 			startDate: 'Jul 2022',
-			endDate: 'Current',
+			endDate: 'Des 2023',
 			link: 'https://govtechedu.id',
 			tasks: [
-				'Designed, developed, and maintained multiple scalable microservices. Ensured the reliability and performance of the system by implementing best practices and clean codes.',
+				'Designed, developed, and maintained multiple scalable microservices, ensuring the reliability and performance of the system by implementing best practices and clean codes.',
 				'Developed and maintained reusable internal libraries, providing standardized functionality across multiple services.',
 				'Optimized the Docker-building-related CI/CD pipeline, reducing building resources by 88% and storage by 84% through combining and reusing common Docker images.',
 				'Enhanced the error tracking by implementing structured logging and utilizing request context. Reduced the time to identify errors and improved log readability.'
@@ -124,7 +143,7 @@ export const data = {
 				'Designed and developed a Telegram bot to notify transaction error status, improving user experience and engagement.'
 			],
 			simpleTasks: [
-				'Leading developer operation team to maintain all handed-over projects from developer and ready-to-used by public. Including client-side and server-side.',
+				'Led developer operation team to maintain all handed-over projects from developer and ready-to-used by public. Including client-side and server-side.',
 				'Implemented CI-CD for automatic deployment.',
 				'Developed bot for transaction notification.'
 			]
