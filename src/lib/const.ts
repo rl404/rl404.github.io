@@ -25,7 +25,7 @@ export const data = {
 	resume: 'https://www.dropbox.com/s/wsgw2269m6ns2jx/Resume.pdf?dl=0',
 	experiences: [
 		{
-			position: 'Tech Lead',
+			position: 'Technical Lead',
 			company: 'GovTech Edu',
 			location: 'Jakarta, Indonesia',
 			team: 'IT Division',
