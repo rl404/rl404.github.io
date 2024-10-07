@@ -25,7 +25,7 @@ export const data = {
 	resume: 'https://www.dropbox.com/s/wsgw2269m6ns2jx/Resume.pdf?dl=0',
 	experiences: [
 		{
-			position: 'Tech Lead',
+			position: 'Technical Lead',
 			company: 'GovTech Edu',
 			location: 'Jakarta, Indonesia',
 			team: 'IT Division',
@@ -49,7 +49,7 @@ export const data = {
 			location: 'Jakarta, Indonesia',
 			team: 'IT Division',
 			startDate: 'Jul 2022',
-			endDate: 'Des 2023',
+			endDate: 'Dec 2023',
 			link: 'https://govtechedu.id',
 			tasks: [
 				'Designed, developed, and maintained multiple scalable microservices, ensuring the reliability and performance of the system by implementing best practices and clean codes.',
