@@ -57,10 +57,9 @@
 			}))
 		}
 	};
-
-	const jsonLdScript = `<script type="application/ld+json">${JSON.stringify(schema)}${'<'}/script>`;
 </script>
 
 <svelte:head>
-	{@html jsonLdScript}
+	<link rel="canonical" href="https://www.rl404.com" />
+	{@html `<script type="application/ld+json">${JSON.stringify(schema)}${'<'}/script>`}
 </svelte:head>
