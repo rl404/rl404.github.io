@@ -26,7 +26,11 @@
 		<div class="grid grid-cols-12 gap-1">
 			<div class="col-span-12 flex flex-col sm:col-span-3">
 				<h3 class="text-2xl font-bold">
-					<a href={exp.link} target="_blank">{exp.company}</a>
+					{#if exp.link}
+						<a href={exp.link} target="_blank">{exp.company}</a>
+					{:else}
+						{exp.company}
+					{/if}
 				</h3>
 				<div class="hover flex items-center gap-1">
 					<UsersIcon class="h-4 w-4 text-primary" />

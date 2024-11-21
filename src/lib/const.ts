@@ -116,7 +116,7 @@ export const data = {
 			team: 'Tech Team',
 			startDate: 'Dec 2019',
 			endDate: 'Sep 2020',
-			link: 'https://www.e-mas.com',
+			// link: 'https://www.e-mas.com',
 			tasks: [
 				'Designed, developed, and maintained back-end services, providing data access for front-end developers across web and mobile applications.',
 				'Collaborated with front-end developers to understand their requirements and ensure seamless integration with the API.',
@@ -385,7 +385,7 @@ export const data = {
 			{
 				name: 'Image Randomizer',
 				description: 'Simple website to generate random image from chosen image list.',
-				link: 'https://randomizer.rl404.com',
+				link: 'https://github.com/rl404/image-randomizer',
 				tags: ['go', 'postgresql', 'nodejs', 'react', 'docker', 'kubernetes']
 			}
 		],
@@ -474,21 +474,21 @@ export const data = {
 				name: 'E-mas',
 				description:
 					'An online mobile application for buying, selling, and withdrawing digital gold.',
-				link: 'http://e-mas.com',
+				// link: 'http://e-mas.com',
 				tags: ['go', 'beego', 'mysql', 'redis', 'elasticsearch', 'kibana', 'rabbitmq']
 			},
 			{
 				name: 'Skrap',
 				description:
 					'An online mobile application for selling any kind of gold including jewelry, second-hand gold, and various type of precious gold metal.',
-				link: 'http://skrap.id',
+				// link: 'http://skrap.id',
 				tags: ['go', 'beego', 'mysql', 'redis']
 			},
 			{
 				name: 'Doco Ticketing',
 				description:
 					'A support ticket system used to communicate between internal divisions in Docotel World company and their clients.',
-				link: 'http://helpdesk.docotel.net',
+				// link: 'http://helpdesk.docotel.net',
 				tags: ['php', 'mysql']
 			},
 			{
