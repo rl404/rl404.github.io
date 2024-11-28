@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex items-end gap-2">
-	<h2 class="text-3xl font-bold">Activities and Achievements</h2>
+	<h2 id="activity" class="text-3xl font-bold">Activities and Achievements</h2>
 	<span class="hover whitespace-nowrap">— {data.activities.length.toLocaleString()}</span>
 </div>
 

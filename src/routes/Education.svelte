@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex items-end gap-2">
-	<h2 class="text-3xl font-bold">Education</h2>
+	<h2 id="education" class="text-3xl font-bold">Education</h2>
 	<span class="hover">— {data.educations.length.toLocaleString()}</span>
 </div>
 
