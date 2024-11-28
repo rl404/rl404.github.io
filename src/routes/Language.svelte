@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex items-end gap-2">
-	<h2 class="text-3xl font-bold">Languages</h2>
+	<h2 id="language" class="text-3xl font-bold">Languages</h2>
 	<span class="hover">— {data.languages.length.toLocaleString()}</span>
 </div>
 

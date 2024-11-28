@@ -12,7 +12,7 @@
 </script>
 
 <div class="flex items-end gap-2">
-	<h2 class="text-3xl font-bold">Skills</h2>
+	<h2 id="skill" class="text-3xl font-bold">Skills</h2>
 	<span class="hover">— {count.toLocaleString()}</span>
 </div>
 

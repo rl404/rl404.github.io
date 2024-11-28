@@ -9,7 +9,7 @@
 </script>
 
 <div class="flex items-end gap-2">
-	<h2 class="text-3xl font-bold">Projects</h2>
+	<h2 id="project" class="text-3xl font-bold">Projects</h2>
 	<span
 		class="hover"
 		title={`${data.projects.personal.length} personal & ${data.projects.work.length} work`}

@@ -10,7 +10,7 @@
 
 <div class="flex items-center justify-between gap-2">
 	<div class="flex items-end gap-2">
-		<h2 class="text-3xl font-bold">Experience</h2>
+		<h2 id="experience" class="text-3xl font-bold">Experience</h2>
 		<span class="hover">— {data.experiences.length.toLocaleString()}</span>
 	</div>
 	<div class="hover flex items-center gap-2">
