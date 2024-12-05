@@ -33,9 +33,10 @@ export const data = {
 			endDate: 'Current',
 			link: 'https://govtechedu.id',
 			tasks: [
-				'Led technical direction and guidance for the team alongside Engineering Manager, ensuring the successful delivery of features.',
-				'Migrated and improved legacy features, enhancing performance, scalability, and maintainability.',
-				'Designed and established the development environment and skeleton, enabling quicker, streamlined, and efficient coding practice.'
+				'Led technical direction and guidance for team of 8 members alongside Engineering Manager, ensuring the successful delivery of features.',
+				'Implemented new unique identifier number (NUPTK) for over 300,000 lecturers in Indonesia',
+				'Migrated and improved 6 legacy features, achiving 80%+ user satisfaction rate.',
+				'Designed and established the development environment and skeleton, reducing development time by 30% and enabling faster feature deployment.'
 			],
 			simpleTasks: [
 				'Led team from technical perspective.',
@@ -52,10 +53,10 @@ export const data = {
 			endDate: 'Dec 2023',
 			link: 'https://govtechedu.id',
 			tasks: [
-				'Designed, developed, and maintained multiple scalable microservices, ensuring the reliability and performance of the system by implementing best practices and clean codes.',
+				'Designed, developed, and maintained 9 scalable microservices, ensuring the reliability and performance of the system by implementing best practices and clean codes.',
 				'Developed and maintained reusable internal libraries, providing standardized functionality across multiple services.',
 				'Optimized the Docker-building-related CI/CD pipeline, reducing building resources by 88% and storage by 84% through combining and reusing common Docker images.',
-				'Enhanced the error tracking by implementing structured logging and utilizing request context. Reduced the time to identify errors and improved log readability.'
+				'Enhanced the error tracking by implementing structured logging and utilizing request context. Reduced the time to identify errors by 30% and improved log readability.'
 			],
 			simpleTasks: [
 				'Developed and maintained micro-services.',
@@ -75,7 +76,7 @@ export const data = {
 			tasks: [
 				'Spearheaded the development and implementation of coding standards and best practices, ensuring consistency and quality across all projects.',
 				'Designed, developed, and maintained a secure and scalable payment service used by various internal projects.',
-				'Integrated multiple payment gateway APIs and libraries, such as Xendit and Midtrans, to provide users with vast and flexible payment options.',
+				'Integrated 3+ payment gateway APIs and libraries to provide users with vast and flexible payment options.',
 				'Designed, developed, and maintained various micro-sites for marketing campaigns, enhancing brand visibility and customer engagement.',
 				'Implemented logging and application performance monitoring (APM) tools, such as ELK stack and Prometheus, to track system performance and identify errors.',
 				'Established a continuous integration and continuous deployment (CI/CD) pipeline using Gitlab and Docker, automating the migration and deployment process for increased efficiency and reliability.'
