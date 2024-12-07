@@ -34,7 +34,7 @@ export const data = {
 			link: 'https://govtechedu.id',
 			tasks: [
 				'Led technical direction and guidance for team of 8 members alongside Engineering Manager, ensuring the successful delivery of features.',
-				'Implemented new unique identifier number (NUPTK) for over 300,000 lecturers in Indonesia',
+				'Implemented new unique identifier number (NUPTK) for over 300,000 lecturers in Indonesia.',
 				'Migrated and improved 6 legacy features, achiving 80%+ user satisfaction rate.',
 				'Designed and established the development environment and skeleton, reducing development time by 30% and enabling faster feature deployment.'
 			],
@@ -53,8 +53,8 @@ export const data = {
 			endDate: 'Dec 2023',
 			link: 'https://govtechedu.id',
 			tasks: [
-				'Designed, developed, and maintained 9 scalable microservices, ensuring the reliability and performance of the system by implementing best practices and clean codes.',
-				'Developed and maintained reusable internal libraries, providing standardized functionality across multiple services.',
+				'Designed, developed, and maintained 8 scalable microservices, ensuring the reliability and performance of the system by implementing best practices and clean codes.',
+				'Developed and maintained reusable internal libraries, providing standardized functionality across 8 services.',
 				'Optimized the Docker-building-related CI/CD pipeline, reducing building resources by 88% and storage by 84% through combining and reusing common Docker images.',
 				'Enhanced the error tracking by implementing structured logging and utilizing request context. Reduced the time to identify errors by 30% and improved log readability.'
 			],
@@ -125,7 +125,7 @@ export const data = {
 				'Implemented automated deployment, reducing manual effort and increasing efficiency.'
 			],
 			simpleTasks: [
-				'Developed and maintained back-end REST API for front-end developer (web and mobile application).',
+				'Developed and maintained back-end REST API.',
 				'Automated back-end unit-testing and deployment.'
 			]
 		},
@@ -144,7 +144,7 @@ export const data = {
 				'Designed and developed a Telegram bot to notify transaction error status, improving user experience and engagement.'
 			],
 			simpleTasks: [
-				'Led developer operation team to maintain all handed-over projects from developer and ready-to-used by public. Including client-side and server-side.',
+				'Led developer operation team to maintain various government-related web applications.',
 				'Implemented CI-CD for automatic deployment.',
 				'Developed bot for transaction notification.'
 			]
@@ -163,9 +163,9 @@ export const data = {
 				'Developed a web application for clients to communicate with the Heldesk department, resulting in 500 tickets being created each month, improving customer support and issue resolution.'
 			],
 			simpleTasks: [
-				'Developed and maintained more than 10 government-related web applications with more than 1,500,000 transactions each month.',
+				'Developed and maintained various government-related web applications.',
 				'Developed various tools for handling common and repeated client request.',
-				'Developed web application for communicating between clients and Helpdesk department. 500 tickets created each month.'
+				'Developed web application for communicating between clients and Helpdesk department.'
 			]
 		},
 		{
