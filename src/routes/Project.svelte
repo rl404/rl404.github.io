@@ -19,7 +19,7 @@
 
 <Border />
 
-<section class="grid grid-cols-2 gap-4">
+<section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 	{#each data.projects.personal as p}
 		<div class="flex flex-col">
 			<h3 class="text-2xl font-bold">
