@@ -18,7 +18,7 @@
 
 <Border />
 
-<section class="grid grid-cols-2 gap-2">
+<section class="grid grid-cols-1 gap-2 sm:grid-cols-2">
 	<div class="flex flex-col">
 		<h3 class="hover">Language</h3>
 		<div>{data.skills.language.join(', ')}</div>
