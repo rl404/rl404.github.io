@@ -31,8 +31,8 @@
 			</h3>
 			<div>{p.description}</div>
 			<div class="hover flex items-center gap-1">
-				<span title="personal project"><UserIcon class="h-4 w-4 text-primary" /></span>
-				<span><TagIcon class="h-4 w-4 text-primary" /></span>
+				<span title="personal project"><UserIcon class="text-primary h-4 w-4" /></span>
+				<span><TagIcon class="text-primary h-4 w-4" /></span>
 				<span class="line-clamp-1" title={p.tags.join(', ')}>{p.tags.join(', ')}</span>
 			</div>
 		</div>
@@ -48,8 +48,8 @@
 			</h3>
 			<div>{p.description}</div>
 			<div class="hover flex items-center gap-1">
-				<span title="work project"><BuildingIcon class="h-4 min-w-4 text-primary" /></span>
-				<span><TagIcon class="h-4 min-w-4 text-primary" /></span>
+				<span title="work project"><BuildingIcon class="text-primary h-4 min-w-4" /></span>
+				<span><TagIcon class="text-primary h-4 min-w-4" /></span>
 				<span class="line-clamp-1" title={p.tags.join(', ')}>{p.tags.join(', ')}</span>
 			</div>
 		</div>

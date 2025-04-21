@@ -1,18 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+	--color-primary: #428375;
+	--color-secondary: #42837580;
+}
 
 @layer base {
 	body {
-		@apply bg-body text-body;
+		background-color: #303030;
+		color: #e9e8e8;
 	}
 
 	hr {
-		@apply h-px w-full border-0 bg-secondary;
+		@apply bg-secondary h-px w-full border-0;
 	}
 
 	a {
-		@apply transition-all duration-500 hover:text-primary;
+		@apply hover:text-primary transition-all duration-500;
 	}
 
 	li::marker {

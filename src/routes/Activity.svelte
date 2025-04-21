@@ -21,11 +21,11 @@
 					<a href={act.link} target="_blank">{act.place}</a>
 				</h3>
 				<div class="hover flex items-center gap-1">
-					<LocationIcon class="h-4 w-4 text-primary" />
+					<LocationIcon class="text-primary h-4 w-4" />
 					<span>{act.location}</span>
 				</div>
 				<div class="hover flex items-center gap-1">
-					<CalendarIcon class="h-4 w-4 text-primary" />
+					<CalendarIcon class="text-primary h-4 w-4" />
 					<span>{act.startDate} - {act.endDate}</span>
 				</div>
 			</div>

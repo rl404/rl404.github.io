@@ -20,11 +20,11 @@
 					<a href={edu.link} target="_blank">{edu.school}</a>
 				</h3>
 				<div class="hover flex items-center gap-1">
-					<LocationIcon class="h-4 w-4 text-primary" />
+					<LocationIcon class="text-primary h-4 w-4" />
 					<span>{edu.location}</span>
 				</div>
 				<div class="hover flex items-center gap-1">
-					<CalendarIcon class="h-4 w-4 text-primary" />
+					<CalendarIcon class="text-primary h-4 w-4" />
 					<span>{edu.startDate} - {edu.endDate}</span>
 				</div>
 			</div>
