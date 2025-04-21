@@ -33,15 +33,15 @@
 					{/if}
 				</h3>
 				<div class="hover flex items-center gap-1">
-					<UsersIcon class="h-4 w-4 text-primary" />
+					<UsersIcon class="text-primary h-4 w-4" />
 					<span>{exp.team}</span>
 				</div>
 				<div class="hover flex items-center gap-1">
-					<LocationIcon class="h-4 w-4 text-primary" />
+					<LocationIcon class="text-primary h-4 w-4" />
 					<span>{exp.location}</span>
 				</div>
 				<div class="hover flex items-center gap-1">
-					<CalendarIcon class="h-4 w-4 text-primary" />
+					<CalendarIcon class="text-primary h-4 w-4" />
 					<span>{exp.startDate} - {exp.endDate}</span>
 				</div>
 			</div>
