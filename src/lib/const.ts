@@ -278,6 +278,24 @@ export const data = {
 	projects: {
 		personal: [
 			{
+				name: 'Fairy',
+				description: 'General tools for easier and simpler development.',
+				link: 'https://github.com/rl404/fairy',
+				tags: ['go']
+			},
+			{
+				name: 'Image Randomizer',
+				description: 'Simple website to generate random image from chosen image list.',
+				link: 'https://github.com/rl404/image-randomizer',
+				tags: ['go', 'postgresql', 'nodejs', 'react', 'docker', 'kubernetes']
+			},
+			{
+				name: 'Nyaa X Discord',
+				description: 'Discord bot to notify Nyaa updates.',
+				link: 'https://github.com/rl404/nyaa-x-discord',
+				tags: ['go', 'mongodb', 'docker', 'kubernetes']
+			},	
+			{
 				name: 'Ikazuchi',
 				description: 'Explore anime database with Bakemonogatari theme.',
 				link: 'https://ikazuchi.rl404.com',
@@ -351,13 +369,7 @@ export const data = {
 				description: 'Unofficial golang API wrapper for flip.id.',
 				link: 'https://github.com/rl404/flip-go',
 				tags: ['go']
-			},
-			{
-				name: 'Fairy',
-				description: 'General tools for easier and simpler development.',
-				link: 'https://github.com/rl404/fairy',
-				tags: ['go']
-			},
+			},			
 			{
 				name: 'Verniy',
 				description: 'Unofficial Anilist graphql api wrapper.',
@@ -376,19 +388,7 @@ export const data = {
 				description: 'Auto generate MyAnimeList anime/manga CSS cover.',
 				link: 'https://github.com/rl404/mal-cover',
 				tags: ['go', 'docker', 'kubernetes']
-			},
-			{
-				name: 'Nyaa X Discord',
-				description: 'Discord bot to notify Nyaa updates.',
-				link: 'https://github.com/rl404/nyaa-x-discord',
-				tags: ['go', 'mongodb', 'docker', 'kubernetes']
-			},
-			{
-				name: 'Image Randomizer',
-				description: 'Simple website to generate random image from chosen image list.',
-				link: 'https://github.com/rl404/image-randomizer',
-				tags: ['go', 'postgresql', 'nodejs', 'react', 'docker', 'kubernetes']
-			}
+			}					
 		],
 		work: [
 			{
