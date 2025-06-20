@@ -294,7 +294,13 @@ export const data = {
 				description: 'Discord bot to notify Nyaa updates.',
 				link: 'https://github.com/rl404/nyaa-x-discord',
 				tags: ['go', 'mongodb', 'docker', 'kubernetes']
-			},	
+			},
+			{
+				name: 'Yuubari',
+				description: 'List your Discord Emojis & Stickers from all your joined Discord servers.',
+				link: 'https://github.com/rl404/yuubari',
+				tags: ['nodejs', 'sveltekit']
+			},
 			{
 				name: 'Ikazuchi',
 				description: 'Explore anime database with Bakemonogatari theme.',
@@ -369,7 +375,7 @@ export const data = {
 				description: 'Unofficial golang API wrapper for flip.id.',
 				link: 'https://github.com/rl404/flip-go',
 				tags: ['go']
-			},			
+			},
 			{
 				name: 'Verniy',
 				description: 'Unofficial Anilist graphql api wrapper.',
@@ -388,7 +394,7 @@ export const data = {
 				description: 'Auto generate MyAnimeList anime/manga CSS cover.',
 				link: 'https://github.com/rl404/mal-cover',
 				tags: ['go', 'docker', 'kubernetes']
-			}					
+			}
 		],
 		work: [
 			{
