@@ -30,7 +30,7 @@ export const data = {
 			location: 'Jakarta, Indonesia',
 			team: 'IT Division',
 			startDate: 'Jan 2024',
-			endDate: 'Current',
+			endDate: 'Aug 2025',
 			link: 'https://govtechedu.id',
 			tasks: [
 				'Led technical direction and guidance for team of 8 members alongside Engineering Manager, ensuring the successful delivery of features.',
