@@ -66,6 +66,25 @@ export const data = {
 			]
 		},
 		{
+			position: 'Backend Developer (Part-Time)',
+			company: '80&Company',
+			location: 'Kyoto, Japan',
+			team: 'Kalonade Team',
+			startDate: 'Dec 2023',
+			endDate: 'Apr 2024',
+			link: 'https://80and.co',
+			tasks: [
+				'Developed and maintained backend API based on product requirement for frontend usage.',
+				'Migrated new and existing tables for developing new API and to be used by other developers.',
+				'Refactored project folder structure to be more scalable and flexible.'
+			],
+			simpleTasks: [
+				'Developed and maintained backend API.',
+				'Migrated tables.',
+				'Refactored project folder structure.'
+			]
+		},
+		{
 			position: 'Backend Developer',
 			company: 'eDOT',
 			location: 'Jakarta, Indonesia',
@@ -410,6 +429,13 @@ export const data = {
 					'An online service for providing students with the opportunity to hone their skills by going directly into real world and working as a career preparation step. This is part of the independent learning policy by the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek).',
 				link: 'https://kampusmerdeka.kemdikbud.go.id/',
 				tags: ['go', 'postgresql', 'redis', 'google-pubsub', 'docker', 'kubernetes']
+			},
+			{
+				name: 'Kalonade',
+				description:
+					'An online service for providing reservation management, customer management, accounting management, and shift management of staff of beauty and medical care.',
+				link: 'https://service.kalonade.com/',
+				tags: ['go', 'postgresql', 'google-pubsub', 'docker']
 			},
 			{
 				name: 'eLOG',
