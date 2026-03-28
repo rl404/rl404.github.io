@@ -155,7 +155,7 @@ export const data = {
 			team: 'Operational Division',
 			startDate: 'Feb 2019',
 			endDate: 'Nov 2019',
-			link: 'https://www.docotel.com',
+			link: 'https://www.dtisolution.id',
 			tasks: [
 				'Led a team of 4 developers to maintain deployed projects, ensuring the stability and usability. This included both client-side and server-side projects.',
 				'Collaborated with cross-functional teams to ensure the readiness of their newly added features.',
@@ -175,7 +175,7 @@ export const data = {
 			team: 'Operational Division',
 			startDate: 'Sep 2018',
 			endDate: 'Jan 2019',
-			link: 'https://www.docotel.com',
+			link: 'https://www.dtisolution.id',
 			tasks: [
 				'Developed and maintained over 10 government-related web applications, handling more than 1,500,000 transactions per month. Ensured high availability, security, and scalability.',
 				'Designed and developed tools to handle common and repeated client requests, improving efficiency and reducing manual effort.',
@@ -194,7 +194,7 @@ export const data = {
 			team: 'Developer Division',
 			startDate: 'Jan 2018',
 			endDate: 'Aug 2018',
-			link: 'https://www.docotel.com',
+			link: 'https://www.dtisolution.id',
 			tasks: [
 				'Developed multiple web applications for notaries in Indonesia, ensuring compliance with government regulations and standards.',
 				'Conducted an analysis of database queries and suggested improvements to enhance query speed and optimize database performance.'
@@ -211,7 +211,7 @@ export const data = {
 			team: 'Engineering Division',
 			startDate: 'May 2017',
 			endDate: 'Oct 2017',
-			link: 'https://www.toyotaindonesiamanufacturing.co.id',
+			link: 'https://www.toyota.co.id/',
 			tasks: [
 				'Designed and developed a document management web application, providing an easy-to-use distribution system between Toyota Japan, Toyota Indonesia, and their suppliers.',
 				'Designed and developed an engineer activities and work hour management web application, improving efficiency and transparency in tracking and managing engineers.',
@@ -231,7 +231,7 @@ export const data = {
 			location: 'Bangkok, Thailand',
 			startDate: 'Aug 2013',
 			endDate: 'Jan 2017',
-			link: 'https://global.kmutt.ac.th',
+			link: 'https://www.kmutt.ac.th',
 			tasks: ['GPA 3.4 out of 4.0', 'Graduated with Second Class Honor']
 		},
 		{
@@ -264,7 +264,7 @@ export const data = {
 			location: 'Bangkok, Thailand',
 			startDate: 'Aug 2014',
 			endDate: 'Dec 2014',
-			link: 'https://global.kmutt.ac.th',
+			link: 'https://www.kmutt.ac.th',
 			tasks: ['Taught basic Java programming to 3 junior students']
 		}
 	],
@@ -420,14 +420,14 @@ export const data = {
 				name: 'Sistem Informasi Sumberdaya Terintegrasi (SISTER)',
 				description:
 					"An online service for serving portfolio, updating data, and processing career of all lecturers in Indonesia. This is part of the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek) to reduce lecturers' workload on updating their career activities.",
-				link: 'https://sister.kemdikbud.go.id/',
+				link: 'https://sister.kemdiktisaintek.go.id',
 				tags: ['php', 'postgresql', 'docker', 'kubernetes']
 			},
 			{
 				name: 'Kampus Merdeka',
 				description:
 					'An online service for providing students with the opportunity to hone their skills by going directly into real world and working as a career preparation step. This is part of the independent learning policy by the Ministry of Education, Culture, Research, and Technology (Kemendikbudristek).',
-				link: 'https://kampusmerdeka.kemdikbud.go.id/',
+				// link: 'https://kampusmerdeka.kemdikbud.go.id/',
 				tags: ['go', 'postgresql', 'redis', 'google-pubsub', 'docker', 'kubernetes']
 			},
 			{
@@ -440,19 +440,19 @@ export const data = {
 			{
 				name: 'eLOG',
 				description: 'An online service for renting vehicle and sending goods.',
-				link: 'https://www.elog.co.id/',
+				// link: 'https://www.elog.co.id/',
 				tags: ['nodejs', 'mysql', 'redis', 'prometheus', 'grafana']
 			},
 			{
 				name: 'MLBB Philippine',
 				description: 'Campaign for eDOT philippine and Mobile Legend collaboration.',
-				link: 'https://mlbb.edot.ph/',
+				// link: 'https://mlbb.edot.ph/',
 				tags: ['go', 'mysql', 'redis', 'docker', 'prometheus', 'grafana', 'elasticsearch', 'kibana']
 			},
 			{
 				name: 'Wheel of Fortune',
 				description: 'Discount voucher campaign for eDOT.',
-				link: 'https://fortune-wheel.edot.id/',
+				// link: 'https://fortune-wheel.edot.id/',
 				tags: [
 					'go',
 					'mysql',
@@ -468,7 +468,7 @@ export const data = {
 			{
 				name: 'Richeese x MLBB',
 				description: 'Campaign for Richeese Factory and Mobile Legend collaboration.',
-				link: 'https://rfxmlbb.edot.id/',
+				// link: 'https://rfxmlbb.edot.id/',
 				tags: [
 					'go',
 					'mysql',
@@ -605,7 +605,7 @@ export const data = {
 				name: 'E-Kerja',
 				description:
 					'An internal service online system to manage all activity schedule and plan in one calendar used by General Legal Administration (AHU) employees.',
-				link: 'http://e-kerja.ahu.go.id',
+				// link: 'http://e-kerja.ahu.go.id',
 				tags: ['php', 'yii2', 'mysql']
 			},
 			{
@@ -640,14 +640,14 @@ export const data = {
 				name: 'Epasti',
 				description:
 					'An internal service online system to manage all secretariat administration activities in General Legal Administration office (AHU) including salary, mailing, finance, business travel report, etc. This project is part of AHU-Online project.',
-				link: 'http://e-office.ahu.go.id',
+				// link: 'http://e-office.ahu.go.id',
 				tags: ['php', 'yii', 'yii2', 'mysql']
 			},
 			{
 				name: 'E-saki',
 				description:
 					'An internal service online system to manage all secretariat administration activities in Intellectual Property office (DJKI) including salary, mailing, finance, business travel report, etc.',
-				link: 'http://e-saki.dgip.go.id',
+				// link: 'http://e-saki.dgip.go.id',
 				tags: ['php', 'yii', 'mysql']
 			},
 			{
