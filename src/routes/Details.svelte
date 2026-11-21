@@ -18,6 +18,7 @@
 	<a
 		href={data.github.link}
 		target="_blank"
+		rel="external"
 		class="hover col-span-12 flex items-center gap-1 sm:col-span-6 md:col-span-4 lg:col-span-3"
 	>
 		<GithubIcon class="text-primary h-4 w-4" />
@@ -26,6 +27,7 @@
 	<a
 		href={data.linkedin.link}
 		target="_blank"
+		rel="external"
 		class="hover col-span-12 flex items-center gap-1 sm:col-span-6 md:col-span-4 lg:col-span-3"
 	>
 		<LinkedinIcon class="text-primary h-4 w-4" />

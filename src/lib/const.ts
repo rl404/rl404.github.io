@@ -115,7 +115,7 @@ export const data = {
 			team: 'Backend Team',
 			startDate: 'Oct 2020',
 			endDate: 'Jul 2021',
-			link: 'https://mola.tv',
+			// link: 'https://mola.tv',
 			tasks: [
 				'Developed and maintained back-end microservices, ensuring scalability, reliability, and code quality.',
 				'Implemented the circuit-breaker pattern for database and cache, improving system resilience and preventing cascading failures.',
@@ -271,8 +271,8 @@ export const data = {
 	skills: {
 		language: ['Go', 'PHP', 'JavaScript'],
 		database: ['MySQL', 'PostgreSQL', 'Oracle', 'MongoDB', 'Redis'],
-		pubsub: ['RabbitMQ', 'NSQ', 'Google-Pubsub'],
-		monitoring: ['Elasticsearch', 'Kibana', 'Prometheus', 'Grafana'],
+		pubsub: ['RabbitMQ', 'NSQ', 'Google-Pubsub', 'Kafka'],
+		monitoring: ['Elasticsearch', 'Kibana', 'Prometheus', 'Grafana', 'OpenSearch', 'NewRelic'],
 		version: ['Git', 'Github', 'Gitlab'],
 		devops: ['Docker', 'Kubernetes']
 	},
@@ -500,7 +500,7 @@ export const data = {
 			{
 				name: 'Mola TV',
 				description: 'An online video streaming platform.',
-				link: 'https://mola.tv/',
+				// link: 'https://mola.tv/',
 				tags: ['go', 'mysql', 'redis', 'nsq', 'docker', 'kubernetes']
 			},
 			{

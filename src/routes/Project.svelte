@@ -20,28 +20,11 @@
 <Border />
 
 <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-	{#each data.projects.personal as p}
+	{#each data.projects.work as p (p)}
 		<div class="flex flex-col">
 			<h3 class="text-2xl font-bold">
 				{#if p.link}
-					<a href={p.link} target="_blank">{p.name}</a>
-				{:else}
-					{p.name}
-				{/if}
-			</h3>
-			<div>{p.description}</div>
-			<div class="hover flex items-center gap-1">
-				<span title="personal project"><UserIcon class="text-primary h-4 w-4" /></span>
-				<span><TagIcon class="text-primary h-4 w-4" /></span>
-				<span class="line-clamp-1" title={p.tags.join(', ')}>{p.tags.join(', ')}</span>
-			</div>
-		</div>
-	{/each}
-	{#each data.projects.work as p}
-		<div class="flex flex-col">
-			<h3 class="text-2xl font-bold">
-				{#if p.link}
-					<a href={p.link} target="_blank">{p.name}</a>
+					<a href={p.link} target="_blank" rel="external">{p.name}</a>
 				{:else}
 					{p.name}
 				{/if}
@@ -50,6 +33,23 @@
 			<div class="hover flex items-center gap-1">
 				<span title="work project"><BuildingIcon class="text-primary h-4 min-w-4" /></span>
 				<span><TagIcon class="text-primary h-4 min-w-4" /></span>
+				<span class="line-clamp-1" title={p.tags.join(', ')}>{p.tags.join(', ')}</span>
+			</div>
+		</div>
+	{/each}
+	{#each data.projects.personal as p (p)}
+		<div class="flex flex-col">
+			<h3 class="text-2xl font-bold">
+				{#if p.link}
+					<a href={p.link} target="_blank" rel="external">{p.name}</a>
+				{:else}
+					{p.name}
+				{/if}
+			</h3>
+			<div>{p.description}</div>
+			<div class="hover flex items-center gap-1">
+				<span title="personal project"><UserIcon class="text-primary h-4 w-4" /></span>
+				<span><TagIcon class="text-primary h-4 w-4" /></span>
 				<span class="line-clamp-1" title={p.tags.join(', ')}>{p.tags.join(', ')}</span>
 			</div>
 		</div>

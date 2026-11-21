@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { data } from '$lib/const';
-	import type { ProfilePage, WithContext } from 'schema-dts';
+	import type { EducationalOrganization, Organization, ProfilePage, WithContext } from 'schema-dts';
 
 	const schema: WithContext<ProfilePage> = {
 		'@context': 'https://schema.org',
@@ -31,19 +31,25 @@
 				address: data.experiences[0].location
 			},
 			alumniOf: [
-				...data.experiences.slice(1).map((e) => ({
-					'@type': 'Organization',
-					name: e.company,
-					url: e.link,
-					address: e.location
-				})),
-				...data.educations.map((e) => ({
-					'@type': 'EducationalOrganization',
-					name: e.school,
-					url: e.link,
-					address: e.location
-				}))
-			] as any,
+				...data.experiences.slice(1).map(
+					(e) =>
+						({
+							'@type': 'Organization',
+							name: e.company,
+							url: e.link,
+							address: e.location
+						}) as WithContext<Organization>
+				),
+				...data.educations.map(
+					(e) =>
+						({
+							'@type': 'EducationalOrganization',
+							name: e.school,
+							url: e.link,
+							address: e.location
+						}) as WithContext<EducationalOrganization>
+				)
+			],
 			knowsLanguage: data.languages.map((l) => ({
 				'@type': 'Language',
 				name: l.name,
@@ -61,5 +67,6 @@
 
 <svelte:head>
 	<link rel="canonical" href="https://www.rl404.com" />
-	{@html `<script type="application/ld+json">${JSON.stringify(schema)}${'<'}/script>`}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+	{@html '<script type="application/ld+json">' + JSON.stringify(schema) + '<' + '/script>'}
 </svelte:head>

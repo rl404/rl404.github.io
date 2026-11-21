@@ -22,12 +22,12 @@
 <Border />
 
 <section class="grid gap-4">
-	{#each data.experiences as exp}
+	{#each data.experiences as exp (exp)}
 		<div class="grid grid-cols-12 gap-1">
 			<div class="col-span-12 flex flex-col sm:col-span-3">
 				<h3 class="text-2xl font-bold">
 					{#if exp.link}
-						<a href={exp.link} target="_blank">{exp.company}</a>
+						<a href={exp.link} target="_blank" rel="external">{exp.company}</a>
 					{:else}
 						{exp.company}
 					{/if}
@@ -48,7 +48,7 @@
 			<div class="col-span-12 flex flex-col sm:col-span-9">
 				<h3 class="text-xl font-bold">{exp.position}</h3>
 				<ul class="list-disc pl-4">
-					{#each useSimple ? exp.simpleTasks : exp.tasks as w}
+					{#each useSimple ? exp.simpleTasks : exp.tasks as w (w)}
 						<li>{w}</li>
 					{/each}
 				</ul>

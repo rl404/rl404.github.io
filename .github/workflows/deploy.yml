@@ -1,33 +1,30 @@
-name: deploy
+name: Deploy
 
 on:
   push:
     tags:
-      - "v*"
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-*'
+
+permissions:
+  contents: read
 
 jobs:
-  build_site:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-      - name: Install Node.js
-        uses: actions/setup-node@v7
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: 26
+          node-version: 26.13
           cache: npm
-      - name: Install dependencies
-        run: npm install
-      - name: build
-        run: |
-          npm run build
-      - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v5
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: 'build/'
-
   deploy:
-    needs: build_site
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -36,6 +33,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v5
