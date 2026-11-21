@@ -11,7 +11,7 @@
 <Border />
 
 <section class="grid gap-4">
-	{#each data.languages as lang}
+	{#each data.languages as lang (lang)}
 		<div class="flex gap-2">
 			<span>{lang.name}</span>
 			<span class="hover">— {lang.level}</span>

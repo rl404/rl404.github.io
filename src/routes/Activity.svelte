@@ -14,11 +14,11 @@
 <Border />
 
 <section class="grid gap-4">
-	{#each data.activities as act}
+	{#each data.activities as act (act)}
 		<div class="grid grid-cols-12 gap-2">
 			<div class="col-span-12 flex flex-col sm:col-span-3">
 				<h3 class="text-2xl font-bold">
-					<a href={act.link} target="_blank">{act.place}</a>
+					<a href={act.link} target="_blank" rel="external">{act.place}</a>
 				</h3>
 				<div class="hover flex items-center gap-1">
 					<LocationIcon class="text-primary h-4 w-4" />
@@ -32,7 +32,7 @@
 			<div class="col-span-12 flex flex-col sm:col-span-9">
 				<h3 class="text-xl font-bold">{act.position}</h3>
 				<ul class="list-disc pl-4">
-					{#each act.tasks as w}
+					{#each act.tasks as w (w)}
 						<li>{w}</li>
 					{/each}
 				</ul>
